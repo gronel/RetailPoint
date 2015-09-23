@@ -1,0 +1,799 @@
+C:\Documents and Settings\DEV4\Desktop\TOPCInventorySales\TOPCInventorySales\bin\Debug\TOPCInventorySales.exe.config
+C:\Documents and Settings\DEV4\Desktop\TOPCInventorySales\TOPCInventorySales\bin\Debug\TOPCInventorySales.exe.manifest
+C:\Documents and Settings\DEV4\Desktop\TOPCInventorySales\TOPCInventorySales\bin\Debug\TOPCInventorySales.application
+C:\Documents and Settings\DEV4\Desktop\TOPCInventorySales\TOPCInventorySales\bin\Debug\TOPCInventorySales.exe
+C:\Documents and Settings\DEV4\Desktop\TOPCInventorySales\TOPCInventorySales\bin\Debug\TOPCInventorySales.pdb
+C:\Documents and Settings\DEV4\Desktop\TOPCInventorySales\TOPCInventorySales\bin\Debug\TOPCInventorySales.xml
+C:\Documents and Settings\DEV4\Desktop\TOPCInventorySales\TOPCInventorySales\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\DEV4\Desktop\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.ErrorProviderExtended.resources
+C:\Documents and Settings\DEV4\Desktop\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frmActUnit.resources
+C:\Documents and Settings\DEV4\Desktop\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frmDeleteItem.resources
+C:\Documents and Settings\DEV4\Desktop\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frmDepartment.resources
+C:\Documents and Settings\DEV4\Desktop\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frmSearchCash.resources
+C:\Documents and Settings\DEV4\Desktop\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Customer.resources
+C:\Documents and Settings\DEV4\Desktop\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_CustomerList.resources
+C:\Documents and Settings\DEV4\Desktop\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Employee.resources
+C:\Documents and Settings\DEV4\Desktop\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Employee_List.resources
+C:\Documents and Settings\DEV4\Desktop\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_ExchangeRate.resources
+C:\Documents and Settings\DEV4\Desktop\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Product.resources
+C:\Documents and Settings\DEV4\Desktop\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_ProductList.resources
+C:\Documents and Settings\DEV4\Desktop\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_DR.resources
+C:\Documents and Settings\DEV4\Desktop\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_DRList.resources
+C:\Documents and Settings\DEV4\Desktop\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_Order.resources
+C:\Documents and Settings\DEV4\Desktop\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_OrderList.resources
+C:\Documents and Settings\DEV4\Desktop\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frmUnit.resources
+C:\Documents and Settings\DEV4\Desktop\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_SearchTransNO.resources
+C:\Documents and Settings\DEV4\Desktop\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_SendAlert.resources
+C:\Documents and Settings\DEV4\Desktop\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.opendialog.resources
+C:\Documents and Settings\DEV4\Desktop\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frmMember.resources
+C:\Documents and Settings\DEV4\Desktop\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frmSearchPRJR.resources
+C:\Documents and Settings\DEV4\Desktop\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frmSummary.resources
+C:\Documents and Settings\DEV4\Desktop\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Ulility.resources
+C:\Documents and Settings\DEV4\Desktop\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_ARList.resources
+C:\Documents and Settings\DEV4\Desktop\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_AR.resources
+C:\Documents and Settings\DEV4\Desktop\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_200_JOS.resources
+C:\Documents and Settings\DEV4\Desktop\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_WRList.resources
+C:\Documents and Settings\DEV4\Desktop\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_WR.resources
+C:\Documents and Settings\DEV4\Desktop\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frmAbout.resources
+C:\Documents and Settings\DEV4\Desktop\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frmMyAccount.resources
+C:\Documents and Settings\DEV4\Desktop\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frmPic.resources
+C:\Documents and Settings\DEV4\Desktop\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frmSearchItems.resources
+C:\Documents and Settings\DEV4\Desktop\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frmSQLConfig.resources
+C:\Documents and Settings\DEV4\Desktop\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Category.resources
+C:\Documents and Settings\DEV4\Desktop\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Company.resources
+C:\Documents and Settings\DEV4\Desktop\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Currency.resources
+C:\Documents and Settings\DEV4\Desktop\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Department.resources
+C:\Documents and Settings\DEV4\Desktop\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Item.resources
+C:\Documents and Settings\DEV4\Desktop\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_ItemList.resources
+C:\Documents and Settings\DEV4\Desktop\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Supplier.resources
+C:\Documents and Settings\DEV4\Desktop\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_User.resources
+C:\Documents and Settings\DEV4\Desktop\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_UserRights.resources
+C:\Documents and Settings\DEV4\Desktop\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Warehouse.resources
+C:\Documents and Settings\DEV4\Desktop\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_CashAdvance.resources
+C:\Documents and Settings\DEV4\Desktop\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_JO.resources
+C:\Documents and Settings\DEV4\Desktop\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_JOList.resources
+C:\Documents and Settings\DEV4\Desktop\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_JR.resources
+C:\Documents and Settings\DEV4\Desktop\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_JRList.resources
+C:\Documents and Settings\DEV4\Desktop\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_PO.resources
+C:\Documents and Settings\DEV4\Desktop\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_POList.resources
+C:\Documents and Settings\DEV4\Desktop\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_PR.resources
+C:\Documents and Settings\DEV4\Desktop\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_PRList.resources
+C:\Documents and Settings\DEV4\Desktop\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_RR.resources
+C:\Documents and Settings\DEV4\Desktop\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_RRList.resources
+C:\Documents and Settings\DEV4\Desktop\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_200_ISS.resources
+C:\Documents and Settings\DEV4\Desktop\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_200_JRS.resources
+C:\Documents and Settings\DEV4\Desktop\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_200_POS.resources
+C:\Documents and Settings\DEV4\Desktop\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_200_PRS.resources
+C:\Documents and Settings\DEV4\Desktop\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_200_ReportV.resources
+C:\Documents and Settings\DEV4\Desktop\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_200_RRI.resources
+C:\Documents and Settings\DEV4\Desktop\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_POPUP.resources
+C:\Documents and Settings\DEV4\Desktop\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_PopUP_WR.resources
+C:\Documents and Settings\DEV4\Desktop\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_Searchitem.resources
+C:\Documents and Settings\DEV4\Desktop\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.LoginForm.resources
+C:\Documents and Settings\DEV4\Desktop\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.MainForm.resources
+C:\Documents and Settings\DEV4\Desktop\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.Resources.resources
+C:\Documents and Settings\DEV4\Desktop\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.vbproj.GenerateResource.Cache
+C:\Documents and Settings\DEV4\Desktop\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.TrustInfo.xml
+C:\Documents and Settings\DEV4\Desktop\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.exe.manifest
+C:\Documents and Settings\DEV4\Desktop\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.application
+C:\Documents and Settings\DEV4\Desktop\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.exe
+C:\Documents and Settings\DEV4\Desktop\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.xml
+C:\Documents and Settings\DEV4\Desktop\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.pdb
+C:\Documents and Settings\DEV4\Desktop\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_200_RIL.resources
+E:\TOPCInventorySales\TOPCInventorySales\bin\Debug\TOPCInventorySales.exe.config
+E:\TOPCInventorySales\TOPCInventorySales\bin\Debug\TOPCInventorySales.exe.manifest
+E:\TOPCInventorySales\TOPCInventorySales\bin\Debug\TOPCInventorySales.application
+E:\TOPCInventorySales\TOPCInventorySales\bin\Debug\TOPCInventorySales.exe
+E:\TOPCInventorySales\TOPCInventorySales\bin\Debug\TOPCInventorySales.pdb
+E:\TOPCInventorySales\TOPCInventorySales\bin\Debug\TOPCInventorySales.xml
+E:\TOPCInventorySales\TOPCInventorySales\obj\Release\ResolveAssemblyReference.cache
+E:\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.ErrorProviderExtended.resources
+E:\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frmActUnit.resources
+E:\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frmDeleteItem.resources
+E:\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frmDepartment.resources
+E:\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frmSearchCash.resources
+E:\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Customer.resources
+E:\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_CustomerList.resources
+E:\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Employee.resources
+E:\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Employee_List.resources
+E:\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_ExchangeRate.resources
+E:\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Product.resources
+E:\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_ProductList.resources
+E:\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_DR.resources
+E:\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_DRList.resources
+E:\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_Order.resources
+E:\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_OrderList.resources
+E:\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_200_RIL.resources
+E:\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frmUnit.resources
+E:\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_SearchTransNO.resources
+E:\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_Search_WR.resources
+E:\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_SendAlert.resources
+E:\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.opendialog.resources
+E:\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frmMember.resources
+E:\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frmSearchPRJR.resources
+E:\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frmSummary.resources
+E:\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Ulility.resources
+E:\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_ARList.resources
+E:\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_AR.resources
+E:\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_200_JOS.resources
+E:\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_WRList.resources
+E:\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_WR.resources
+E:\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frmAbout.resources
+E:\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frmMyAccount.resources
+E:\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frmPic.resources
+E:\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frmSearchItems.resources
+E:\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frmSQLConfig.resources
+E:\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Category.resources
+E:\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Company.resources
+E:\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Currency.resources
+E:\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Department.resources
+E:\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Item.resources
+E:\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_ItemList.resources
+E:\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Supplier.resources
+E:\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_User.resources
+E:\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_UserRights.resources
+E:\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Warehouse.resources
+E:\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_CashAdvance.resources
+E:\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_JO.resources
+E:\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_JOList.resources
+E:\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_JR.resources
+E:\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_JRList.resources
+E:\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_PO.resources
+E:\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_POList.resources
+E:\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_PR.resources
+E:\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_PRList.resources
+E:\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_RR.resources
+E:\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_RRList.resources
+E:\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_200_ISS.resources
+E:\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_200_JRS.resources
+E:\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_200_POS.resources
+E:\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_200_PRS.resources
+E:\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_200_ReportV.resources
+E:\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_200_RRI.resources
+E:\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_POPUP.resources
+E:\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_PopUP_WR.resources
+E:\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_Searchitem.resources
+E:\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.LoginForm.resources
+E:\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.MainForm.resources
+E:\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.Resources.resources
+E:\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.vbproj.GenerateResource.Cache
+E:\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.TrustInfo.xml
+E:\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.exe.manifest
+E:\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.application
+E:\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.exe
+E:\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.xml
+E:\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.pdb
+E:\nel\TOPCInventorySales\TOPCInventorySales\bin\Debug\TOPCInventorySales.exe.config
+E:\nel\TOPCInventorySales\TOPCInventorySales\bin\Debug\TOPCInventorySales.exe.manifest
+E:\nel\TOPCInventorySales\TOPCInventorySales\bin\Debug\TOPCInventorySales.application
+E:\nel\TOPCInventorySales\TOPCInventorySales\bin\Debug\TOPCInventorySales.exe
+E:\nel\TOPCInventorySales\TOPCInventorySales\bin\Debug\TOPCInventorySales.pdb
+E:\nel\TOPCInventorySales\TOPCInventorySales\bin\Debug\TOPCInventorySales.xml
+E:\nel\TOPCInventorySales\TOPCInventorySales\obj\Release\ResolveAssemblyReference.cache
+E:\nel\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.ErrorProviderExtended.resources
+E:\nel\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frmActUnit.resources
+E:\nel\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frmDeleteItem.resources
+E:\nel\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frmSearchCash.resources
+E:\nel\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Customer.resources
+E:\nel\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_CustomerList.resources
+E:\nel\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Employee.resources
+E:\nel\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Employee_List.resources
+E:\nel\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_ExchangeRate.resources
+E:\nel\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Product.resources
+E:\nel\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_ProductList.resources
+E:\nel\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_DR.resources
+E:\nel\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_DRList.resources
+E:\nel\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_Order.resources
+E:\nel\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_OrderList.resources
+E:\nel\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_200_RIL.resources
+E:\nel\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frmUnit.resources
+E:\nel\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_SearchTransNO.resources
+E:\nel\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_Search_WR.resources
+E:\nel\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_SendAlert.resources
+E:\nel\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.opendialog.resources
+E:\nel\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frmMember.resources
+E:\nel\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frmSearchPRJR.resources
+E:\nel\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frmSummary.resources
+E:\nel\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Ulility.resources
+E:\nel\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_ARList.resources
+E:\nel\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_AR.resources
+E:\nel\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_200_JOS.resources
+E:\nel\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_WRList.resources
+E:\nel\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_WR.resources
+E:\nel\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frmAbout.resources
+E:\nel\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frmMyAccount.resources
+E:\nel\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frmPic.resources
+E:\nel\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frmSearchItems.resources
+E:\nel\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frmSQLConfig.resources
+E:\nel\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Category.resources
+E:\nel\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Company.resources
+E:\nel\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Currency.resources
+E:\nel\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Department.resources
+E:\nel\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Item.resources
+E:\nel\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_ItemList.resources
+E:\nel\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Supplier.resources
+E:\nel\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_User.resources
+E:\nel\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_UserRights.resources
+E:\nel\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Warehouse.resources
+E:\nel\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_CashAdvance.resources
+E:\nel\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_JO.resources
+E:\nel\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_JOList.resources
+E:\nel\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_JR.resources
+E:\nel\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_JRList.resources
+E:\nel\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_PO.resources
+E:\nel\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_POList.resources
+E:\nel\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_PR.resources
+E:\nel\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_PRList.resources
+E:\nel\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_RR.resources
+E:\nel\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_RRList.resources
+E:\nel\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_200_ISS.resources
+E:\nel\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_200_JRS.resources
+E:\nel\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_200_POS.resources
+E:\nel\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_200_PRS.resources
+E:\nel\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_200_ReportV.resources
+E:\nel\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_200_RRI.resources
+E:\nel\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_POPUP.resources
+E:\nel\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_PopUP_WR.resources
+E:\nel\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_Searchitem.resources
+E:\nel\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.LoginForm.resources
+E:\nel\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.MainForm.resources
+E:\nel\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.Resources.resources
+E:\nel\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.vbproj.GenerateResource.Cache
+E:\nel\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.TrustInfo.xml
+E:\nel\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.exe.manifest
+E:\nel\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.application
+E:\nel\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.exe
+E:\nel\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.xml
+E:\nel\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.pdb
+D:\Ronel\Project\TOPCInventorySales\TOPCInventorySales\obj\Release\ResolveAssemblyReference.cache
+D:\Ronel\Project\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.ErrorProviderExtended.resources
+D:\Ronel\Project\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_Search_Emp.resources
+D:\Ronel\Project\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frmActUnit.resources
+D:\Ronel\Project\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frmDeleteItem.resources
+D:\Ronel\Project\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frmSearchCash.resources
+D:\Ronel\Project\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Customer.resources
+D:\Ronel\Project\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_CustomerList.resources
+D:\Ronel\Project\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Employee.resources
+D:\Ronel\Project\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Employee_List.resources
+D:\Ronel\Project\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_ExchangeRate.resources
+D:\Ronel\Project\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Product.resources
+D:\Ronel\Project\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_ProductList.resources
+D:\Ronel\Project\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_DR.resources
+D:\Ronel\Project\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_DRList.resources
+D:\Ronel\Project\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_Order.resources
+D:\Ronel\Project\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_OrderList.resources
+D:\Ronel\Project\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_200_RIL.resources
+D:\Ronel\Project\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frmUnit.resources
+D:\Ronel\Project\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_SearchTransNO.resources
+D:\Ronel\Project\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_Search_WR.resources
+D:\Ronel\Project\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_SendAlert.resources
+D:\Ronel\Project\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.opendialog.resources
+D:\Ronel\Project\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frmMember.resources
+D:\Ronel\Project\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frmSearchPRJR.resources
+D:\Ronel\Project\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frmSummary.resources
+D:\Ronel\Project\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Ulility.resources
+D:\Ronel\Project\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_ARList.resources
+D:\Ronel\Project\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_AR.resources
+D:\Ronel\Project\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_200_JOS.resources
+D:\Ronel\Project\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_WRList.resources
+D:\Ronel\Project\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_WR.resources
+D:\Ronel\Project\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frmAbout.resources
+D:\Ronel\Project\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frmMyAccount.resources
+D:\Ronel\Project\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frmPic.resources
+D:\Ronel\Project\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frmSQLConfig.resources
+D:\Ronel\Project\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Category.resources
+D:\Ronel\Project\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Company.resources
+D:\Ronel\Project\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Currency.resources
+D:\Ronel\Project\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Department.resources
+D:\Ronel\Project\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Item.resources
+D:\Ronel\Project\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_ItemList.resources
+D:\Ronel\Project\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Supplier.resources
+D:\Ronel\Project\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_User.resources
+D:\Ronel\Project\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_UserRights.resources
+D:\Ronel\Project\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Warehouse.resources
+D:\Ronel\Project\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_CashAdvance.resources
+D:\Ronel\Project\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_JO.resources
+D:\Ronel\Project\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_JOList.resources
+D:\Ronel\Project\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_JR.resources
+D:\Ronel\Project\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_JRList.resources
+D:\Ronel\Project\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_PO.resources
+D:\Ronel\Project\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_POList.resources
+D:\Ronel\Project\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_PR.resources
+D:\Ronel\Project\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_PRList.resources
+D:\Ronel\Project\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_RR.resources
+D:\Ronel\Project\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_RRList.resources
+D:\Ronel\Project\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_200_ISS.resources
+D:\Ronel\Project\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_200_JRS.resources
+D:\Ronel\Project\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_200_POS.resources
+D:\Ronel\Project\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_200_PRS.resources
+D:\Ronel\Project\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_200_ReportV.resources
+D:\Ronel\Project\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_200_RRI.resources
+D:\Ronel\Project\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_POPUP.resources
+D:\Ronel\Project\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_PopUP_WR.resources
+D:\Ronel\Project\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_Searchitem.resources
+D:\Ronel\Project\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.LoginForm.resources
+D:\Ronel\Project\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.MainForm.resources
+D:\Ronel\Project\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.Resources.resources
+D:\Ronel\Project\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.vbproj.GenerateResource.Cache
+D:\Ronel\Project\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.exe
+D:\Ronel\Project\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.xml
+D:\Ronel\Project\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.pdb
+D:\Ronel\Project\TOPCInventorySales\TOPCInventorySales\bin\Debug\TOPCInventorySales.exe.config
+D:\Ronel\Project\TOPCInventorySales\TOPCInventorySales\bin\Debug\TOPCInventorySales.exe.manifest
+D:\Ronel\Project\TOPCInventorySales\TOPCInventorySales\bin\Debug\TOPCInventorySales.application
+D:\Ronel\Project\TOPCInventorySales\TOPCInventorySales\bin\Debug\TOPCInventorySales.exe
+D:\Ronel\Project\TOPCInventorySales\TOPCInventorySales\bin\Debug\TOPCInventorySales.pdb
+D:\Ronel\Project\TOPCInventorySales\TOPCInventorySales\bin\Debug\TOPCInventorySales.xml
+D:\Ronel\Project\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frmSearchItems.resources
+D:\Ronel\Project\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.TrustInfo.xml
+D:\Ronel\Project\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.exe.manifest
+D:\Ronel\Project\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.application
+D:\Ronel\Project\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frmPicFrame.resources
+D:\Ronel\Project\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frmGetEmployee.resources
+D:\Ronel\Project\TOPCInventorySales\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_200_AR.resources
+D:\Ronel\TOPC-Source Code and Database\TOPCInventorySales\bin\Debug\Forms\frm_000_Customer.resx
+D:\Ronel\TOPC-Source Code and Database\TOPCInventorySales\bin\Debug\Forms\frm_000_Customer.Designer.vb
+D:\Ronel\TOPC-Source Code and Database\TOPCInventorySales\bin\Debug\Forms\frm_000_Customer.vb
+D:\Ronel\TOPC-Source Code and Database\TOPCInventorySales\bin\Debug\TOPCInventorySales.exe.config
+D:\Ronel\TOPC-Source Code and Database\TOPCInventorySales\bin\Debug\TOPCInventorySales.exe.manifest
+D:\Ronel\TOPC-Source Code and Database\TOPCInventorySales\bin\Debug\TOPCInventorySales.application
+D:\Ronel\TOPC-Source Code and Database\TOPCInventorySales\bin\Debug\TOPCInventorySales.exe
+D:\Ronel\TOPC-Source Code and Database\TOPCInventorySales\bin\Debug\TOPCInventorySales.pdb
+D:\Ronel\TOPC-Source Code and Database\TOPCInventorySales\bin\Debug\TOPCInventorySales.xml
+D:\Ronel\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\ResolveAssemblyReference.cache
+D:\Ronel\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.ErrorProviderExtended.resources
+D:\Ronel\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Customer.resources
+D:\Ronel\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frmActUnit.resources
+D:\Ronel\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frmDeleteItem.resources
+D:\Ronel\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frmGetEmployee.resources
+D:\Ronel\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frmPicFrame.resources
+D:\Ronel\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frmSearchCash.resources
+D:\Ronel\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_CustomerList.resources
+D:\Ronel\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Employee.resources
+D:\Ronel\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Employee_List.resources
+D:\Ronel\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_ExchangeRate.resources
+D:\Ronel\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Product.resources
+D:\Ronel\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_ProductList.resources
+D:\Ronel\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_DR.resources
+D:\Ronel\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_DRList.resources
+D:\Ronel\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_Order.resources
+D:\Ronel\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_OrderList.resources
+D:\Ronel\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_200_AR.resources
+D:\Ronel\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_200_RIL.resources
+D:\Ronel\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frmUnit.resources
+D:\Ronel\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_SearchTransNO.resources
+D:\Ronel\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_search_emp.resources
+D:\Ronel\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_Search_WR.resources
+D:\Ronel\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_SendAlert.resources
+D:\Ronel\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.opendialog.resources
+D:\Ronel\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frmMember.resources
+D:\Ronel\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frmSearchPRJR.resources
+D:\Ronel\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frmSummary.resources
+D:\Ronel\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Ulility.resources
+D:\Ronel\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_ARList.resources
+D:\Ronel\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_AR.resources
+D:\Ronel\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_200_JOS.resources
+D:\Ronel\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_WRList.resources
+D:\Ronel\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_WR.resources
+D:\Ronel\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frmAbout.resources
+D:\Ronel\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frmMyAccount.resources
+D:\Ronel\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frmPic.resources
+D:\Ronel\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frmSearchItems.resources
+D:\Ronel\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frmSQLConfig.resources
+D:\Ronel\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Category.resources
+D:\Ronel\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Company.resources
+D:\Ronel\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Currency.resources
+D:\Ronel\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Department.resources
+D:\Ronel\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Item.resources
+D:\Ronel\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_ItemList.resources
+D:\Ronel\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Supplier.resources
+D:\Ronel\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_User.resources
+D:\Ronel\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_UserRights.resources
+D:\Ronel\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Warehouse.resources
+D:\Ronel\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_CashAdvance.resources
+D:\Ronel\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_JO.resources
+D:\Ronel\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_JOList.resources
+D:\Ronel\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_JR.resources
+D:\Ronel\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_JRList.resources
+D:\Ronel\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_PO.resources
+D:\Ronel\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_POList.resources
+D:\Ronel\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_PR.resources
+D:\Ronel\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_PRList.resources
+D:\Ronel\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_RR.resources
+D:\Ronel\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_RRList.resources
+D:\Ronel\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_200_ISS.resources
+D:\Ronel\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_200_JRS.resources
+D:\Ronel\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_200_POS.resources
+D:\Ronel\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_200_PRS.resources
+D:\Ronel\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_200_ReportV.resources
+D:\Ronel\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_200_RRI.resources
+D:\Ronel\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_POPUP.resources
+D:\Ronel\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_PopUP_WR.resources
+D:\Ronel\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_Searchitem.resources
+D:\Ronel\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.LoginForm.resources
+D:\Ronel\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.MainForm.resources
+D:\Ronel\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.Resources.resources
+D:\Ronel\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.vbproj.GenerateResource.Cache
+D:\Ronel\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.TrustInfo.xml
+D:\Ronel\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.exe.manifest
+D:\Ronel\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.application
+D:\Ronel\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.exe
+D:\Ronel\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.xml
+D:\Ronel\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.pdb
+D:\RONEL\Project\TOPC-Source Code and Database\TOPCInventorySales\bin\Debug\Forms\frm_000_Customer.resx
+D:\RONEL\Project\TOPC-Source Code and Database\TOPCInventorySales\bin\Debug\Forms\frm_000_Customer.Designer.vb
+D:\RONEL\Project\TOPC-Source Code and Database\TOPCInventorySales\bin\Debug\Forms\frm_000_Customer.vb
+D:\RONEL\Project\TOPC-Source Code and Database\TOPCInventorySales\bin\Debug\TOPCInventorySales.exe.config
+D:\RONEL\Project\TOPC-Source Code and Database\TOPCInventorySales\bin\Debug\TOPCInventorySales.exe.manifest
+D:\RONEL\Project\TOPC-Source Code and Database\TOPCInventorySales\bin\Debug\TOPCInventorySales.application
+D:\RONEL\Project\TOPC-Source Code and Database\TOPCInventorySales\bin\Debug\TOPCInventorySales.exe
+D:\RONEL\Project\TOPC-Source Code and Database\TOPCInventorySales\bin\Debug\TOPCInventorySales.pdb
+D:\RONEL\Project\TOPC-Source Code and Database\TOPCInventorySales\bin\Debug\TOPCInventorySales.xml
+D:\RONEL\Project\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\ResolveAssemblyReference.cache
+D:\RONEL\Project\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.ErrorProviderExtended.resources
+D:\RONEL\Project\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Customer.resources
+D:\RONEL\Project\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frmActUnit.resources
+D:\RONEL\Project\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frmDeleteItem.resources
+D:\RONEL\Project\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frmGetEmployee.resources
+D:\RONEL\Project\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frmPicFrame.resources
+D:\RONEL\Project\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frmSearchCash.resources
+D:\RONEL\Project\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_CustomerList.resources
+D:\RONEL\Project\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Employee.resources
+D:\RONEL\Project\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Employee_List.resources
+D:\RONEL\Project\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_ExchangeRate.resources
+D:\RONEL\Project\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Product.resources
+D:\RONEL\Project\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_ProductList.resources
+D:\RONEL\Project\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_DR.resources
+D:\RONEL\Project\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_DRList.resources
+D:\RONEL\Project\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_Order.resources
+D:\RONEL\Project\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_OrderList.resources
+D:\RONEL\Project\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_200_AR.resources
+D:\RONEL\Project\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_200_RIL.resources
+D:\RONEL\Project\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frmUnit.resources
+D:\RONEL\Project\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_SearchTransNO.resources
+D:\RONEL\Project\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_search_emp.resources
+D:\RONEL\Project\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_Search_WR.resources
+D:\RONEL\Project\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_SendAlert.resources
+D:\RONEL\Project\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.opendialog.resources
+D:\RONEL\Project\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frmMember.resources
+D:\RONEL\Project\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frmSearchPRJR.resources
+D:\RONEL\Project\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frmSummary.resources
+D:\RONEL\Project\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Ulility.resources
+D:\RONEL\Project\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_ARList.resources
+D:\RONEL\Project\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_AR.resources
+D:\RONEL\Project\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_200_JOS.resources
+D:\RONEL\Project\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_WRList.resources
+D:\RONEL\Project\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_WR.resources
+D:\RONEL\Project\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frmAbout.resources
+D:\RONEL\Project\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frmMyAccount.resources
+D:\RONEL\Project\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frmPic.resources
+D:\RONEL\Project\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frmSearchItems.resources
+D:\RONEL\Project\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frmSQLConfig.resources
+D:\RONEL\Project\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Category.resources
+D:\RONEL\Project\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Company.resources
+D:\RONEL\Project\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Currency.resources
+D:\RONEL\Project\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Department.resources
+D:\RONEL\Project\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Item.resources
+D:\RONEL\Project\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_ItemList.resources
+D:\RONEL\Project\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Supplier.resources
+D:\RONEL\Project\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_User.resources
+D:\RONEL\Project\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_UserRights.resources
+D:\RONEL\Project\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Warehouse.resources
+D:\RONEL\Project\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_CashAdvance.resources
+D:\RONEL\Project\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_JO.resources
+D:\RONEL\Project\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_JOList.resources
+D:\RONEL\Project\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_JR.resources
+D:\RONEL\Project\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_JRList.resources
+D:\RONEL\Project\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_PO.resources
+D:\RONEL\Project\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_POList.resources
+D:\RONEL\Project\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_PR.resources
+D:\RONEL\Project\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_PRList.resources
+D:\RONEL\Project\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_RR.resources
+D:\RONEL\Project\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_RRList.resources
+D:\RONEL\Project\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_200_ISS.resources
+D:\RONEL\Project\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_200_JRS.resources
+D:\RONEL\Project\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_200_POS.resources
+D:\RONEL\Project\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_200_PRS.resources
+D:\RONEL\Project\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_200_ReportV.resources
+D:\RONEL\Project\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_200_RRI.resources
+D:\RONEL\Project\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_POPUP.resources
+D:\RONEL\Project\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_PopUP_WR.resources
+D:\RONEL\Project\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_Searchitem.resources
+D:\RONEL\Project\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.LoginForm.resources
+D:\RONEL\Project\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.MainForm.resources
+D:\RONEL\Project\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.Resources.resources
+D:\RONEL\Project\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.vbproj.GenerateResource.Cache
+D:\RONEL\Project\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.TrustInfo.xml
+D:\RONEL\Project\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.exe.manifest
+D:\RONEL\Project\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.application
+D:\RONEL\Project\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.exe
+D:\RONEL\Project\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.xml
+D:\RONEL\Project\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.pdb
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\bin\Debug\Forms\frm_000_Customer.resx
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\bin\Debug\Forms\frm_000_Customer.Designer.vb
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\bin\Debug\Forms\frm_000_Customer.vb
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\bin\Debug\TOPCInventorySales.exe.config
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\bin\Debug\TOPCInventorySales.exe.manifest
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\bin\Debug\TOPCInventorySales.application
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\bin\Debug\TOPCInventorySales.exe
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\bin\Debug\TOPCInventorySales.pdb
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\bin\Debug\TOPCInventorySales.xml
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\ResolveAssemblyReference.cache
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.ErrorProviderExtended.resources
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_SearchProduct.resources
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Customer.resources
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frmActUnit.resources
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frmDeleteItem.resources
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frmGetEmployee.resources
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frmPicFrame.resources
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frmSearchCash.resources
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_CustomerList.resources
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Employee.resources
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Employee_List.resources
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_ExchangeRate.resources
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Product.resources
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_ProductList.resources
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_AR.resources
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_DR.resources
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_DRList.resources
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_Order.resources
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_OrderList.resources
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_Reconfirm.resources
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_200_AR_.resources
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_200_RIL.resources
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frmUnit.resources
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_SearchTransNO.resources
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_search_emp.resources
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_Search_WR.resources
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_SendAlert.resources
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.opendialog.resources
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frmMember.resources
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frmSearchPRJR.resources
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frmSummary.resources
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Ulility.resources
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_ARList.resources
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_AR_.resources
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_200_JOS.resources
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_WRList.resources
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_WR.resources
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frmAbout.resources
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frmMyAccount.resources
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frmPic.resources
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frmSearchItems.resources
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frmSQLConfig.resources
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Category.resources
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Company.resources
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Currency.resources
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Department.resources
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Item.resources
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_ItemList.resources
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Supplier.resources
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_User.resources
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_UserRights.resources
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Warehouse.resources
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_CashAdvance.resources
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_JO.resources
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_JOList.resources
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_JR.resources
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_JRList.resources
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_PO.resources
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_POList.resources
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_PR.resources
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_PRList.resources
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_RR.resources
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_RRList.resources
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_200_ISS.resources
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_200_JRS.resources
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_200_POS.resources
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_200_PRS.resources
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_200_ReportV.resources
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_200_RRI.resources
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_POPUP.resources
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_PopUP_WR.resources
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_Searchitem.resources
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.LoginForm.resources
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.MainForm.resources
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.Resources.resources
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.vbproj.GenerateResource.Cache
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.TrustInfo.xml
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.exe.manifest
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.application
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.exe
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.xml
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.pdb
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_200_OSI.resources
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_200_PSI.resources
+D:\Ronel\Project\TOPCInventorySales\TOPC-Source Code and Database\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_300_SalesReport.resources
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\bin\Debug\Forms\frm_000_Customer.resx
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\bin\Debug\Forms\frm_000_Customer.Designer.vb
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\bin\Debug\Forms\frm_000_Customer.vb
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\bin\Debug\TOPCInventorySales.exe.config
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\bin\Debug\TOPCInventorySales.exe.manifest
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\bin\Debug\TOPCInventorySales.application
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\bin\Debug\TOPCInventorySales.exe
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.ErrorProviderExtended.resources
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_Order_Edit.resources
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_ImageLocation.resources
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_300_SalesReport.resources
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_200_PSI.resources
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_200_OSI.resources
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_SearchProduct.resources
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Customer.resources
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frmActUnit.resources
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frmDeleteItem.resources
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frmGetEmployee.resources
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frmPicFrame.resources
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frmSearchCash.resources
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_CustomerList.resources
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Employee.resources
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Employee_List.resources
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_ExchangeRate.resources
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Product.resources
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_ProductList.resources
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_AR.resources
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_DR.resources
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_DRList.resources
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_Order.resources
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_OrderList.resources
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_Reconfirm.resources
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_200_AR_.resources
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_200_RIL.resources
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frmUnit.resources
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_SearchTransNO.resources
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_search_emp.resources
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_Search_WR.resources
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_SendAlert.resources
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.opendialog.resources
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frmMember.resources
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frmSearchPRJR.resources
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frmSummary.resources
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Ulility.resources
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_ARList.resources
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_AR_.resources
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_200_JOS.resources
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_WRList.resources
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_WR.resources
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frmAbout.resources
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frmMyAccount.resources
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frmPic.resources
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frmSearchItems.resources
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frmSQLConfig.resources
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Category.resources
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Company.resources
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Currency.resources
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Department.resources
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Item.resources
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_ItemList.resources
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Supplier.resources
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_User.resources
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_UserRights.resources
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Warehouse.resources
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_CashAdvance.resources
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_JO.resources
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_JOList.resources
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_JR.resources
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_JRList.resources
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_PO.resources
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_POList.resources
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_PR.resources
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_PRList.resources
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_RR.resources
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_RRList.resources
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_200_ISS.resources
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_200_JRS.resources
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_200_POS.resources
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_200_PRS.resources
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_200_ReportV.resources
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_200_RRI.resources
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_POPUP.resources
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_PopUP_WR.resources
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_Searchitem.resources
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.LoginForm.resources
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.MainForm.resources
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.Resources.resources
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.vbproj.GenerateResource.Cache
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.TrustInfo.xml
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.exe.manifest
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.application
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.exe
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.xml
+C:\Documents and Settings\Gonzales\Desktop\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.pdb
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\bin\Debug\TOPCInventorySales.exe.config
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\bin\Debug\Forms\frm_000_Customer.resx
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\bin\Debug\Forms\frm_000_Customer.Designer.vb
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\bin\Debug\Forms\frm_000_Customer.vb
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\bin\Debug\TOPCInventorySales.exe.manifest
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\bin\Debug\TOPCInventorySales.application
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\bin\Debug\TOPCInventorySales.exe
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\bin\Debug\TOPCInventorySales.pdb
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\bin\Debug\TOPCInventorySales.xml
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\obj\Release\ResolveAssemblyReference.cache
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.ErrorProviderExtended.resources
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_EditUPrice.resources
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_Order_Edit.resources
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_ImageLocation.resources
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_300_SalesReport.resources
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_200_PSI.resources
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_200_OSI.resources
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_SearchProduct.resources
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Customer.resources
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frmActUnit.resources
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frmDeleteItem.resources
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frmGetEmployee.resources
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frmPicFrame.resources
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frmSearchCash.resources
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_CustomerList.resources
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Employee.resources
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Employee_List.resources
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_ExchangeRate.resources
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Product.resources
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_ProductList.resources
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_AR.resources
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_DR.resources
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_DRList.resources
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_Order.resources
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_OrderList.resources
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_Reconfirm.resources
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_200_AR_.resources
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_200_RIL.resources
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frmUnit.resources
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_SearchTransNO.resources
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_search_emp.resources
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_Search_WR.resources
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_SendAlert.resources
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.opendialog.resources
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frmMember.resources
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frmSearchPRJR.resources
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frmSummary.resources
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Ulility.resources
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_ARList.resources
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_AR_.resources
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_200_JOS.resources
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_WRList.resources
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_WR.resources
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frmAbout.resources
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frmMyAccount.resources
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frmPic.resources
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frmSearchItems.resources
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frmSQLConfig.resources
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Category.resources
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Company.resources
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Currency.resources
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Department.resources
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Item.resources
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_ItemList.resources
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Supplier.resources
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_User.resources
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_UserRights.resources
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_000_Warehouse.resources
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_CashAdvance.resources
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_JO.resources
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_JOList.resources
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_JR.resources
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_JRList.resources
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_PO.resources
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_POList.resources
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_PR.resources
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_PRList.resources
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_RR.resources
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_100_RRList.resources
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_200_ISS.resources
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_200_JRS.resources
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_200_POS.resources
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_200_PRS.resources
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_200_ReportV.resources
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_200_RRI.resources
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_POPUP.resources
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_PopUP_WR.resources
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.frm_Searchitem.resources
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.LoginForm.resources
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.MainForm.resources
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.Resources.resources
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.vbproj.GenerateResource.Cache
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.TrustInfo.xml
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.exe.manifest
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.application
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.exe
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.xml
+E:\Ronel\Project\TOKIWA\TOPCInventorySales\obj\Release\TOPCInventorySales.pdb

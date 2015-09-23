@@ -1,0 +1,1324 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Retails
+</name>
+</assembly>
+<members>
+<member name="T:Retails.tbl_100_WR">
+	<summary>
+ Save to main Withdrawal table
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Retails.clsWithdrawalOperation.savetempwr(System.String,System.Windows.Forms.DataGridView,Retails.clsPublic.FormState)">
+	<summary>
+ Check the Withdrawal Quantity before to Save
+ </summary>
+	<param name="controlnum">Withdrawal control number</param>
+	<param name="dgsub">datagridview</param>
+	<param name="mystate">form State</param>
+	<returns>Return True if the Quantity is not exist</returns>
+	<remarks>Used</remarks>
+</member><member name="M:Retails.clsWithdrawalOperation.Check_WR_Operation(System.String,System.Windows.Forms.DataGridView,Retails.clsPublic.FormState)">
+	<summary>
+ append / update transaction detail 
+ before to save
+ </summary>
+	<param name="controlnum">Withdrawal control number</param>
+	<param name="dgsub">Datagridview</param>
+	<param name="mystate">FormState</param>
+	<remarks></remarks>
+</member><member name="T:Retails.clsWithdrawalOperation">
+	<summary>
+ Check WR before Save
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Retails.frm_100_RRList.ProcessFormCommand(System.String)">
+	<summary>
+	</summary>
+	<param name="strCmd"></param>
+	<remarks></remarks>
+</member><member name="M:Retails.frm_100_RRList.DeleteRecord">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:Retails.frm_100_RRList.NewRecord">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:Retails.frm_100_RRList.EditRecord">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:Retails.frm_100_RRList.ActivateCommands(Retails.clsPublic.FormState)">
+	<summary>
+	</summary>
+	<param name="frmState"></param>
+	<remarks></remarks>
+</member><member name="T:Retails.clsEnumerations.UserInfo">
+	<summary>
+ Logged-in user information.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Retails.clsEnumerations.FormState">
+	<summary>
+ The current state of the form.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Retails.clsEnumerations.CompanyInfo">
+	<summary>
+ The company information.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Retails.clsEnumerations.myDays">
+	<summary>
+ Enumerates the days of the week.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Retails.clsEnumerations.CountNumberOfHolidaysBy">
+	<summary>
+ Enumerates how the number of holidays will be counted.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Retails.clsEnumerations.FormatType">
+	<summary>
+ Enumerates the format type.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Retails.clsEnumerations.ReportMode">
+	<summary>
+ Enumerates the report mode.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Retails.clsEnumerations.ReportType">
+	<summary>
+ Enumerates the report type.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Retails.clsEnumerations.TransactionType">
+	<summary>
+ Enumerates the transaction type.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Retails.modFunction.GetFieldValue(System.String,System.String)">
+	<summary>
+ Same as DBLookUp
+ </summary>
+	<param name="srcSQL"></param>
+	<param name="strField"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Retails.modFunction.SaveUpdateRecord(System.String,System.Int32,System.Int32,System.Int64,System.Data.SqlClient.SqlDataAdapter@,System.Data.DataSet@)">
+	<summary>
+ Save or Update table in the database
+ </summary>
+	<param name="srcTbl"></param>
+	<param name="startField"></param>
+	<param name="endField"></param>
+	<param name="frmState"></param>
+	<param name="srcda"></param>
+	<param name="srcds"></param>
+	<remarks></remarks>
+</member><member name="M:Retails.modFunction.DisplayRecord(System.Int32,System.Int32,System.Data.SqlClient.SqlDataReader@)">
+	<summary>
+ Display record in the form
+ </summary>
+	<param name="startField"></param>
+	<param name="endField"></param>
+	<param name="myData"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Retails.modFunction.ValidateMoney(System.Char,System.Object)">
+	<summary>
+ Check if input is a number - add on keypress event
+ Usage: KeyChar=validatemoney(KeyChar,txtBoxName)
+ </summary>
+	<param name="intKey"></param>
+	<param name="txt"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Retails.modFunction.NZ(System.String)">
+	<summary>
+ Replace string emptyp or null Value to 0
+ </summary>
+	<param name="val">string value or numeric</param>
+	<returns>return 0 if val is empty else numeric value</returns>
+	<remarks></remarks>
+</member><member name="M:Retails.modFunction.CountRows(System.String)">
+	<summary>
+ Count records from a table
+ </summary>
+	<param name="sSQL">sql string </param>
+	<returns>number of rows</returns>
+	<remarks></remarks>
+</member><member name="M:Retails.modFunction.GetData(System.String)">
+	<summary>
+ Get data from a table
+ </summary>
+	<param name="sSQL"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Retails.modFunction.ExecNonQuery(System.String)">
+	<summary>
+ Execute SQL Statements/Query
+ </summary>
+	<param name="strSQL"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Retails.modFunction.FillGrid(System.Windows.Forms.DataGridView,System.String,System.String)">
+	<summary>
+ Fill gridview from a table in the database
+ </summary>
+	<param name="srcGrid">Datagrid source</param>
+	<param name="srcSQL">Sql String</param>
+	<param name="scrTable">source table</param>
+	<remarks></remarks>
+</member><member name="M:Retails.modFunction.changeYNValue(System.String)">
+	<summary>
+ Function used to change the yes/no value
+ </summary>
+	<param name="srcStr"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Retails.modFunction.getUser(System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="srcUser"></param>
+	<param name="srcPassword"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Retails.modFunction.isRecordExist(System.String)">
+	<summary>
+	</summary>
+	<param name="srcsql">SQL String</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Retails.modFunction.DBLookUp(System.String,System.String)">
+	<summary>
+ Look up the value of a field in the table
+ </summary>
+	<param name="strSQL">SQL String</param>
+	<param name="fieldName">Field name</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Retails.modFunction.HasNewVersion">
+	<summary>
+ Check if the current version of the program is out-of-date
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="F:Retails.modFunction.vdate">
+	<summary>
+ Update table version
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Retails.modFunction.ResizeForm(System.Windows.Forms.Form)">
+	<summary>
+ Resize form
+ </summary>
+	<param name="frm">Form name </param>
+	<remarks></remarks>
+</member><member name="M:Retails.modFunction.FillDataGrid(System.Windows.Forms.DataGridView,System.String,System.Int32,System.Int32)">
+	<summary>
+ Fill GridView
+ </summary>
+	<param name="dgView">DatagridView</param>
+	<param name="strSQL">SQL String</param>
+	<param name="colStart">column start</param>
+	<param name="colEnd">column end</param>
+	<remarks></remarks>
+</member><member name="M:Retails.modFunction.RemoveFromDataGrid(System.Windows.Forms.DataGridView)">
+	<summary>
+ Remove selected rows or the current row from the datagridview
+ </summary>
+	<param name="dgView"></param>
+	<remarks></remarks>
+</member><member name="M:Retails.modFunction.getRecordCount(System.Windows.Forms.DataGridView)">
+	<summary>
+ Count Datagridview rows
+ </summary>
+	<param name="dg"></param>
+	<remarks></remarks>
+</member><member name="M:Retails.modFunction.ValidateNumericDataGrid(System.Windows.Forms.DataGridView,System.Int32,System.Int32,System.Boolean)">
+	<summary>
+ Check if value enter in Datagridview is numeric
+ </summary>
+	<param name="dgDatagrid"></param>
+	<param name="intColumnIndex"></param>
+	<param name="intRowIndex"></param>
+	<param name="bolAllowNegative"></param>
+	<remarks></remarks>
+</member><member name="M:Retails.modFunction.GetUserRights(System.Windows.Forms.DataGridView,System.Boolean,System.Boolean)">
+	<summary>
+ Get user's rights
+ </summary>
+	<param name="dgView"></param>
+	<param name="tsAdd"></param>
+	<param name="tsDelete"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Retails.modFunction.LengthConvert(Retails.modFunction.LengthUnit,Retails.modFunction.LengthUnit)">
+	<summary>
+ Length Converter function
+ </summary>
+	<param name="ConvertFrom"></param>
+	<param name="ConvertTo"></param>
+	<remarks></remarks>
+</member><member name="M:Retails.modFunction.GridHasRows(System.Windows.Forms.DataGridView)">
+	<summary>
+ Check if DataGridView has rows
+ </summary>
+	<param name="srcDataGridView"></param>
+	<remarks></remarks>
+</member><member name="M:Retails.modFunction.SetConnectionStatus(System.Boolean)">
+	<summary>
+ Update the status strip to denote the current network connection status
+ </summary>
+	<param name="connected"></param>
+	<remarks></remarks>
+</member><member name="M:Retails.modFunction.GetEndOfDate(System.Int32,System.Int32)">
+	<summary>
+ Get the end of date
+ </summary>
+	<param name="intMonth"></param>
+	<param name="intYear"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Retails.modFunction.ClearTextbox(System.Windows.Forms.Form)">
+	<summary>
+ Clear all Text in the current form
+ </summary>
+	<param name="frm"></param>
+	<remarks></remarks>
+</member><member name="M:Retails.modFunction.CenterControl(System.Windows.Forms.Control,System.Windows.Forms.Form)">
+	<summary>
+ Center Control on the form
+ </summary>
+	<param name="ctrl"></param>
+	<remarks></remarks>
+</member><member name="M:Retails.modFunction.CenterForm(System.Windows.Forms.Form,System.Boolean)">
+	<summary>
+ Center the form
+ </summary>
+	<param name="frm"></param>
+	<remarks></remarks>
+</member><member name="M:Retails.modFunction.ImageToByte(System.Drawing.Image)">
+	<summary>
+ Converts image into bytes.
+ </summary>
+	<param name="img">The image.</param>
+	<returns>An image from the bytes retrieved from the database.</returns>
+</member><member name="M:Retails.modFunction.BytesToImage(System.Byte[])">
+	<summary>
+ Converts bytes into an image.
+ </summary>
+	<param name="imageByte">the bytes to be converted into image.</param>
+	<returns>An image from the bytes retrieved from the database.</returns>
+</member><member name="M:Retails.modFunction.CheckCodeFromDatagridView(System.Windows.Forms.DataGridView,System.Int32,System.String,System.Int32,System.Boolean)">
+	<summary>
+ Checks in the datagridview if the passed code is found.
+ </summary>
+	<param name="srcDataGridView">The datagridview to be checked.</param>
+	<param name="intCol">The column index to be checked.</param>
+	<param name="strCodeToCheck">The code to look for.</param>
+	<returns>Returns true if the passed code is found, else false.</returns>
+	<remarks></remarks>
+</member><member name="M:Retails.modFunction.AddNode(System.Windows.Forms.TreeNode,System.String,System.String,System.String,System.Int32)">
+	<summary>
+ Adds a child node to the srcNode.
+ </summary>
+	<param name="srcNode">The node to be added with child nodes.</param>
+	<param name="srcParentCode">The parent code of the current item to be added.</param>
+	<param name="srcChildCode">The code of the current item to be added.</param>
+	<param name="strDescription">The description of the current item to be added.</param>
+	<remarks></remarks>
+</member><member name="M:Retails.modFunction.CountDataRow(System.String)">
+	<summary>
+ Count Data Row
+ </summary>
+	<param name="strCommand">SQL</param>
+	<returns>Return number of rows</returns>
+	<remarks>Used</remarks>
+</member><member name="M:Retails.modFunction.FetchData(System.Collections.ArrayList,System.String,System.Data.CommandType)">
+	<summary>
+	</summary>
+	<param name="strParameterAndValue"></param>
+	<param name="strCommand"></param>
+	<param name="srcCommandType"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Retails.modFunction.FillMultiColumn(System.Windows.Forms.DataGridView,System.Windows.Forms.DataGridViewColumn,System.String,System.Int32,System.String,System.String,System.String,System.Data.CommandType,System.Collections.ArrayList)">
+	<summary>
+ DataGridView Combobox Multicolumn
+ </summary>
+	<param name="srcDataGridView">DataGridView</param>
+	<param name="srcColumn">DataGridView Combobox src</param>
+	<param name="strColumnWidths"> Width of the column</param>
+	<param name="intColumnNumber">Number of column</param>
+	<param name="strCommand">SQL Commnad</param>
+	<param name="strDisplayMember">DisplayMember</param>
+	<param name="strValueMember">ValueMember</param>
+	<param name="srcCommandType">Commnad Type</param>
+	<param name="arrParameterAndValues">Parameters and Values</param>
+	<remarks></remarks>
+</member><member name="M:Retails.modFunction.FillReport(System.String,System.Data.CommandType,System.Collections.ArrayList)">
+	<summary>
+ Fill Report
+ </summary>
+	<param name="sql"> Query string / StoredProcedure</param>
+	<param name="cmdType">commandType</param>
+	<param name="strParameterAndValue">Parameter Value</param>
+	<returns>Return Report</returns>
+	<remarks>Used</remarks>
+</member><member name="M:Retails.modFunction.Navigation(System.String,System.String,System.String,System.String)">
+	<summary>
+ Navigation
+ </summary>
+	<param name="SQLstring">StoredProcedure / SQL string</param>
+	<param name="sourceTable">Table</param>
+	<param name="FieldString">Fieldname</param>
+	<param name="Binding">Next, Back First and Last</param>
+	<returns>Return Fieldname</returns>
+	<remarks>Used</remarks>
+</member><member name="M:Retails.modFunction.ConvertToMoney(System.String)">
+	<summary>
+	</summary>
+	<param name="obj"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Retails.frm_100_WR.DirectUpdate(System.String,System.Data.CommandType)">
+	<summary>
+ Direct Update you can
+ insert and upate Data
+ used DBLOOKUP to select Data
+ </summary>
+	<param name="QueryString">Query String</param>
+	<param name="srcCommandType">Command Type</param>
+	<remarks></remarks>
+</member><member name="M:Retails.frm_100_WR.AddNewToEdit(System.Int32)">
+	<summary>
+ If edit mode then this item is not exist in current table
+ </summary>
+	<param name="rowindex"></param>
+	<remarks></remarks>
+</member><member name="M:Retails.frm_100_WR.SetUpateTransaction">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:Retails.frm_100_WR.ProcessFormCommand(System.String)">
+	<summary>
+ Process form command
+ </summary>
+	<param name="strCmd"></param>
+	<remarks></remarks>
+</member><member name="M:Retails.frm_100_WR.Voidrecords">
+	<summary>
+ Void control number
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Retails.frm_100_WR.enabled_tools(System.Boolean)">
+	<summary>
+	</summary>
+	<param name="en"></param>
+	<remarks></remarks>
+</member><member name="M:Retails.frm_100_WR.ClearFields">
+	<summary>
+ Clear all fields 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Retails.frm_100_WR.doCancel">
+	<summary>
+ 'Close the Form
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Retails.frm_100_WR.sentmsg">
+	<summary>
+ Sent Alert
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Retails.frm_100_WR.FillSection">
+	<summary>
+ Fill Section
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Retails.frm_100_WR.FillLine">
+	<summary>
+ Fill line
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Retails.frm_100_WR.FillLineTextBox">
+	<summary>
+ Fill line textbox
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Retails.frm_100_WR.ActivateCommands(Retails.clsPublic.FormState)">
+	<summary>
+ Active Commands in form
+ </summary>
+	<param name="frmState"></param>
+	<remarks></remarks>
+</member><member name="M:Retails.frm_100_WR.ComputeAllRows">
+	<summary>
+ Compute all total amount in datagridview row
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Retails.frm_100_WR.AddFields(System.Int32)">
+	<summary>
+ Add fields
+ </summary>
+	<param name="rowIndex"></param>
+	<remarks></remarks>
+</member><member name="M:Retails.frm_100_WR.CheckActualPrice">
+	<summary>
+	</summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Retails.frm_100_WR.CheckQuantity">
+	<summary>
+ Check the Quantity
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Retails.frm_100_WR.SetEditValue">
+	<summary>
+ Edit the Value in withdrawal
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Retails.frm_100_WR.fillCode(System.Int32)">
+	<summary>
+ Fill Datagrid Cell
+ </summary>
+	<param name="rowindex"></param>
+	<remarks></remarks>
+</member><member name="M:Retails.strArrays.Finalize">
+	<summary>
+ To clean up the object after it is used.
+ </summary>
+</member><member name="M:Retails._xDatabase.SaveAuditTrail(System.String,System.String,System.Boolean)">
+	<summary>
+ Save to Audit Trail
+ </summary>
+	<param name="LogTransaction"></param>
+	<param name="LogTransNo"></param>
+	<param name="withTrans"></param>
+	<remarks></remarks>
+</member><member name="F:Retails.modAdo.cnString">
+	<summary>
+ Connection String for SQL Connection
+ </summary>
+</member><member name="F:Retails.modAdo.strConn">
+	<summary>
+ Connection String for ADODB Connection
+ </summary>
+</member><member name="T:Retails.ComputeRR">
+	<summary>
+ Compute RR Details
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Retails.frm_SearchProduct.FillItemsOrProducts(System.Windows.Forms.DataGridView,System.Windows.Forms.DataGridView,System.String,System.String,System.String,System.String)">
+	<summary>
+ Check the item if Selected if Exist then the item will remove in the search box
+ </summary>
+	<param name="dgGrid">Target Datagridview</param>
+	<param name="myGrid">Source Datagridview</param>
+	<param name="ordername">Target Cell</param>
+	<param name="myordername">Source Cell</param>
+	<remarks></remarks>
+</member><member name="M:Retails.frm_200_AR_.ActivateCommands(Retails.clsPublic.FormState)">
+	<summary>
+	</summary>
+	<param name="frmState"></param>
+	<remarks></remarks>
+</member><member name="T:Retails.tbl_100_Order">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="T:Retails.tbl_100_ConfirmDateDetails">
+	<summary>
+ Confirmation product Delivery date
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Retails.frm_100_PO.SetEditValue">
+	<summary>
+ Method for Saving and update
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Retails.frm_100_PO.FillTerm">
+	<summary>
+ Method to  Fill the term and extended the payable date 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Retails.frm_100_PO.FillSection">
+	<summary>
+ method to fill the Supplier name, address and type
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Retails.frm_100_PO.fillCode(System.Int32)">
+	<summary>
+method fill the cell in selected rows
+ </summary>
+	<param name="rowindex"></param>
+	<remarks></remarks>
+</member><member name="M:Retails.frm_100_PO.AddFields(System.Int32)">
+	<summary>
+ method adding the cell of Quantity and Price
+ or set the  formatnumber
+ </summary>
+	<param name="rowIndex"></param>
+	<remarks></remarks>
+</member><member name="M:Retails.frm_100_PO.ComputeAllRows">
+	<summary>
+ method compute the column
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Retails.frm_100_PO.CheckActualPrice">
+	<summary>
+ method Check the price of selected items
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Retails.frm_100_PO.SaveRecord">
+	<summary>
+ method for saving the record to the database
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Retails.frm_100_Order_Edit.ControlTask(Retails.frm_100_Order_Edit.state)">
+	<summary>
+ Transaction Mode Option
+ </summary>
+	<param name="isState"></param>
+	<remarks></remarks>
+</member><member name="M:Retails.frm_100_AR.ValidateRequirment(System.Int32)">
+	<summary>
+	</summary>
+	<param name="param"></param>
+	<remarks></remarks>
+</member><member name="M:Retails.frm_100_AR.ChoseAccountable(System.Int32)">
+	<summary>
+	</summary>
+	<param name="item"></param>
+	<remarks></remarks>
+</member><member name="M:Retails.frm_100_RR.viewReport(System.String)">
+	<summary>
+ View Report
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Retails.frm_100_RR.clear">
+	<summary>
+ Clear
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Retails.frm_100_RR.voidrecord">
+	<summary>
+ cancel the transaction number 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Retails.frm_100_RR.enabled_tools">
+	<summary>
+ Enable all tolls after void the transaction number
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Retails.frm_100_RR.UpdateStatus(System.String,System.String,System.Int32,System.Double)">
+	<summary>
+ get and set status
+ </summary>
+	<param name="istype">RR type[cash,PO,JO]</param>
+	<param name="rowindex">Datagridview row number</param>
+	<remarks></remarks>
+</member><member name="M:Retails.frm_100_RR.UpdateStockOH(System.Int32,System.String,System.Double)">
+	<summary>
+ Update Stock on hand
+ </summary>
+	<param name="rowindex">Datagridview row</param>
+	<param name="mood">ADD/EDIT</param>
+	<remarks>Yes</remarks>
+</member><member name="M:Retails.frm_100_RR.doCancel">
+	<summary>
+ Close Form
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Retails.frm_100_RR.ActivateCommands(Retails.clsPublic.FormState)">
+	<summary>
+ Activate Command in main form
+ </summary>
+	<param name="frmState"></param>
+	<remarks></remarks>
+</member><member name="M:Retails.frm_100_RR.SetEditValue">
+	<summary>
+ Set Edit value in selected control number
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Retails.frm_100_RR.GetConvertedPrice(System.Int32)">
+	<summary>
+ Get conveted price
+ </summary>
+	<param name="rowindex">datagrid row</param>
+	<returns>Converted Price</returns>
+	<remarks>Used</remarks>
+</member><member name="M:Retails.frm_100_RR.GetConvetedAmount(System.Int32)">
+	<summary>
+ Get Converted Amount
+ </summary>
+	<param name="rowindex">Datagrid row</param>
+	<returns>Conveted Amount</returns>
+	<remarks>Used</remarks>
+</member><member name="M:Retails.frm_100_RR.ComputeAllRows">
+	<summary>
+ Compute all rows in DatagridView
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Retails.frm_100_RR.HideColumn">
+	<summary>
+ Hide column in datagrid view if the rr type is po or jo
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Retails.frm_100_RR.isBal(System.String)">
+	<summary>
+ Get the running balance 
+ </summary>
+	<param name="istype"> RR type [Cash,PO,JO]</param>
+	<remarks></remarks>
+</member><member name="M:Retails.frm_100_RR.fillCode(System.Int32)">
+	<summary>
+	</summary>
+	<param name="rowindex"></param>
+	<remarks></remarks>
+</member><member name="M:Retails.frm_100_RR.keyREF">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:Retails.MainForm.isFormOpen(System.String)">
+	<summary>
+	</summary>
+	<param name="frmName"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Retails.MainForm.runToEnableFalse">
+	<summary>
+ Check popup form if popup data is empty then popup is disable else popup will enable after login
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Retails.tbl_000_Product">
+	<summary>
+ For tbl_000_Product
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Retails.tbl_000_Selling">
+	<summary>
+ For tbl_000_Selling
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Retails.tbl_000_Product_Process">
+	<summary>
+ For tbl_000_Product_Process
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Retails.frm_100_PR.CheckActualPrice">
+	<summary>
+	</summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Retails.frm_100_PR.SetEditValue">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:Retails.frm_100_PR.viewReport(System.String)">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:Retails.frm_100_PR.ProcessFormCommand(System.String)">
+	<summary>
+	</summary>
+	<param name="strCmd"></param>
+	<remarks></remarks>
+</member><member name="M:Retails.frm_100_PR.voidrecord">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:Retails.frm_100_PR.enabled_tools">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:Retails.frm_100_PR.ClearFields">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:Retails.frm_100_PR.doCancel">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:Retails.frm_100_PR.SaveRecord">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:Retails.frm_200_RIL.ProcessFormCommand(System.String)">
+	<summary>
+	</summary>
+	<param name="strCmd"></param>
+	<remarks></remarks>
+</member><member name="M:Retails.frm_200_RIL.ActivateCommands(Retails.clsPublic.FormState)">
+	<summary>
+	</summary>
+	<param name="frmState"></param>
+	<remarks></remarks>
+</member><member name="M:Retails.frmSummary.LoadEmployee(System.Windows.Forms.ComboBox)">
+	<summary>
+ Load Employee in report
+ </summary>
+	<param name="cbo">combobox</param>
+	<remarks></remarks>
+</member><member name="M:Retails.frmSummary.ViewReport(Retails.frmSummary.ReportMode)">
+	<summary>
+ View Report
+ </summary>
+	<param name="rptMode">rptWindowMode / rptPrintMode</param>
+	<remarks></remarks>
+</member><member name="M:Retails.frm_100_AR_.ValidateRequirment(System.Int32)">
+	<summary>
+	</summary>
+	<param name="param"></param>
+	<remarks></remarks>
+</member><member name="M:Retails.frm_100_AR_.ChoseAccountable(System.Int32)">
+	<summary>
+	</summary>
+	<param name="item"></param>
+	<remarks></remarks>
+</member><member name="M:Retails.frm_300_SalesReport.ViewReport(Retails.frm_300_SalesReport.ReportMode)">
+	<summary>
+ View Report
+ </summary>
+	<param name="rptMode">rptWindowMode / rptPrintMode</param>
+	<remarks></remarks>
+</member><member name="M:Retails.frm_100_CashAdvance.RefreshRecord">
+	<summary>
+ Refresh all Records
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Retails.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Retails.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="P:Retails.My.Resources.Resources._error">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Retails.My.Resources.Resources._exit">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Retails.My.Resources.Resources.Accounting">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Retails.My.Resources.Resources.add">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Retails.My.Resources.Resources.add_reviewer">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Retails.My.Resources.Resources.Application">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Retails.My.Resources.Resources.audit">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Retails.My.Resources.Resources.BD14755_">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Retails.My.Resources.Resources.bg">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Retails.My.Resources.Resources.bplogo">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Retails.My.Resources.Resources.bplogo1">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Retails.My.Resources.Resources.calc">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Retails.My.Resources.Resources.Calendar">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Retails.My.Resources.Resources.close">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Retails.My.Resources.Resources.Company">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Retails.My.Resources.Resources.Computer">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Retails.My.Resources.Resources.Computer1">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Retails.My.Resources.Resources.Computer2">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Retails.My.Resources.Resources.customer">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Retails.My.Resources.Resources.customercat">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Retails.My.Resources.Resources.Database">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Retails.My.Resources.Resources.Database1">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Retails.My.Resources.Resources.delete">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Retails.My.Resources.Resources.delete_16">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Retails.My.Resources.Resources.Delivery">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Retails.My.Resources.Resources.DigitalRights16">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Retails.My.Resources.Resources.dollar">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Retails.My.Resources.Resources.edit2">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Retails.My.Resources.Resources.Filter">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Retails.My.Resources.Resources.FilterRemove">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Retails.My.Resources.Resources.FilterSelection">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Retails.My.Resources.Resources.FilterToogle">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Retails.My.Resources.Resources.find">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Retails.My.Resources.Resources.folder">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Retails.My.Resources.Resources.Header">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Retails.My.Resources.Resources.help">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Retails.My.Resources.Resources.help_earth">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Retails.My.Resources.Resources.help2">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Retails.My.Resources.Resources.icon_delete">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Retails.My.Resources.Resources.icon_edit">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Retails.My.Resources.Resources.icon_quit">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Retails.My.Resources.Resources.id_card_ok">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Retails.My.Resources.Resources.info">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Retails.My.Resources.Resources.invoice">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Retails.My.Resources.Resources.keys">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Retails.My.Resources.Resources.Line_Chart">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Retails.My.Resources.Resources.loading">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Retails.My.Resources.Resources.loading36">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Retails.My.Resources.Resources.login">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Retails.My.Resources.Resources.MoveFirst">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Retails.My.Resources.Resources.MoveLast">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Retails.My.Resources.Resources.MoveNext">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Retails.My.Resources.Resources.MovePrevious">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Retails.My.Resources.Resources.pcat">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Retails.My.Resources.Resources.Performance">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Retails.My.Resources.Resources.pgroup">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Retails.My.Resources.Resources.preview">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Retails.My.Resources.Resources.pricelist">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Retails.My.Resources.Resources.print">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Retails.My.Resources.Resources.printer">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Retails.My.Resources.Resources.product">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Retails.My.Resources.Resources.profile">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Retails.My.Resources.Resources.Refresh">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Retails.My.Resources.Resources.refreshd">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Retails.My.Resources.Resources.report">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Retails.My.Resources.Resources.salesman">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Retails.My.Resources.Resources.salesorder">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Retails.My.Resources.Resources.save">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Retails.My.Resources.Resources.Search">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Retails.My.Resources.Resources.server_ok">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Retails.My.Resources.Resources.SIGMA_Head">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Retails.My.Resources.Resources.soa">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Retails.My.Resources.Resources.soareport">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Retails.My.Resources.Resources.sprite">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Retails.My.Resources.Resources.success">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Retails.My.Resources.Resources.Table">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Retails.My.Resources.Resources.Table1">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Retails.My.Resources.Resources.Unfilter">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Retails.My.Resources.Resources.user1_mobilephone">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Retails.My.Resources.Resources.users16_1">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Retails.My.Resources.Resources.vat">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Retails.My.Resources.Resources.warning">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Retails.My.Resources.Resources.wFilterRemove">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Retails.My.Resources.Resources.Wrench">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="T:Retails.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:Retails.frm_SearchTransNO.filldetails">
+	<summary>
+ Fill Datagridview
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Retails.frm_100_JO.viewReport(System.String)">
+	<summary>
+ View Report
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Retails.frm_100_JO.InsetValues">
+	<summary>
+ Insert Employee name into combobox
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Retails.frm_100_JO.fillCode(System.Int32)">
+	<summary>
+ method fill the cell in selected rows
+ </summary>
+	<param name="rowindex"></param>
+	<remarks></remarks>
+</member><member name="M:Retails.frm_100_JO.ProcessFormCommand(System.String)">
+	<summary>
+ Form Command
+ </summary>
+	<param name="strCmd"></param>
+	<remarks></remarks>
+</member><member name="M:Retails.frm_100_JO.voidrecord">
+	<summary>
+ Void Record
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Retails.frm_100_JO.enabled_tools">
+	<summary>
+ enable tools
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Retails.frm_100_JO.doCancel">
+	<summary>
+ Cancel the Transaction
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Retails.frm_100_JO.SetEditValue">
+	<summary>
+ Method for Saving and update to database
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Retails.frm_100_JO.CheckActualPrice">
+	<summary>
+ method Check the price of selected items
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Retails.frm_100_JO.SaveRecord">
+	<summary>
+ Save Record to Database
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Retails.frm_100_JO.FillSection">
+	<summary>
+ method to fill the Supplier name, address and type
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Retails.frm_100_JO.FillTerm">
+	<summary>
+ Method to  Fill the term and extended the payable date 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Retails.frm_100_JO.AddFields(System.Int32)">
+	<summary>
+ method adding the cell of Quantity and Price
+ Or Set the format number
+ </summary>
+	<param name="rowIndex"></param>
+	<remarks></remarks>
+</member><member name="M:Retails.frm_100_JO.ComputeAllRows">
+	<summary>
+ Compute all row
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Retails.frm_100_JO.frm_100_JO_Load(System.Object,System.EventArgs)">
+	<summary>
+ JO Form Load
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Retails.frm_Searchitem.FillSearchItem">
+	<summary>
+ Fill the Datagridview
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Retails.frm_Searchitem.ok">
+	<summary>
+ Select need item
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Retails.frm_Searchitem.FillItems(System.Windows.Forms.DataGridView,System.Windows.Forms.DataGridView,System.String,System.String)">
+	<summary>
+ para kani inig select nimo sa item human ma delete cya kung mo balik ka 
+ </summary>
+	<param name="dgGrid">Datagridview na ako sublan</param>
+	<param name="myGrid">Datagridview na ako pilian</param>
+	<param name="colNameCode">Column sa datagridview na ako sudlan human ko mka pili</param>
+	<param name="mycolNameCode">Column sa datagridview na ako pilian </param>
+	<remarks></remarks>
+</member><member name="M:Retails.frm_Searchitem.FillSearchItemsOrProducts">
+	<summary>
+ Conpare the item in Datagrid if exist then delete the row
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Retails.modProcedure.HideTheTabControl(CrystalDecisions.Windows.Forms.CrystalReportViewer)">
+	<summary>
+ Hide tab in Crystal report viewer
+ </summary>
+	<param name="crv"> viewer name</param>
+	<remarks></remarks>
+</member><member name="M:Retails.modProcedure.FillCombobox(System.Windows.Forms.ComboBox,System.String,System.String,System.String,System.String)">
+	<summary>
+ isert data from database to combobox
+ </summary>
+	<param name="cboCombo"></param>
+	<param name="sSQL"></param>
+	<param name="strTable"></param>
+	<param name="strDisplayMember"></param>
+	<param name="strValueMember"></param>
+	<remarks></remarks>
+</member><member name="M:Retails.modProcedure.FillGridCombobox(System.Windows.Forms.DataGridViewComboBoxColumn,System.String,System.String,System.String,System.String)">
+	<summary>
+ Get data from database and display to DatagridViewComboboxColumn
+ </summary>
+	<param name="cboCombo"></param>
+	<param name="sSQL"></param>
+	<param name="strTable"></param>
+	<param name="strDisplayMember"></param>
+	<param name="strValueMember"></param>
+	<remarks></remarks>
+</member><member name="M:Retails.modProcedure.FillReportForm(System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="sql">SQL string</param>
+	<param name="srcTable">src table</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Retails.modProcedure.UpdateTrans(System.String)">
+	<summary>
+ Update Transaction
+ </summary>
+	<param name="str"></param>
+	<remarks></remarks>
+</member><member name="M:Retails.modProcedure.RunQuery(System.String)">
+	<summary>
+ Run SQL Query
+ </summary>
+	<param name="str">Query String or Stored Procedure</param>
+	<remarks></remarks>
+</member><member name="M:Retails.modProcedure.ClearDatGridView(System.Windows.Forms.DataGridView)">
+	<summary>
+ Clears datagridview.
+ </summary>
+	<param name="srcDataGridView">The datagridview to be cleared.</param>
+	<remarks>Clears datagridview.</remarks>
+</member><member name="M:Retails.modProcedure.FillItemsOrProducts(System.Windows.Forms.DataGridView,System.Windows.Forms.DataGridView,System.String,System.String)">
+	<summary>
+ Check the item if Selected if Exist then the item will remove in the search box
+ </summary>
+	<param name="dgGrid">Target Datagridview</param>
+	<param name="myGrid">Source Datagridview</param>
+	<param name="colNameCode">Target Cell</param>
+	<param name="mycolNameCode">Source Cell</param>
+	<remarks></remarks>
+</member><member name="F:Retails.modPublicVar.ComputerName">
+	<summary>
+ Computer name
+ </summary>
+	<remarks></remarks>
+</member>
+</members>
+</doc>
