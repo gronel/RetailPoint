@@ -96,3 +96,7 @@ D:\PROJECT SYS\VB.NET\Retails\Retails\obj\Debug\Retails.application
 D:\PROJECT SYS\VB.NET\Retails\Retails\obj\Debug\Retails.exe
 D:\PROJECT SYS\VB.NET\Retails\Retails\obj\Debug\Retails.xml
 D:\PROJECT SYS\VB.NET\Retails\Retails\obj\Debug\Retails.pdb
+D:\PROJECT SYS\VB.NET\RetailPoint\Retails\bin\Debug\Retails.exe.config
+D:\PROJECT SYS\VB.NET\RetailPoint\Retails\obj\Debug\Retails.exe
+D:\PROJECT SYS\VB.NET\RetailPoint\Retails\obj\Debug\Retails.xml
+D:\PROJECT SYS\VB.NET\RetailPoint\Retails\obj\Debug\Retails.pdb
