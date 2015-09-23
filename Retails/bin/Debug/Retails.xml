@@ -34,73 +34,6 @@ Retails
  Check WR before Save
  </summary>
 	<remarks></remarks>
-</member><member name="M:Retails.frm_100_RRList.ProcessFormCommand(System.String)">
-	<summary>
-	</summary>
-	<param name="strCmd"></param>
-	<remarks></remarks>
-</member><member name="M:Retails.frm_100_RRList.DeleteRecord">
-	<summary>
-	</summary>
-	<remarks></remarks>
-</member><member name="M:Retails.frm_100_RRList.NewRecord">
-	<summary>
-	</summary>
-	<remarks></remarks>
-</member><member name="M:Retails.frm_100_RRList.EditRecord">
-	<summary>
-	</summary>
-	<remarks></remarks>
-</member><member name="M:Retails.frm_100_RRList.ActivateCommands(Retails.clsPublic.FormState)">
-	<summary>
-	</summary>
-	<param name="frmState"></param>
-	<remarks></remarks>
-</member><member name="T:Retails.clsEnumerations.UserInfo">
-	<summary>
- Logged-in user information.
- </summary>
-	<remarks></remarks>
-</member><member name="T:Retails.clsEnumerations.FormState">
-	<summary>
- The current state of the form.
- </summary>
-	<remarks></remarks>
-</member><member name="T:Retails.clsEnumerations.CompanyInfo">
-	<summary>
- The company information.
- </summary>
-	<remarks></remarks>
-</member><member name="T:Retails.clsEnumerations.myDays">
-	<summary>
- Enumerates the days of the week.
- </summary>
-	<remarks></remarks>
-</member><member name="T:Retails.clsEnumerations.CountNumberOfHolidaysBy">
-	<summary>
- Enumerates how the number of holidays will be counted.
- </summary>
-	<remarks></remarks>
-</member><member name="T:Retails.clsEnumerations.FormatType">
-	<summary>
- Enumerates the format type.
- </summary>
-	<remarks></remarks>
-</member><member name="T:Retails.clsEnumerations.ReportMode">
-	<summary>
- Enumerates the report mode.
- </summary>
-	<remarks></remarks>
-</member><member name="T:Retails.clsEnumerations.ReportType">
-	<summary>
- Enumerates the report type.
- </summary>
-	<remarks></remarks>
-</member><member name="T:Retails.clsEnumerations.TransactionType">
-	<summary>
- Enumerates the transaction type.
- </summary>
-	<remarks></remarks>
 </member><member name="M:Retails.modFunction.GetFieldValue(System.String,System.String)">
 	<summary>
  Same as DBLookUp
@@ -387,112 +320,13 @@ Retails
 	<param name="obj"></param>
 	<returns></returns>
 	<remarks></remarks>
-</member><member name="M:Retails.frm_100_WR.DirectUpdate(System.String,System.Data.CommandType)">
+</member><member name="F:Retails.modAdo.cnString">
 	<summary>
- Direct Update you can
- insert and upate Data
- used DBLOOKUP to select Data
+ Connection String for SQL Connection
  </summary>
-	<param name="QueryString">Query String</param>
-	<param name="srcCommandType">Command Type</param>
-	<remarks></remarks>
-</member><member name="M:Retails.frm_100_WR.AddNewToEdit(System.Int32)">
+</member><member name="F:Retails.modAdo.strConn">
 	<summary>
- If edit mode then this item is not exist in current table
- </summary>
-	<param name="rowindex"></param>
-	<remarks></remarks>
-</member><member name="M:Retails.frm_100_WR.SetUpateTransaction">
-	<summary>
-	</summary>
-	<remarks></remarks>
-</member><member name="M:Retails.frm_100_WR.ProcessFormCommand(System.String)">
-	<summary>
- Process form command
- </summary>
-	<param name="strCmd"></param>
-	<remarks></remarks>
-</member><member name="M:Retails.frm_100_WR.Voidrecords">
-	<summary>
- Void control number
- </summary>
-	<remarks></remarks>
-</member><member name="M:Retails.frm_100_WR.enabled_tools(System.Boolean)">
-	<summary>
-	</summary>
-	<param name="en"></param>
-	<remarks></remarks>
-</member><member name="M:Retails.frm_100_WR.ClearFields">
-	<summary>
- Clear all fields 
- </summary>
-	<remarks></remarks>
-</member><member name="M:Retails.frm_100_WR.doCancel">
-	<summary>
- 'Close the Form
- </summary>
-	<remarks></remarks>
-</member><member name="M:Retails.frm_100_WR.sentmsg">
-	<summary>
- Sent Alert
- </summary>
-	<remarks></remarks>
-</member><member name="M:Retails.frm_100_WR.FillSection">
-	<summary>
- Fill Section
- </summary>
-	<remarks></remarks>
-</member><member name="M:Retails.frm_100_WR.FillLine">
-	<summary>
- Fill line
- </summary>
-	<remarks></remarks>
-</member><member name="M:Retails.frm_100_WR.FillLineTextBox">
-	<summary>
- Fill line textbox
- </summary>
-	<remarks></remarks>
-</member><member name="M:Retails.frm_100_WR.ActivateCommands(Retails.clsPublic.FormState)">
-	<summary>
- Active Commands in form
- </summary>
-	<param name="frmState"></param>
-	<remarks></remarks>
-</member><member name="M:Retails.frm_100_WR.ComputeAllRows">
-	<summary>
- Compute all total amount in datagridview row
- </summary>
-	<remarks></remarks>
-</member><member name="M:Retails.frm_100_WR.AddFields(System.Int32)">
-	<summary>
- Add fields
- </summary>
-	<param name="rowIndex"></param>
-	<remarks></remarks>
-</member><member name="M:Retails.frm_100_WR.CheckActualPrice">
-	<summary>
-	</summary>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Retails.frm_100_WR.CheckQuantity">
-	<summary>
- Check the Quantity
- </summary>
-	<remarks></remarks>
-</member><member name="M:Retails.frm_100_WR.SetEditValue">
-	<summary>
- Edit the Value in withdrawal
- </summary>
-	<remarks></remarks>
-</member><member name="M:Retails.frm_100_WR.fillCode(System.Int32)">
-	<summary>
- Fill Datagrid Cell
- </summary>
-	<param name="rowindex"></param>
-	<remarks></remarks>
-</member><member name="M:Retails.strArrays.Finalize">
-	<summary>
- To clean up the object after it is used.
+ Connection String for ADODB Connection
  </summary>
 </member><member name="M:Retails._xDatabase.SaveAuditTrail(System.String,System.String,System.Boolean)">
 	<summary>
@@ -502,32 +336,10 @@ Retails
 	<param name="LogTransNo"></param>
 	<param name="withTrans"></param>
 	<remarks></remarks>
-</member><member name="F:Retails.modAdo.cnString">
-	<summary>
- Connection String for SQL Connection
- </summary>
-</member><member name="F:Retails.modAdo.strConn">
-	<summary>
- Connection String for ADODB Connection
- </summary>
 </member><member name="T:Retails.ComputeRR">
 	<summary>
  Compute RR Details
  </summary>
-	<remarks></remarks>
-</member><member name="M:Retails.frm_SearchProduct.FillItemsOrProducts(System.Windows.Forms.DataGridView,System.Windows.Forms.DataGridView,System.String,System.String,System.String,System.String)">
-	<summary>
- Check the item if Selected if Exist then the item will remove in the search box
- </summary>
-	<param name="dgGrid">Target Datagridview</param>
-	<param name="myGrid">Source Datagridview</param>
-	<param name="ordername">Target Cell</param>
-	<param name="myordername">Source Cell</param>
-	<remarks></remarks>
-</member><member name="M:Retails.frm_200_AR_.ActivateCommands(Retails.clsPublic.FormState)">
-	<summary>
-	</summary>
-	<param name="frmState"></param>
 	<remarks></remarks>
 </member><member name="T:Retails.tbl_100_Order">
 	<summary>
@@ -536,262 +348,6 @@ Retails
 </member><member name="T:Retails.tbl_100_ConfirmDateDetails">
 	<summary>
  Confirmation product Delivery date
- </summary>
-	<remarks></remarks>
-</member><member name="M:Retails.frm_100_PO.SetEditValue">
-	<summary>
- Method for Saving and update
- </summary>
-	<remarks></remarks>
-</member><member name="M:Retails.frm_100_PO.FillTerm">
-	<summary>
- Method to  Fill the term and extended the payable date 
- </summary>
-	<remarks></remarks>
-</member><member name="M:Retails.frm_100_PO.FillSection">
-	<summary>
- method to fill the Supplier name, address and type
- </summary>
-	<remarks></remarks>
-</member><member name="M:Retails.frm_100_PO.fillCode(System.Int32)">
-	<summary>
-method fill the cell in selected rows
- </summary>
-	<param name="rowindex"></param>
-	<remarks></remarks>
-</member><member name="M:Retails.frm_100_PO.AddFields(System.Int32)">
-	<summary>
- method adding the cell of Quantity and Price
- or set the  formatnumber
- </summary>
-	<param name="rowIndex"></param>
-	<remarks></remarks>
-</member><member name="M:Retails.frm_100_PO.ComputeAllRows">
-	<summary>
- method compute the column
- </summary>
-	<remarks></remarks>
-</member><member name="M:Retails.frm_100_PO.CheckActualPrice">
-	<summary>
- method Check the price of selected items
- </summary>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Retails.frm_100_PO.SaveRecord">
-	<summary>
- method for saving the record to the database
- </summary>
-	<remarks></remarks>
-</member><member name="M:Retails.frm_100_Order_Edit.ControlTask(Retails.frm_100_Order_Edit.state)">
-	<summary>
- Transaction Mode Option
- </summary>
-	<param name="isState"></param>
-	<remarks></remarks>
-</member><member name="M:Retails.frm_100_AR.ValidateRequirment(System.Int32)">
-	<summary>
-	</summary>
-	<param name="param"></param>
-	<remarks></remarks>
-</member><member name="M:Retails.frm_100_AR.ChoseAccountable(System.Int32)">
-	<summary>
-	</summary>
-	<param name="item"></param>
-	<remarks></remarks>
-</member><member name="M:Retails.frm_100_RR.viewReport(System.String)">
-	<summary>
- View Report
- </summary>
-	<remarks></remarks>
-</member><member name="M:Retails.frm_100_RR.clear">
-	<summary>
- Clear
- </summary>
-	<remarks></remarks>
-</member><member name="M:Retails.frm_100_RR.voidrecord">
-	<summary>
- cancel the transaction number 
- </summary>
-	<remarks></remarks>
-</member><member name="M:Retails.frm_100_RR.enabled_tools">
-	<summary>
- Enable all tolls after void the transaction number
- </summary>
-	<remarks></remarks>
-</member><member name="M:Retails.frm_100_RR.UpdateStatus(System.String,System.String,System.Int32,System.Double)">
-	<summary>
- get and set status
- </summary>
-	<param name="istype">RR type[cash,PO,JO]</param>
-	<param name="rowindex">Datagridview row number</param>
-	<remarks></remarks>
-</member><member name="M:Retails.frm_100_RR.UpdateStockOH(System.Int32,System.String,System.Double)">
-	<summary>
- Update Stock on hand
- </summary>
-	<param name="rowindex">Datagridview row</param>
-	<param name="mood">ADD/EDIT</param>
-	<remarks>Yes</remarks>
-</member><member name="M:Retails.frm_100_RR.doCancel">
-	<summary>
- Close Form
- </summary>
-	<remarks></remarks>
-</member><member name="M:Retails.frm_100_RR.ActivateCommands(Retails.clsPublic.FormState)">
-	<summary>
- Activate Command in main form
- </summary>
-	<param name="frmState"></param>
-	<remarks></remarks>
-</member><member name="M:Retails.frm_100_RR.SetEditValue">
-	<summary>
- Set Edit value in selected control number
- </summary>
-	<remarks></remarks>
-</member><member name="M:Retails.frm_100_RR.GetConvertedPrice(System.Int32)">
-	<summary>
- Get conveted price
- </summary>
-	<param name="rowindex">datagrid row</param>
-	<returns>Converted Price</returns>
-	<remarks>Used</remarks>
-</member><member name="M:Retails.frm_100_RR.GetConvetedAmount(System.Int32)">
-	<summary>
- Get Converted Amount
- </summary>
-	<param name="rowindex">Datagrid row</param>
-	<returns>Conveted Amount</returns>
-	<remarks>Used</remarks>
-</member><member name="M:Retails.frm_100_RR.ComputeAllRows">
-	<summary>
- Compute all rows in DatagridView
- </summary>
-	<remarks></remarks>
-</member><member name="M:Retails.frm_100_RR.HideColumn">
-	<summary>
- Hide column in datagrid view if the rr type is po or jo
- </summary>
-	<remarks></remarks>
-</member><member name="M:Retails.frm_100_RR.isBal(System.String)">
-	<summary>
- Get the running balance 
- </summary>
-	<param name="istype"> RR type [Cash,PO,JO]</param>
-	<remarks></remarks>
-</member><member name="M:Retails.frm_100_RR.fillCode(System.Int32)">
-	<summary>
-	</summary>
-	<param name="rowindex"></param>
-	<remarks></remarks>
-</member><member name="M:Retails.frm_100_RR.keyREF">
-	<summary>
-	</summary>
-	<remarks></remarks>
-</member><member name="M:Retails.MainForm.isFormOpen(System.String)">
-	<summary>
-	</summary>
-	<param name="frmName"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Retails.MainForm.runToEnableFalse">
-	<summary>
- Check popup form if popup data is empty then popup is disable else popup will enable after login
- </summary>
-	<remarks></remarks>
-</member><member name="T:Retails.tbl_000_Product">
-	<summary>
- For tbl_000_Product
- </summary>
-	<remarks></remarks>
-</member><member name="T:Retails.tbl_000_Selling">
-	<summary>
- For tbl_000_Selling
- </summary>
-	<remarks></remarks>
-</member><member name="T:Retails.tbl_000_Product_Process">
-	<summary>
- For tbl_000_Product_Process
- </summary>
-	<remarks></remarks>
-</member><member name="M:Retails.frm_100_PR.CheckActualPrice">
-	<summary>
-	</summary>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Retails.frm_100_PR.SetEditValue">
-	<summary>
-	</summary>
-	<remarks></remarks>
-</member><member name="M:Retails.frm_100_PR.viewReport(System.String)">
-	<summary>
-	</summary>
-	<remarks></remarks>
-</member><member name="M:Retails.frm_100_PR.ProcessFormCommand(System.String)">
-	<summary>
-	</summary>
-	<param name="strCmd"></param>
-	<remarks></remarks>
-</member><member name="M:Retails.frm_100_PR.voidrecord">
-	<summary>
-	</summary>
-	<remarks></remarks>
-</member><member name="M:Retails.frm_100_PR.enabled_tools">
-	<summary>
-	</summary>
-	<remarks></remarks>
-</member><member name="M:Retails.frm_100_PR.ClearFields">
-	<summary>
-	</summary>
-	<remarks></remarks>
-</member><member name="M:Retails.frm_100_PR.doCancel">
-	<summary>
-	</summary>
-	<remarks></remarks>
-</member><member name="M:Retails.frm_100_PR.SaveRecord">
-	<summary>
-	</summary>
-	<remarks></remarks>
-</member><member name="M:Retails.frm_200_RIL.ProcessFormCommand(System.String)">
-	<summary>
-	</summary>
-	<param name="strCmd"></param>
-	<remarks></remarks>
-</member><member name="M:Retails.frm_200_RIL.ActivateCommands(Retails.clsPublic.FormState)">
-	<summary>
-	</summary>
-	<param name="frmState"></param>
-	<remarks></remarks>
-</member><member name="M:Retails.frmSummary.LoadEmployee(System.Windows.Forms.ComboBox)">
-	<summary>
- Load Employee in report
- </summary>
-	<param name="cbo">combobox</param>
-	<remarks></remarks>
-</member><member name="M:Retails.frmSummary.ViewReport(Retails.frmSummary.ReportMode)">
-	<summary>
- View Report
- </summary>
-	<param name="rptMode">rptWindowMode / rptPrintMode</param>
-	<remarks></remarks>
-</member><member name="M:Retails.frm_100_AR_.ValidateRequirment(System.Int32)">
-	<summary>
-	</summary>
-	<param name="param"></param>
-	<remarks></remarks>
-</member><member name="M:Retails.frm_100_AR_.ChoseAccountable(System.Int32)">
-	<summary>
-	</summary>
-	<param name="item"></param>
-	<remarks></remarks>
-</member><member name="M:Retails.frm_300_SalesReport.ViewReport(Retails.frm_300_SalesReport.ReportMode)">
-	<summary>
- View Report
- </summary>
-	<param name="rptMode">rptWindowMode / rptPrintMode</param>
-	<remarks></remarks>
-</member><member name="M:Retails.frm_100_CashAdvance.RefreshRecord">
-	<summary>
- Refresh all Records
  </summary>
 	<remarks></remarks>
 </member><member name="P:Retails.My.Resources.Resources.ResourceManager">
@@ -1143,115 +699,75 @@ method fill the cell in selected rows
 	<summary>
   A strongly-typed resource class, for looking up localized strings, etc.
 </summary>
-</member><member name="M:Retails.frm_SearchTransNO.filldetails">
+</member><member name="M:Retails.MainForm.isFormOpen(System.String)">
 	<summary>
- Fill Datagridview
- </summary>
-	<remarks></remarks>
-</member><member name="M:Retails.frm_100_JO.viewReport(System.String)">
-	<summary>
- View Report
- </summary>
-	<remarks></remarks>
-</member><member name="M:Retails.frm_100_JO.InsetValues">
-	<summary>
- Insert Employee name into combobox
- </summary>
-	<remarks></remarks>
-</member><member name="M:Retails.frm_100_JO.fillCode(System.Int32)">
-	<summary>
- method fill the cell in selected rows
- </summary>
-	<param name="rowindex"></param>
-	<remarks></remarks>
-</member><member name="M:Retails.frm_100_JO.ProcessFormCommand(System.String)">
-	<summary>
- Form Command
- </summary>
-	<param name="strCmd"></param>
-	<remarks></remarks>
-</member><member name="M:Retails.frm_100_JO.voidrecord">
-	<summary>
- Void Record
- </summary>
-	<remarks></remarks>
-</member><member name="M:Retails.frm_100_JO.enabled_tools">
-	<summary>
- enable tools
- </summary>
-	<remarks></remarks>
-</member><member name="M:Retails.frm_100_JO.doCancel">
-	<summary>
- Cancel the Transaction
- </summary>
-	<remarks></remarks>
-</member><member name="M:Retails.frm_100_JO.SetEditValue">
-	<summary>
- Method for Saving and update to database
- </summary>
-	<remarks></remarks>
-</member><member name="M:Retails.frm_100_JO.CheckActualPrice">
-	<summary>
- method Check the price of selected items
- </summary>
+	</summary>
+	<param name="frmName"></param>
 	<returns></returns>
 	<remarks></remarks>
-</member><member name="M:Retails.frm_100_JO.SaveRecord">
+</member><member name="M:Retails.MainForm.runToEnableFalse">
 	<summary>
- Save Record to Database
+ Check popup form if popup data is empty then popup is disable else popup will enable after login
  </summary>
 	<remarks></remarks>
-</member><member name="M:Retails.frm_100_JO.FillSection">
+</member><member name="T:Retails.clsEnumerations.UserInfo">
 	<summary>
- method to fill the Supplier name, address and type
+ Logged-in user information.
  </summary>
 	<remarks></remarks>
-</member><member name="M:Retails.frm_100_JO.FillTerm">
+</member><member name="T:Retails.clsEnumerations.FormState">
 	<summary>
- Method to  Fill the term and extended the payable date 
+ The current state of the form.
  </summary>
 	<remarks></remarks>
-</member><member name="M:Retails.frm_100_JO.AddFields(System.Int32)">
+</member><member name="T:Retails.clsEnumerations.CompanyInfo">
 	<summary>
- method adding the cell of Quantity and Price
- Or Set the format number
- </summary>
-	<param name="rowIndex"></param>
-	<remarks></remarks>
-</member><member name="M:Retails.frm_100_JO.ComputeAllRows">
-	<summary>
- Compute all row
+ The company information.
  </summary>
 	<remarks></remarks>
-</member><member name="M:Retails.frm_100_JO.frm_100_JO_Load(System.Object,System.EventArgs)">
+</member><member name="T:Retails.clsEnumerations.myDays">
 	<summary>
- JO Form Load
- </summary>
-	<param name="sender"></param>
-	<param name="e"></param>
-	<remarks></remarks>
-</member><member name="M:Retails.frm_Searchitem.FillSearchItem">
-	<summary>
- Fill the Datagridview
+ Enumerates the days of the week.
  </summary>
 	<remarks></remarks>
-</member><member name="M:Retails.frm_Searchitem.ok">
+</member><member name="T:Retails.clsEnumerations.CountNumberOfHolidaysBy">
 	<summary>
- Select need item
+ Enumerates how the number of holidays will be counted.
  </summary>
 	<remarks></remarks>
-</member><member name="M:Retails.frm_Searchitem.FillItems(System.Windows.Forms.DataGridView,System.Windows.Forms.DataGridView,System.String,System.String)">
+</member><member name="T:Retails.clsEnumerations.FormatType">
 	<summary>
- para kani inig select nimo sa item human ma delete cya kung mo balik ka 
+ Enumerates the format type.
  </summary>
-	<param name="dgGrid">Datagridview na ako sublan</param>
-	<param name="myGrid">Datagridview na ako pilian</param>
-	<param name="colNameCode">Column sa datagridview na ako sudlan human ko mka pili</param>
-	<param name="mycolNameCode">Column sa datagridview na ako pilian </param>
 	<remarks></remarks>
-</member><member name="M:Retails.frm_Searchitem.FillSearchItemsOrProducts">
+</member><member name="T:Retails.clsEnumerations.ReportMode">
 	<summary>
- Conpare the item in Datagrid if exist then delete the row
+ Enumerates the report mode.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Retails.clsEnumerations.ReportType">
+	<summary>
+ Enumerates the report type.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Retails.clsEnumerations.TransactionType">
+	<summary>
+ Enumerates the transaction type.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Retails.tbl_000_Product">
+	<summary>
+ For tbl_000_Product
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Retails.tbl_000_Selling">
+	<summary>
+ For tbl_000_Selling
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Retails.tbl_000_Product_Process">
+	<summary>
+ For tbl_000_Product_Process
  </summary>
 	<remarks></remarks>
 </member><member name="M:Retails.modProcedure.HideTheTabControl(CrystalDecisions.Windows.Forms.CrystalReportViewer)">
@@ -1314,6 +830,10 @@ method fill the cell in selected rows
 	<param name="colNameCode">Target Cell</param>
 	<param name="mycolNameCode">Source Cell</param>
 	<remarks></remarks>
+</member><member name="M:Retails.strArrays.Finalize">
+	<summary>
+ To clean up the object after it is used.
+ </summary>
 </member><member name="F:Retails.modPublicVar.ComputerName">
 	<summary>
  Computer name

@@ -564,23 +564,23 @@ Public Class frm_000_ItemList
 
 
     Private Sub Button1_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
-        With frm_SearchTransNO
-            .ItemList = Me
-            .param1 = "ItemList"
+        'With frm_SearchTransNO
+        '    .ItemList = Me
+        '    .param1 = "ItemList"
 
-            If category <> String.Empty And value <> String.Empty Then
-                .cboCategory.Text = category
-                .txtValue.Text = value
-            Else
-                .cboCategory.Text = String.Empty
-                .txtValue.Text = String.Empty
-            End If
-            .ShowDialog()
-            Call RefreshRecord("GetItemSub '" & cboItemCode.Text & "'")
-            rownum = inc
+        '    If category <> String.Empty And value <> String.Empty Then
+        '        .cboCategory.Text = category
+        '        .txtValue.Text = value
+        '    Else
+        '        .cboCategory.Text = String.Empty
+        '        .txtValue.Text = String.Empty
+        '    End If
+        '    .ShowDialog()
+        '    Call RefreshRecord("GetItemSub '" & cboItemCode.Text & "'")
+        '    rownum = inc
 
 
-        End With
+        'End With
     End Sub
 
     Private Sub btnNext_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnNext.Click

@@ -158,46 +158,10 @@
     <Compile Include="Forms\frm_000_EditUPrice.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\frm_100_Order_Edit.designer.vb">
-      <DependentUpon>frm_100_Order_Edit.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\frm_100_Order_Edit.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Forms\frm_000_ImageLocation.Designer.vb">
       <DependentUpon>frm_000_ImageLocation.vb</DependentUpon>
     </Compile>
     <Compile Include="Forms\frm_000_ImageLocation.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\frm_300_SalesReport.Designer.vb">
-      <DependentUpon>frm_300_SalesReport.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\frm_300_SalesReport.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\frm_200_PSI.Designer.vb">
-      <DependentUpon>frm_200_PSI.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\frm_200_PSI.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\frm_200_OSI.Designer.vb">
-      <DependentUpon>frm_200_OSI.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\frm_200_OSI.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\frm_dr_paper.Designer.vb">
-      <DependentUpon>frm_dr_paper.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\frm_dr_paper.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\frm_SearchProduct.Designer.vb">
-      <DependentUpon>frm_SearchProduct.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\frm_SearchProduct.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\frm_000_Customer.Designer.vb">
@@ -208,22 +172,10 @@
       <SubType>Form</SubType>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
-    <Compile Include="Forms\frmActUnit.Designer.vb">
-      <DependentUpon>frmActUnit.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\frmActUnit.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Forms\frmDeleteItem.Designer.vb">
       <DependentUpon>frmDeleteItem.vb</DependentUpon>
     </Compile>
     <Compile Include="Forms\frmDeleteItem.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\frmGetEmployee.Designer.vb">
-      <DependentUpon>frmGetEmployee.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\frmGetEmployee.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\frmPicFrame.Designer.vb">
@@ -232,28 +184,10 @@
     <Compile Include="Forms\frmPicFrame.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\frmSearchCash.designer.vb">
-      <DependentUpon>frmSearchCash.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\frmSearchCash.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Forms\frm_000_CustomerList.designer.vb">
       <DependentUpon>frm_000_CustomerList.vb</DependentUpon>
     </Compile>
     <Compile Include="Forms\frm_000_CustomerList.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\frm_000_Employee.Designer.vb">
-      <DependentUpon>frm_000_Employee.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\frm_000_Employee.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\frm_000_Employee_List.Designer.vb">
-      <DependentUpon>frm_000_Employee_List.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\frm_000_Employee_List.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\frm_000_ExchangeRate.designer.vb">
@@ -262,154 +196,10 @@
     <Compile Include="Forms\frm_000_ExchangeRate.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\frm_000_Product.designer.vb">
-      <DependentUpon>frm_000_Product.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\frm_000_Product.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\frm_000_ProductList.designer.vb">
-      <DependentUpon>frm_000_ProductList.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\frm_000_ProductList.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\frm_100_AR.Designer.vb">
-      <DependentUpon>frm_100_AR.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\frm_100_AR.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\frm_100_DR.designer.vb">
-      <DependentUpon>frm_100_DR.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\frm_100_DR.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\frm_100_DRList.designer.vb">
-      <DependentUpon>frm_100_DRList.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\frm_100_DRList.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\frm_100_Order.designer.vb">
-      <DependentUpon>frm_100_Order.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\frm_100_Order.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\frm_100_OrderList.designer.vb">
-      <DependentUpon>frm_100_OrderList.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\frm_100_OrderList.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\frm_100_Reconfirm.Designer.vb">
-      <DependentUpon>frm_100_Reconfirm.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\frm_100_Reconfirm.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\frm_200_AR_.Designer.vb">
-      <DependentUpon>frm_200_AR_.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\frm_200_AR_.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\frm_200_RIL.Designer.vb">
-      <DependentUpon>frm_200_RIL.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\frm_200_RIL.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\frm_NewNo.Designer.vb">
-      <DependentUpon>frm_NewNo.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\frm_NewNo.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\frm_SearchTransNO.Designer.vb">
-      <DependentUpon>frm_SearchTransNO.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\frm_SearchTransNO.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\frm_search_emp.Designer.vb">
-      <DependentUpon>frm_search_emp.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\frm_search_emp.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\frm_Search_WR.Designer.vb">
-      <DependentUpon>frm_Search_WR.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\frm_Search_WR.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\frm_SendAlert.Designer.vb">
-      <DependentUpon>frm_SendAlert.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\frm_SendAlert.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\opendialog.Designer.vb">
-      <DependentUpon>opendialog.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\opendialog.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\frmMember.Designer.vb">
-      <DependentUpon>frmMember.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\frmMember.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\frmSearchPRJR.Designer.vb">
-      <DependentUpon>frmSearchPRJR.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\frmSearchPRJR.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\frmSummary.Designer.vb">
-      <DependentUpon>frmSummary.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\frmSummary.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Forms\frm_000_Ulility.Designer.vb">
       <DependentUpon>frm_000_Ulility.vb</DependentUpon>
     </Compile>
     <Compile Include="Forms\frm_000_Ulility.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\frm_100_ARList.Designer.vb">
-      <DependentUpon>frm_100_ARList.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\frm_100_ARList.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\frm_100_AR_.Designer.vb">
-      <DependentUpon>frm_100_AR_.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\frm_100_AR_.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\frm_200_JOS.Designer.vb">
-      <DependentUpon>frm_200_JOS.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\frm_200_JOS.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\frm_100_WRList.Designer.vb">
-      <DependentUpon>frm_100_WRList.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\frm_100_WRList.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\frm_100_WR.Designer.vb">
-      <DependentUpon>frm_100_WR.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\frm_100_WR.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\frmAbout.Designer.vb">
@@ -428,12 +218,6 @@
       <DependentUpon>frmPic.vb</DependentUpon>
     </Compile>
     <Compile Include="Forms\frmPic.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\frmSearchItems.Designer.vb">
-      <DependentUpon>frmSearchItems.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\frmSearchItems.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\frmSQLConfig.Designer.vb">
@@ -502,126 +286,6 @@
     <Compile Include="Forms\frm_000_Warehouse.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\frm_100_CashAdvance.Designer.vb">
-      <DependentUpon>frm_100_CashAdvance.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\frm_100_CashAdvance.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\frm_100_JO.Designer.vb">
-      <DependentUpon>frm_100_JO.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\frm_100_JO.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\frm_100_JOList.Designer.vb">
-      <DependentUpon>frm_100_JOList.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\frm_100_JOList.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\frm_100_JR.Designer.vb">
-      <DependentUpon>frm_100_JR.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\frm_100_JR.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\frm_100_JRList.Designer.vb">
-      <DependentUpon>frm_100_JRList.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\frm_100_JRList.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\frm_100_PO.Designer.vb">
-      <DependentUpon>frm_100_PO.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\frm_100_PO.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\frm_100_POList.Designer.vb">
-      <DependentUpon>frm_100_POList.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\frm_100_POList.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\frm_100_PR.Designer.vb">
-      <DependentUpon>frm_100_PR.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\frm_100_PR.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\frm_100_PRList.Designer.vb">
-      <DependentUpon>frm_100_PRList.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\frm_100_PRList.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\frm_100_RR.Designer.vb">
-      <DependentUpon>frm_100_RR.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\frm_100_RR.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\frm_100_RRList.Designer.vb">
-      <DependentUpon>frm_100_RRList.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\frm_100_RRList.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\frm_200_ISS.Designer.vb">
-      <DependentUpon>frm_200_ISS.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\frm_200_ISS.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\frm_200_JRS.Designer.vb">
-      <DependentUpon>frm_200_JRS.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\frm_200_JRS.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\frm_200_POS.Designer.vb">
-      <DependentUpon>frm_200_POS.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\frm_200_POS.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\frm_200_PRS.Designer.vb">
-      <DependentUpon>frm_200_PRS.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\frm_200_PRS.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\frm_200_ReportV.designer.vb">
-      <DependentUpon>frm_200_ReportV.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\frm_200_ReportV.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\frm_200_RRI.Designer.vb">
-      <DependentUpon>frm_200_RRI.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\frm_200_RRI.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\frm_POPUP.Designer.vb">
-      <DependentUpon>frm_POPUP.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\frm_POPUP.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\frm_PopUP_WR.Designer.vb">
-      <DependentUpon>frm_PopUP_WR.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\frm_PopUP_WR.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\frm_Searchitem.Designer.vb">
-      <DependentUpon>frm_Searchitem.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\frm_Searchitem.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Forms\LoginForm.designer.vb">
       <DependentUpon>LoginForm.vb</DependentUpon>
     </Compile>
@@ -677,32 +341,8 @@
       <DependentUpon>frm_000_EditUPrice.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frm_100_Order_Edit.resx">
-      <DependentUpon>frm_100_Order_Edit.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\frm_000_ImageLocation.resx">
       <DependentUpon>frm_000_ImageLocation.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frm_300_SalesReport.resx">
-      <DependentUpon>frm_300_SalesReport.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frm_200_PSI.resx">
-      <DependentUpon>frm_200_PSI.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frm_200_OSI.resx">
-      <DependentUpon>frm_200_OSI.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frm_dr_paper.resx">
-      <DependentUpon>frm_dr_paper.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frm_SearchProduct.resx">
-      <DependentUpon>frm_SearchProduct.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frm_000_Customer.resx">
@@ -710,140 +350,24 @@
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frmActUnit.resx">
-      <DependentUpon>frmActUnit.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmDeleteItem.resx">
       <DependentUpon>frmDeleteItem.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frmGetEmployee.resx">
-      <DependentUpon>frmGetEmployee.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmPicFrame.resx">
       <DependentUpon>frmPicFrame.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frmSearchCash.resx">
-      <DependentUpon>frmSearchCash.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\frm_000_CustomerList.resx">
       <DependentUpon>frm_000_CustomerList.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frm_000_Employee.resx">
-      <DependentUpon>frm_000_Employee.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frm_000_Employee_List.resx">
-      <DependentUpon>frm_000_Employee_List.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frm_000_ExchangeRate.resx">
       <DependentUpon>frm_000_ExchangeRate.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frm_000_Product.resx">
-      <DependentUpon>frm_000_Product.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frm_000_ProductList.resx">
-      <DependentUpon>frm_000_ProductList.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frm_100_AR.resx">
-      <DependentUpon>frm_100_AR.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frm_100_DR.resx">
-      <DependentUpon>frm_100_DR.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frm_100_DRList.resx">
-      <SubType>Designer</SubType>
-      <DependentUpon>frm_100_DRList.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frm_100_Order.resx">
-      <SubType>Designer</SubType>
-      <DependentUpon>frm_100_Order.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frm_100_OrderList.resx">
-      <SubType>Designer</SubType>
-      <DependentUpon>frm_100_OrderList.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frm_100_Reconfirm.resx">
-      <DependentUpon>frm_100_Reconfirm.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frm_200_AR_.resx">
-      <DependentUpon>frm_200_AR_.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frm_200_RIL.resx">
-      <DependentUpon>frm_200_RIL.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frm_NewNo.resx">
-      <DependentUpon>frm_NewNo.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frm_SearchTransNO.resx">
-      <DependentUpon>frm_SearchTransNO.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frm_search_emp.resx">
-      <DependentUpon>frm_search_emp.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frm_Search_WR.resx">
-      <DependentUpon>frm_Search_WR.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frm_SendAlert.resx">
-      <DependentUpon>frm_SendAlert.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\opendialog.resx">
-      <DependentUpon>opendialog.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frmMember.resx">
-      <DependentUpon>frmMember.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frmSearchPRJR.resx">
-      <DependentUpon>frmSearchPRJR.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frmSummary.resx">
-      <DependentUpon>frmSummary.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\frm_000_Ulility.resx">
       <DependentUpon>frm_000_Ulility.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frm_100_ARList.resx">
-      <DependentUpon>frm_100_ARList.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frm_100_AR_.resx">
-      <DependentUpon>frm_100_AR_.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frm_200_JOS.resx">
-      <DependentUpon>frm_200_JOS.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frm_100_WRList.resx">
-      <DependentUpon>frm_100_WRList.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frm_100_WR.resx">
-      <DependentUpon>frm_100_WR.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmAbout.resx">
@@ -856,10 +380,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmPic.resx">
       <DependentUpon>frmPic.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frmSearchItems.resx">
-      <DependentUpon>frmSearchItems.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmSQLConfig.resx">
@@ -904,86 +424,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frm_000_Warehouse.resx">
       <DependentUpon>frm_000_Warehouse.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frm_100_CashAdvance.resx">
-      <DependentUpon>frm_100_CashAdvance.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frm_100_JO.resx">
-      <DependentUpon>frm_100_JO.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frm_100_JOList.resx">
-      <DependentUpon>frm_100_JOList.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frm_100_JR.resx">
-      <DependentUpon>frm_100_JR.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frm_100_JRList.resx">
-      <DependentUpon>frm_100_JRList.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frm_100_PO.resx">
-      <DependentUpon>frm_100_PO.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frm_100_POList.resx">
-      <DependentUpon>frm_100_POList.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frm_100_PR.resx">
-      <DependentUpon>frm_100_PR.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frm_100_PRList.resx">
-      <DependentUpon>frm_100_PRList.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frm_100_RR.resx">
-      <DependentUpon>frm_100_RR.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frm_100_RRList.resx">
-      <DependentUpon>frm_100_RRList.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frm_200_ISS.resx">
-      <DependentUpon>frm_200_ISS.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frm_200_JRS.resx">
-      <DependentUpon>frm_200_JRS.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frm_200_POS.resx">
-      <DependentUpon>frm_200_POS.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frm_200_PRS.resx">
-      <DependentUpon>frm_200_PRS.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frm_200_ReportV.resx">
-      <DependentUpon>frm_200_ReportV.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frm_200_RRI.resx">
-      <DependentUpon>frm_200_RRI.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frm_POPUP.resx">
-      <DependentUpon>frm_POPUP.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frm_PopUP_WR.resx">
-      <DependentUpon>frm_PopUP_WR.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frm_Searchitem.resx">
-      <DependentUpon>frm_Searchitem.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\LoginForm.resx">

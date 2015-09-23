@@ -484,23 +484,19 @@ Public Class frm_000_Item
     End Sub
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
-        frmActUnit.mysender = "Item"
-        frmActUnit.ShowDialog()
+      
         Call fillcombo()
         Me.Refresh()
     End Sub
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
-        frmActUnit.mysender = "Item"
-        frmActUnit.ShowDialog()
+      
         Call fillcombo()
         Me.Refresh()
     End Sub
 
     Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
-        frmActUnit.mysender = "Rack"
-        frmActUnit.Text = "Rack"
-        frmActUnit.ShowDialog()
+      
         FillCombobox(cboRack, "SELECt RackNo FROM  tbl_000_Rack ORDER BY dbo.AlphaNum(rackno)", "tbl_000_rack", "RackNo", "RackNo")
         Me.Refresh()
     End Sub

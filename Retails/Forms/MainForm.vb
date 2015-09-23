@@ -173,8 +173,8 @@ Public Class MainForm
             ElseIf frmName = "frm_000_Company" Then
                 frm_000_Company.ShowDialog()
             ElseIf frmName = "frmReport" Then
-                frm_200_ReportV.Text = sender.ToString
-                frm_200_ReportV.Show()
+                'frm_200_ReportV.Text = sender.ToString
+                'frm_200_ReportV.Show()
 
             Else
                 frm = ObjectFinder.CreateForm(frmName)
