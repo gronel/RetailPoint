@@ -169,14 +169,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Retails.exe" size="2471424">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Retails.exe" size="2437632">
       <assemblyIdentity name="Retails" version="2015.9.23.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>Hc7gYynluzIjQ412KnsWCzgq6Hs=</dsig:DigestValue>
+        <dsig:DigestValue>Gp53flRswMDQNBxBqgiu1ZjD07c=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

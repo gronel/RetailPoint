@@ -376,7 +376,6 @@ Public Class frm_000_User
             If .ReadOnly = False Then
                 .Item("colCanAdd", intRowIndex).Value = bolValue
                 .Item("colCanEdit", intRowIndex).Value = bolValue
-                .Item("colCanVoid", intRowIndex).Value = bolValue
                 .Item("colCanDelete", intRowIndex).Value = bolValue
                 .Item("colCanView", intRowIndex).Value = bolValue
                 .Item("colCanPrint", intRowIndex).Value = bolValue

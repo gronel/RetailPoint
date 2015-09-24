@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class frm_000_Warehouse
+Partial Class frm_000_Location
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,19 +22,18 @@ Partial Class frm_000_Warehouse
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_000_Warehouse))
-        Me.Panel1 = New System.Windows.Forms.Panel
-        Me.picLogo = New System.Windows.Forms.PictureBox
-        Me.lblTitle = New System.Windows.Forms.Label
-        Me.grpList = New System.Windows.Forms.GroupBox
-        Me.Panel3 = New System.Windows.Forms.Panel
-        Me.lblRecordCount = New System.Windows.Forms.Label
-        Me.LabelCount = New System.Windows.Forms.Label
-        Me.dgList = New System.Windows.Forms.DataGridView
-        Me.colWarehouseCode = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.colWarehouseName = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.colLocation = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.colDescription = New System.Windows.Forms.DataGridViewTextBoxColumn
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_000_Location))
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.picLogo = New System.Windows.Forms.PictureBox()
+        Me.lblTitle = New System.Windows.Forms.Label()
+        Me.grpList = New System.Windows.Forms.GroupBox()
+        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.lblRecordCount = New System.Windows.Forms.Label()
+        Me.LabelCount = New System.Windows.Forms.Label()
+        Me.dgList = New System.Windows.Forms.DataGridView()
+        Me.colWarehouseCode = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colLocation = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colDescription = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Panel1.SuspendLayout()
         CType(Me.picLogo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.grpList.SuspendLayout()
@@ -45,7 +44,7 @@ Partial Class frm_000_Warehouse
         'Panel1
         '
         Me.Panel1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Panel1.BackgroundImage = CType(resources.GetObject("Panel1.BackgroundImage"), System.Drawing.Image)
         Me.Panel1.Controls.Add(Me.picLogo)
         Me.Panel1.Controls.Add(Me.lblTitle)
@@ -71,15 +70,15 @@ Partial Class frm_000_Warehouse
         Me.lblTitle.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.lblTitle.Location = New System.Drawing.Point(148, 0)
         Me.lblTitle.Name = "lblTitle"
-        Me.lblTitle.Size = New System.Drawing.Size(254, 33)
+        Me.lblTitle.Size = New System.Drawing.Size(216, 33)
         Me.lblTitle.TabIndex = 7
-        Me.lblTitle.Text = "Warehouse Setup"
+        Me.lblTitle.Text = "Location Setup"
         '
         'grpList
         '
         Me.grpList.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.grpList.Controls.Add(Me.Panel3)
         Me.grpList.Controls.Add(Me.dgList)
         Me.grpList.Location = New System.Drawing.Point(12, 42)
@@ -123,12 +122,12 @@ Partial Class frm_000_Warehouse
         '
         Me.dgList.AllowUserToResizeRows = False
         Me.dgList.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.dgList.BackgroundColor = System.Drawing.SystemColors.Control
         Me.dgList.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.dgList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgList.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.colWarehouseCode, Me.colWarehouseName, Me.colLocation, Me.colDescription})
+        Me.dgList.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.colWarehouseCode, Me.colLocation, Me.colDescription})
         Me.dgList.Location = New System.Drawing.Point(13, 19)
         Me.dgList.Name = "dgList"
         Me.dgList.RowHeadersWidth = 25
@@ -138,35 +137,30 @@ Partial Class frm_000_Warehouse
         '
         'colWarehouseCode
         '
-        Me.colWarehouseCode.DataPropertyName = "WHCode"
+        Me.colWarehouseCode.DataPropertyName = "Id"
         Me.colWarehouseCode.HeaderText = ""
         Me.colWarehouseCode.Name = "colWarehouseCode"
         Me.colWarehouseCode.Visible = False
         Me.colWarehouseCode.Width = 5
         '
-        'colWarehouseName
-        '
-        Me.colWarehouseName.DataPropertyName = "WarehouseName"
-        Me.colWarehouseName.HeaderText = "Warehouse Name"
-        Me.colWarehouseName.Name = "colWarehouseName"
-        Me.colWarehouseName.Width = 150
-        '
         'colLocation
         '
-        Me.colLocation.DataPropertyName = "Location"
+        Me.colLocation.DataPropertyName = "location"
         Me.colLocation.HeaderText = "Location"
+        Me.colLocation.MaxInputLength = 150
         Me.colLocation.Name = "colLocation"
         Me.colLocation.Width = 200
         '
         'colDescription
         '
         Me.colDescription.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.colDescription.DataPropertyName = "Description"
+        Me.colDescription.DataPropertyName = "description"
         Me.colDescription.HeaderText = "Description"
+        Me.colDescription.MaxInputLength = 300
         Me.colDescription.MinimumWidth = 100
         Me.colDescription.Name = "colDescription"
         '
-        'frm_000_Warehouse
+        'frm_000_Location
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -175,7 +169,7 @@ Partial Class frm_000_Warehouse
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.KeyPreview = True
-        Me.Name = "frm_000_Warehouse"
+        Me.Name = "frm_000_Location"
         Me.Text = "frm_000_Warehouse"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
@@ -194,9 +188,8 @@ Partial Class frm_000_Warehouse
     Friend WithEvents lblRecordCount As System.Windows.Forms.Label
     Friend WithEvents LabelCount As System.Windows.Forms.Label
     Friend WithEvents dgList As System.Windows.Forms.DataGridView
+    Friend WithEvents picLogo As System.Windows.Forms.PictureBox
     Friend WithEvents colWarehouseCode As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents colWarehouseName As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents colLocation As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents colDescription As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents picLogo As System.Windows.Forms.PictureBox
 End Class

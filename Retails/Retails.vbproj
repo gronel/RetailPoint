@@ -190,12 +190,6 @@
     <Compile Include="Forms\frm_000_CustomerList.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\frm_000_ExchangeRate.designer.vb">
-      <DependentUpon>frm_000_ExchangeRate.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\frm_000_ExchangeRate.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Forms\frm_000_Ulility.Designer.vb">
       <DependentUpon>frm_000_Ulility.vb</DependentUpon>
     </Compile>
@@ -238,18 +232,6 @@
     <Compile Include="Forms\frm_000_Company.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\frm_000_Currency.Designer.vb">
-      <DependentUpon>frm_000_Currency.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\frm_000_Currency.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\frm_000_Department.Designer.vb">
-      <DependentUpon>frm_000_Department.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\frm_000_Department.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Forms\frm_000_Item.Designer.vb">
       <DependentUpon>frm_000_Item.vb</DependentUpon>
     </Compile>
@@ -280,10 +262,16 @@
     <Compile Include="Forms\frm_000_UserRights.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\frm_000_Warehouse.Designer.vb">
-      <DependentUpon>frm_000_Warehouse.vb</DependentUpon>
+    <Compile Include="Forms\frm_000_Location.Designer.vb">
+      <DependentUpon>frm_000_Location.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\frm_000_Warehouse.vb">
+    <Compile Include="Forms\frm_000_Location.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_100_SalesScreen.Designer.vb">
+      <DependentUpon>frm_100_SalesScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_100_SalesScreen.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\LoginForm.designer.vb">
@@ -362,10 +350,6 @@
       <DependentUpon>frm_000_CustomerList.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frm_000_ExchangeRate.resx">
-      <DependentUpon>frm_000_ExchangeRate.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\frm_000_Ulility.resx">
       <DependentUpon>frm_000_Ulility.vb</DependentUpon>
       <SubType>Designer</SubType>
@@ -394,14 +378,6 @@
       <DependentUpon>frm_000_Company.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frm_000_Currency.resx">
-      <DependentUpon>frm_000_Currency.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frm_000_Department.resx">
-      <DependentUpon>frm_000_Department.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\frm_000_Item.resx">
       <DependentUpon>frm_000_Item.vb</DependentUpon>
       <SubType>Designer</SubType>
@@ -422,9 +398,12 @@
       <DependentUpon>frm_000_UserRights.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frm_000_Warehouse.resx">
-      <DependentUpon>frm_000_Warehouse.vb</DependentUpon>
+    <EmbeddedResource Include="Forms\frm_000_Location.resx">
+      <DependentUpon>frm_000_Location.vb</DependentUpon>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_100_SalesScreen.resx">
+      <DependentUpon>frm_100_SalesScreen.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\LoginForm.resx">
       <DependentUpon>LoginForm.vb</DependentUpon>

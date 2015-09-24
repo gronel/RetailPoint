@@ -1,13 +1,13 @@
 ﻿Imports Retails.clsPublic
 
-Public Class frm_000_Warehouse
+Public Class frm_000_Location
 
     Implements IBPSCommand
 
 #Region "Class Variables"
 
     Dim WarehouseCode As String
-    Dim objWarehouse As New tbl_000_Warehouse
+    Dim objWarehouse As New tbl_000_Location
     Dim bolFormState As clsPublic.FormState
     Dim ErrProvider As New ErrorProviderExtended
 
@@ -52,7 +52,7 @@ Public Class frm_000_Warehouse
         If dgList.CurrentCell.ColumnIndex = 1 Then
             If CheckCodeFromDatagridView(dgList, 1, e.FormattedValue.ToString, e.RowIndex, False) = True Then
                 dgList.CancelEdit()
-                MsgBox("Warehouse name already exists in the list.", MsgBoxStyle.Exclamation, "Existing Warehouse")
+                MsgBox("Locaton name already exists in the list.", MsgBoxStyle.Exclamation, "Existing Warehouse")
             End If
         End If
     End Sub
@@ -108,7 +108,7 @@ Public Class frm_000_Warehouse
                 If dgList.SelectedRows.Count = 0 Then
                     MsgBox("Please select row/s to be deleted.", MsgBoxStyle.Exclamation, "Delete")
                 Else
-                    If vbYes = MsgBox("Are you sure you want to delete this Warehouse?", MsgBoxStyle.Question + MsgBoxStyle.YesNo + MsgBoxStyle.DefaultButton2, "Confirm Delete") Then
+                    If vbYes = MsgBox("Are you sure you want to delete this Location?", MsgBoxStyle.Question + MsgBoxStyle.YesNo + MsgBoxStyle.DefaultButton2, "Confirm Delete") Then
                         Dim strCriteria As String = ""
                         For Each tmpList As DataGridViewRow In dgList.SelectedRows
                             If strCriteria <> "" Then
@@ -117,7 +117,7 @@ Public Class frm_000_Warehouse
                             strCriteria += "'" & dgList.Rows(tmpList.Index).Cells(0).Value.ToString & "'"
                         Next
                         _OpenTransaction()
-                        _CloseTransaction(_DeleteRecord("tbl_000_Warehouse", "WHERE WHCode in (" & strCriteria & ")"))
+                        _CloseTransaction(_DeleteRecord("tbl_000_Location", "WHERE Id in (" & strCriteria & ")"))
                         RefreshRecord()
                         doCancel()
                         ''ClearFields()

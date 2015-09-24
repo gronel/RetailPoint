@@ -107,7 +107,6 @@ D:\PROJECT SYS\VB.NET\RetailPoint\Retails\obj\Debug\Retails.frm_000_Customer.res
 D:\PROJECT SYS\VB.NET\RetailPoint\Retails\obj\Debug\Retails.frmDeleteItem.resources
 D:\PROJECT SYS\VB.NET\RetailPoint\Retails\obj\Debug\Retails.frmPicFrame.resources
 D:\PROJECT SYS\VB.NET\RetailPoint\Retails\obj\Debug\Retails.frm_000_CustomerList.resources
-D:\PROJECT SYS\VB.NET\RetailPoint\Retails\obj\Debug\Retails.frm_000_ExchangeRate.resources
 D:\PROJECT SYS\VB.NET\RetailPoint\Retails\obj\Debug\Retails.frm_000_Ulility.resources
 D:\PROJECT SYS\VB.NET\RetailPoint\Retails\obj\Debug\Retails.frmAbout.resources
 D:\PROJECT SYS\VB.NET\RetailPoint\Retails\obj\Debug\Retails.frmMyAccount.resources
@@ -115,14 +114,11 @@ D:\PROJECT SYS\VB.NET\RetailPoint\Retails\obj\Debug\Retails.frmPic.resources
 D:\PROJECT SYS\VB.NET\RetailPoint\Retails\obj\Debug\Retails.frmSQLConfig.resources
 D:\PROJECT SYS\VB.NET\RetailPoint\Retails\obj\Debug\Retails.frm_000_Category.resources
 D:\PROJECT SYS\VB.NET\RetailPoint\Retails\obj\Debug\Retails.frm_000_Company.resources
-D:\PROJECT SYS\VB.NET\RetailPoint\Retails\obj\Debug\Retails.frm_000_Currency.resources
-D:\PROJECT SYS\VB.NET\RetailPoint\Retails\obj\Debug\Retails.frm_000_Department.resources
 D:\PROJECT SYS\VB.NET\RetailPoint\Retails\obj\Debug\Retails.frm_000_Item.resources
 D:\PROJECT SYS\VB.NET\RetailPoint\Retails\obj\Debug\Retails.frm_000_ItemList.resources
 D:\PROJECT SYS\VB.NET\RetailPoint\Retails\obj\Debug\Retails.frm_000_Supplier.resources
 D:\PROJECT SYS\VB.NET\RetailPoint\Retails\obj\Debug\Retails.frm_000_User.resources
 D:\PROJECT SYS\VB.NET\RetailPoint\Retails\obj\Debug\Retails.frm_000_UserRights.resources
-D:\PROJECT SYS\VB.NET\RetailPoint\Retails\obj\Debug\Retails.frm_000_Warehouse.resources
 D:\PROJECT SYS\VB.NET\RetailPoint\Retails\obj\Debug\Retails.LoginForm.resources
 D:\PROJECT SYS\VB.NET\RetailPoint\Retails\obj\Debug\Retails.MainForm.resources
 D:\PROJECT SYS\VB.NET\RetailPoint\Retails\obj\Debug\Retails.Resources.resources
@@ -138,3 +134,5 @@ D:\PROJECT SYS\VB.NET\RetailPoint\Retails\bin\Debug\Retails.xml
 D:\PROJECT SYS\VB.NET\RetailPoint\Retails\obj\Debug\Retails.TrustInfo.xml
 D:\PROJECT SYS\VB.NET\RetailPoint\Retails\obj\Debug\Retails.exe.manifest
 D:\PROJECT SYS\VB.NET\RetailPoint\Retails\obj\Debug\Retails.application
+D:\PROJECT SYS\VB.NET\RetailPoint\Retails\obj\Debug\Retails.frm_100_SalesScreen.resources
+D:\PROJECT SYS\VB.NET\RetailPoint\Retails\obj\Debug\Retails.frm_000_Location.resources

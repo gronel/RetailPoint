@@ -20,32 +20,8 @@ Public Class LoginForm
 
     End Sub
 
-    Private Sub CreateTmp()
 
-        Call DeleteTmp()
-        Dim path As String = currPath & "\tmpIMG"
-        If File.Exists(path) Then
-        Else
-            System.IO.Directory.CreateDirectory(path)
-        End If
-
-    End Sub
-
-    Private Sub CheckNewVersion()
-        If HasNewVersion() = True Then
-            If MsgBox("Your system is not updated" & vbNewLine & "Do you want to update?", MsgBoxStyle.Question + MsgBoxStyle.OkCancel, "Prompt") = MsgBoxResult.Ok Then
-                Dim thread1 As New System.Threading.Thread(AddressOf RunUpdate)
-                thread1.Priority = Threading.ThreadPriority.Normal
-                thread1.Start()
-                'Call RunUpdate()
-
-                Exit Sub
-            Else
-                Me.Close()
-            End If
-        End If
-    End Sub
-
+  
     Private Function intINI() As Boolean
 
         Try
@@ -84,8 +60,7 @@ Public Class LoginForm
 
 #Region "GUI"
     Private Sub OK_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles OK.Click
-        Dim isSales As String
-        Dim isInventory As String
+       
         Try
 
             If CheckConnection() = False Then Exit Sub
@@ -112,10 +87,6 @@ Public Class LoginForm
 
                     MainForm.Focus()
 
-                 
-
-                    Dim thread2 As New System.Threading.Thread(AddressOf CreateTmp)
-                    thread2.Start()
                 Else
                     MsgBox("User is not active, please contact your administrator.", MsgBoxStyle.Exclamation, "Security")
                 End If
@@ -152,12 +123,9 @@ Public Class LoginForm
         If intINI() = False Then Exit Sub
 
         lblVersion.Text = Version
-       
 
-
-        Call HasNewVersion()
         If connectionError = True Then frmSQLConfig.Show() : Me.Close() : Exit Sub
-        Call CheckNewVersion()
+
     End Sub
 
     Private Sub LoginForm_Shown(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Shown
