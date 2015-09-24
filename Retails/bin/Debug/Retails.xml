@@ -6,35 +6,7 @@ Retails
 </name>
 </assembly>
 <members>
-<member name="T:Retails.tbl_100_WR">
-	<summary>
- Save to main Withdrawal table
- </summary>
-	<remarks></remarks>
-</member><member name="M:Retails.clsWithdrawalOperation.savetempwr(System.String,System.Windows.Forms.DataGridView,Retails.clsPublic.FormState)">
-	<summary>
- Check the Withdrawal Quantity before to Save
- </summary>
-	<param name="controlnum">Withdrawal control number</param>
-	<param name="dgsub">datagridview</param>
-	<param name="mystate">form State</param>
-	<returns>Return True if the Quantity is not exist</returns>
-	<remarks>Used</remarks>
-</member><member name="M:Retails.clsWithdrawalOperation.Check_WR_Operation(System.String,System.Windows.Forms.DataGridView,Retails.clsPublic.FormState)">
-	<summary>
- append / update transaction detail 
- before to save
- </summary>
-	<param name="controlnum">Withdrawal control number</param>
-	<param name="dgsub">Datagridview</param>
-	<param name="mystate">FormState</param>
-	<remarks></remarks>
-</member><member name="T:Retails.clsWithdrawalOperation">
-	<summary>
- Check WR before Save
- </summary>
-	<remarks></remarks>
-</member><member name="M:Retails.modFunction.GetFieldValue(System.String,System.String)">
+<member name="M:Retails.modFunction.GetFieldValue(System.String,System.String)">
 	<summary>
  Same as DBLookUp
  </summary>
@@ -134,17 +106,6 @@ Retails
 	<param name="strSQL">SQL String</param>
 	<param name="fieldName">Field name</param>
 	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Retails.modFunction.HasNewVersion">
-	<summary>
- Check if the current version of the program is out-of-date
- </summary>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="F:Retails.modFunction.vdate">
-	<summary>
- Update table version
- </summary>
 	<remarks></remarks>
 </member><member name="M:Retails.modFunction.ResizeForm(System.Windows.Forms.Form)">
 	<summary>
@@ -335,20 +296,6 @@ Retails
 	<param name="LogTransaction"></param>
 	<param name="LogTransNo"></param>
 	<param name="withTrans"></param>
-	<remarks></remarks>
-</member><member name="T:Retails.ComputeRR">
-	<summary>
- Compute RR Details
- </summary>
-	<remarks></remarks>
-</member><member name="T:Retails.tbl_100_Order">
-	<summary>
-	</summary>
-	<remarks></remarks>
-</member><member name="T:Retails.tbl_100_ConfirmDateDetails">
-	<summary>
- Confirmation product Delivery date
- </summary>
 	<remarks></remarks>
 </member><member name="P:Retails.My.Resources.Resources.ResourceManager">
 	<summary>

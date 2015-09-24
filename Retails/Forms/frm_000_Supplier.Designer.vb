@@ -22,55 +22,55 @@ Partial Class frm_000_Supplier
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_000_Supplier))
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
-        Me.Panel1 = New System.Windows.Forms.Panel
-        Me.picLogo = New System.Windows.Forms.PictureBox
-        Me.lblTitle = New System.Windows.Forms.Label
-        Me.Panel3 = New System.Windows.Forms.Panel
-        Me.lblRecordCount = New System.Windows.Forms.Label
-        Me.LabelCount = New System.Windows.Forms.Label
-        Me.dgList = New System.Windows.Forms.DataGridView
-        Me.colSupplierCode = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.colSupplierName = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.Label1 = New System.Windows.Forms.Label
-        Me.txtSupplierCode = New System.Windows.Forms.TextBox
-        Me.Label2 = New System.Windows.Forms.Label
-        Me.txtSupplierName = New System.Windows.Forms.TextBox
-        Me.grpProfile = New System.Windows.Forms.GroupBox
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox
-        Me.txtEmail = New System.Windows.Forms.TextBox
-        Me.Label14 = New System.Windows.Forms.Label
-        Me.txtDepartment = New System.Windows.Forms.TextBox
-        Me.Label15 = New System.Windows.Forms.Label
-        Me.txtDesignation = New System.Windows.Forms.TextBox
-        Me.Label16 = New System.Windows.Forms.Label
-        Me.txtCPName = New System.Windows.Forms.TextBox
-        Me.txtConName = New System.Windows.Forms.Label
-        Me.Label13 = New System.Windows.Forms.Label
-        Me.cboPayTerms = New System.Windows.Forms.ComboBox
-        Me.Label12 = New System.Windows.Forms.Label
-        Me.cboComCategory = New System.Windows.Forms.ComboBox
-        Me.Label11 = New System.Windows.Forms.Label
-        Me.cboSupType = New System.Windows.Forms.ComboBox
-        Me.Label10 = New System.Windows.Forms.Label
-        Me.dtDate = New System.Windows.Forms.DateTimePicker
-        Me.txtremarks = New System.Windows.Forms.TextBox
-        Me.Label4 = New System.Windows.Forms.Label
-        Me.txtWebsite = New System.Windows.Forms.TextBox
-        Me.Label9 = New System.Windows.Forms.Label
-        Me.txtCellNo = New System.Windows.Forms.TextBox
-        Me.Label7 = New System.Windows.Forms.Label
-        Me.txtFaxNo = New System.Windows.Forms.TextBox
-        Me.Label6 = New System.Windows.Forms.Label
-        Me.txtTelNo = New System.Windows.Forms.TextBox
-        Me.Label5 = New System.Windows.Forms.Label
-        Me.txtAddress = New System.Windows.Forms.TextBox
-        Me.Label3 = New System.Windows.Forms.Label
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.picLogo = New System.Windows.Forms.PictureBox()
+        Me.lblTitle = New System.Windows.Forms.Label()
+        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.lblRecordCount = New System.Windows.Forms.Label()
+        Me.LabelCount = New System.Windows.Forms.Label()
+        Me.dgList = New System.Windows.Forms.DataGridView()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.txtSupplierCode = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.txtSupplierName = New System.Windows.Forms.TextBox()
+        Me.grpProfile = New System.Windows.Forms.GroupBox()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.txtEmail = New System.Windows.Forms.TextBox()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.txtDepartment = New System.Windows.Forms.TextBox()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.txtDesignation = New System.Windows.Forms.TextBox()
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.txtCPName = New System.Windows.Forms.TextBox()
+        Me.txtConName = New System.Windows.Forms.Label()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.cboPayTerms = New System.Windows.Forms.ComboBox()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.cboComCategory = New System.Windows.Forms.ComboBox()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.cboSupType = New System.Windows.Forms.ComboBox()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.dtDate = New System.Windows.Forms.DateTimePicker()
+        Me.txtremarks = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.txtWebsite = New System.Windows.Forms.TextBox()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.txtCellNo = New System.Windows.Forms.TextBox()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.txtFaxNo = New System.Windows.Forms.TextBox()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.txtTelNo = New System.Windows.Forms.TextBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.txtAddress = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.ErrorProvider1 = New System.Windows.Forms.ErrorProvider(Me.components)
-        Me.SplitContainer1 = New System.Windows.Forms.SplitContainer
-        Me.grpList = New System.Windows.Forms.GroupBox
+        Me.SplitContainer1 = New System.Windows.Forms.SplitContainer()
+        Me.grpList = New System.Windows.Forms.GroupBox()
+        Me.colSupplierCode = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colSupplierName = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Panel1.SuspendLayout()
         CType(Me.picLogo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel3.SuspendLayout()
@@ -87,7 +87,7 @@ Partial Class frm_000_Supplier
         'Panel1
         '
         Me.Panel1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Panel1.BackgroundImage = CType(resources.GetObject("Panel1.BackgroundImage"), System.Drawing.Image)
         Me.Panel1.Controls.Add(Me.picLogo)
         Me.Panel1.Controls.Add(Me.lblTitle)
@@ -113,9 +113,9 @@ Partial Class frm_000_Supplier
         Me.lblTitle.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.lblTitle.Location = New System.Drawing.Point(316, 0)
         Me.lblTitle.Name = "lblTitle"
-        Me.lblTitle.Size = New System.Drawing.Size(213, 33)
+        Me.lblTitle.Size = New System.Drawing.Size(198, 33)
         Me.lblTitle.TabIndex = 7
-        Me.lblTitle.Text = "Supplier Setup"
+        Me.lblTitle.Text = "Vendor Setup"
         '
         'Panel3
         '
@@ -151,11 +151,11 @@ Partial Class frm_000_Supplier
         '
         Me.dgList.AllowUserToAddRows = False
         Me.dgList.AllowUserToResizeRows = False
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.LightSteelBlue
-        Me.dgList.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.LightSteelBlue
+        Me.dgList.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         Me.dgList.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.dgList.BackgroundColor = System.Drawing.SystemColors.Control
         Me.dgList.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.dgList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
@@ -170,41 +170,28 @@ Partial Class frm_000_Supplier
         Me.dgList.Size = New System.Drawing.Size(286, 345)
         Me.dgList.TabIndex = 0
         '
-        'colSupplierCode
-        '
-        Me.colSupplierCode.DataPropertyName = "SupplierID"
-        Me.colSupplierCode.HeaderText = "Code"
-        Me.colSupplierCode.Name = "colSupplierCode"
-        Me.colSupplierCode.ReadOnly = True
-        '
-        'colSupplierName
-        '
-        Me.colSupplierName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.colSupplierName.DataPropertyName = "SupplierName"
-        Me.colSupplierName.HeaderText = "Supplier Name"
-        Me.colSupplierName.Name = "colSupplierName"
-        Me.colSupplierName.ReadOnly = True
-        '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(23, 23)
+        Me.Label1.Location = New System.Drawing.Point(18, 221)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(73, 13)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Supplier Code"
+        Me.Label1.Visible = False
         '
         'txtSupplierCode
         '
-        Me.txtSupplierCode.Location = New System.Drawing.Point(102, 20)
+        Me.txtSupplierCode.Location = New System.Drawing.Point(26, 275)
         Me.txtSupplierCode.Name = "txtSupplierCode"
-        Me.txtSupplierCode.Size = New System.Drawing.Size(185, 20)
+        Me.txtSupplierCode.Size = New System.Drawing.Size(50, 20)
         Me.txtSupplierCode.TabIndex = 1
+        Me.txtSupplierCode.Visible = False
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(20, 49)
+        Me.Label2.Location = New System.Drawing.Point(20, 23)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(76, 13)
         Me.Label2.TabIndex = 2
@@ -212,7 +199,7 @@ Partial Class frm_000_Supplier
         '
         'txtSupplierName
         '
-        Me.txtSupplierName.Location = New System.Drawing.Point(102, 46)
+        Me.txtSupplierName.Location = New System.Drawing.Point(102, 20)
         Me.txtSupplierName.Name = "txtSupplierName"
         Me.txtSupplierName.Size = New System.Drawing.Size(518, 20)
         Me.txtSupplierName.TabIndex = 3
@@ -220,8 +207,8 @@ Partial Class frm_000_Supplier
         'grpProfile
         '
         Me.grpProfile.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.grpProfile.Controls.Add(Me.GroupBox1)
         Me.grpProfile.Controls.Add(Me.Label13)
         Me.grpProfile.Controls.Add(Me.cboPayTerms)
@@ -264,7 +251,7 @@ Partial Class frm_000_Supplier
         Me.GroupBox1.Controls.Add(Me.Label16)
         Me.GroupBox1.Controls.Add(Me.txtCPName)
         Me.GroupBox1.Controls.Add(Me.txtConName)
-        Me.GroupBox1.Location = New System.Drawing.Point(102, 256)
+        Me.GroupBox1.Location = New System.Drawing.Point(102, 230)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(452, 128)
         Me.GroupBox1.TabIndex = 31
@@ -274,7 +261,7 @@ Partial Class frm_000_Supplier
         'txtEmail
         '
         Me.txtEmail.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtEmail.Location = New System.Drawing.Point(95, 97)
         Me.txtEmail.Name = "txtEmail"
         Me.txtEmail.Size = New System.Drawing.Size(343, 20)
@@ -292,7 +279,7 @@ Partial Class frm_000_Supplier
         'txtDepartment
         '
         Me.txtDepartment.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtDepartment.Location = New System.Drawing.Point(95, 71)
         Me.txtDepartment.Name = "txtDepartment"
         Me.txtDepartment.Size = New System.Drawing.Size(343, 20)
@@ -310,7 +297,7 @@ Partial Class frm_000_Supplier
         'txtDesignation
         '
         Me.txtDesignation.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtDesignation.Location = New System.Drawing.Point(95, 45)
         Me.txtDesignation.Name = "txtDesignation"
         Me.txtDesignation.Size = New System.Drawing.Size(343, 20)
@@ -328,7 +315,7 @@ Partial Class frm_000_Supplier
         'txtCPName
         '
         Me.txtCPName.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtCPName.Location = New System.Drawing.Point(95, 19)
         Me.txtCPName.Name = "txtCPName"
         Me.txtCPName.Size = New System.Drawing.Size(343, 20)
@@ -346,7 +333,7 @@ Partial Class frm_000_Supplier
         'Label13
         '
         Me.Label13.AutoSize = True
-        Me.Label13.Location = New System.Drawing.Point(318, 181)
+        Me.Label13.Location = New System.Drawing.Point(318, 155)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(80, 13)
         Me.Label13.TabIndex = 22
@@ -356,7 +343,7 @@ Partial Class frm_000_Supplier
         '
         Me.cboPayTerms.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboPayTerms.FormattingEnabled = True
-        Me.cboPayTerms.Location = New System.Drawing.Point(404, 178)
+        Me.cboPayTerms.Location = New System.Drawing.Point(404, 152)
         Me.cboPayTerms.Name = "cboPayTerms"
         Me.cboPayTerms.Size = New System.Drawing.Size(216, 21)
         Me.cboPayTerms.TabIndex = 21
@@ -364,7 +351,7 @@ Partial Class frm_000_Supplier
         'Label12
         '
         Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(302, 154)
+        Me.Label12.Location = New System.Drawing.Point(302, 128)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(96, 13)
         Me.Label12.TabIndex = 20
@@ -374,7 +361,7 @@ Partial Class frm_000_Supplier
         '
         Me.cboComCategory.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboComCategory.FormattingEnabled = True
-        Me.cboComCategory.Location = New System.Drawing.Point(404, 151)
+        Me.cboComCategory.Location = New System.Drawing.Point(404, 125)
         Me.cboComCategory.Name = "cboComCategory"
         Me.cboComCategory.Size = New System.Drawing.Size(216, 21)
         Me.cboComCategory.TabIndex = 19
@@ -382,7 +369,7 @@ Partial Class frm_000_Supplier
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(326, 127)
+        Me.Label11.Location = New System.Drawing.Point(326, 101)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(72, 13)
         Me.Label11.TabIndex = 18
@@ -392,7 +379,7 @@ Partial Class frm_000_Supplier
         '
         Me.cboSupType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboSupType.FormattingEnabled = True
-        Me.cboSupType.Location = New System.Drawing.Point(404, 124)
+        Me.cboSupType.Location = New System.Drawing.Point(404, 98)
         Me.cboSupType.Name = "cboSupType"
         Me.cboSupType.Size = New System.Drawing.Size(216, 21)
         Me.cboSupType.TabIndex = 17
@@ -400,7 +387,7 @@ Partial Class frm_000_Supplier
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(303, 105)
+        Me.Label10.Location = New System.Drawing.Point(303, 79)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(95, 13)
         Me.Label10.TabIndex = 16
@@ -409,14 +396,14 @@ Partial Class frm_000_Supplier
         'dtDate
         '
         Me.dtDate.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.dtDate.Location = New System.Drawing.Point(404, 98)
+        Me.dtDate.Location = New System.Drawing.Point(404, 72)
         Me.dtDate.Name = "dtDate"
         Me.dtDate.Size = New System.Drawing.Size(216, 20)
         Me.dtDate.TabIndex = 15
         '
         'txtremarks
         '
-        Me.txtremarks.Location = New System.Drawing.Point(102, 202)
+        Me.txtremarks.Location = New System.Drawing.Point(102, 176)
         Me.txtremarks.Multiline = True
         Me.txtremarks.Name = "txtremarks"
         Me.txtremarks.Size = New System.Drawing.Size(518, 48)
@@ -425,7 +412,7 @@ Partial Class frm_000_Supplier
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(50, 205)
+        Me.Label4.Location = New System.Drawing.Point(50, 179)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(49, 13)
         Me.Label4.TabIndex = 13
@@ -433,7 +420,7 @@ Partial Class frm_000_Supplier
         '
         'txtWebsite
         '
-        Me.txtWebsite.Location = New System.Drawing.Point(102, 176)
+        Me.txtWebsite.Location = New System.Drawing.Point(102, 150)
         Me.txtWebsite.Name = "txtWebsite"
         Me.txtWebsite.Size = New System.Drawing.Size(185, 20)
         Me.txtWebsite.TabIndex = 14
@@ -441,7 +428,7 @@ Partial Class frm_000_Supplier
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(50, 179)
+        Me.Label9.Location = New System.Drawing.Point(50, 153)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(46, 13)
         Me.Label9.TabIndex = 13
@@ -449,7 +436,7 @@ Partial Class frm_000_Supplier
         '
         'txtCellNo
         '
-        Me.txtCellNo.Location = New System.Drawing.Point(102, 150)
+        Me.txtCellNo.Location = New System.Drawing.Point(102, 124)
         Me.txtCellNo.Name = "txtCellNo"
         Me.txtCellNo.Size = New System.Drawing.Size(185, 20)
         Me.txtCellNo.TabIndex = 12
@@ -457,7 +444,7 @@ Partial Class frm_000_Supplier
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(22, 153)
+        Me.Label7.Location = New System.Drawing.Point(22, 127)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(74, 13)
         Me.Label7.TabIndex = 11
@@ -465,7 +452,7 @@ Partial Class frm_000_Supplier
         '
         'txtFaxNo
         '
-        Me.txtFaxNo.Location = New System.Drawing.Point(102, 124)
+        Me.txtFaxNo.Location = New System.Drawing.Point(102, 98)
         Me.txtFaxNo.Name = "txtFaxNo"
         Me.txtFaxNo.Size = New System.Drawing.Size(185, 20)
         Me.txtFaxNo.TabIndex = 10
@@ -473,7 +460,7 @@ Partial Class frm_000_Supplier
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(52, 127)
+        Me.Label6.Location = New System.Drawing.Point(52, 101)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(44, 13)
         Me.Label6.TabIndex = 9
@@ -481,7 +468,7 @@ Partial Class frm_000_Supplier
         '
         'txtTelNo
         '
-        Me.txtTelNo.Location = New System.Drawing.Point(102, 98)
+        Me.txtTelNo.Location = New System.Drawing.Point(102, 72)
         Me.txtTelNo.Name = "txtTelNo"
         Me.txtTelNo.Size = New System.Drawing.Size(185, 20)
         Me.txtTelNo.TabIndex = 8
@@ -489,7 +476,7 @@ Partial Class frm_000_Supplier
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(18, 102)
+        Me.Label5.Location = New System.Drawing.Point(18, 76)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(78, 13)
         Me.Label5.TabIndex = 7
@@ -497,7 +484,7 @@ Partial Class frm_000_Supplier
         '
         'txtAddress
         '
-        Me.txtAddress.Location = New System.Drawing.Point(102, 72)
+        Me.txtAddress.Location = New System.Drawing.Point(102, 46)
         Me.txtAddress.Name = "txtAddress"
         Me.txtAddress.Size = New System.Drawing.Size(518, 20)
         Me.txtAddress.TabIndex = 6
@@ -505,7 +492,7 @@ Partial Class frm_000_Supplier
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(51, 75)
+        Me.Label3.Location = New System.Drawing.Point(51, 49)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(45, 13)
         Me.Label3.TabIndex = 5
@@ -518,8 +505,8 @@ Partial Class frm_000_Supplier
         'SplitContainer1
         '
         Me.SplitContainer1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.SplitContainer1.Location = New System.Drawing.Point(0, 42)
         Me.SplitContainer1.Name = "SplitContainer1"
         '
@@ -537,8 +524,8 @@ Partial Class frm_000_Supplier
         'grpList
         '
         Me.grpList.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.grpList.Controls.Add(Me.dgList)
         Me.grpList.Controls.Add(Me.Panel3)
         Me.grpList.Location = New System.Drawing.Point(12, 4)
@@ -547,6 +534,22 @@ Partial Class frm_000_Supplier
         Me.grpList.TabIndex = 1
         Me.grpList.TabStop = False
         Me.grpList.Text = "List:"
+        '
+        'colSupplierCode
+        '
+        Me.colSupplierCode.DataPropertyName = "SupplierID"
+        Me.colSupplierCode.HeaderText = "Code"
+        Me.colSupplierCode.Name = "colSupplierCode"
+        Me.colSupplierCode.ReadOnly = True
+        Me.colSupplierCode.Visible = False
+        '
+        'colSupplierName
+        '
+        Me.colSupplierName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.colSupplierName.DataPropertyName = "SupplierName"
+        Me.colSupplierName.HeaderText = "Supplier Name"
+        Me.colSupplierName.Name = "colSupplierName"
+        Me.colSupplierName.ReadOnly = True
         '
         'frm_000_Supplier
         '
@@ -607,8 +610,6 @@ Partial Class frm_000_Supplier
     Friend WithEvents Label11 As System.Windows.Forms.Label
     Friend WithEvents cboSupType As System.Windows.Forms.ComboBox
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
-    Friend WithEvents colSupplierCode As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents colSupplierName As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents txtEmail As System.Windows.Forms.TextBox
     Friend WithEvents Label14 As System.Windows.Forms.Label
     Friend WithEvents txtDepartment As System.Windows.Forms.TextBox
@@ -623,4 +624,6 @@ Partial Class frm_000_Supplier
     Friend WithEvents picLogo As System.Windows.Forms.PictureBox
     Friend WithEvents txtremarks As System.Windows.Forms.TextBox
     Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents colSupplierCode As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents colSupplierName As System.Windows.Forms.DataGridViewTextBoxColumn
 End Class

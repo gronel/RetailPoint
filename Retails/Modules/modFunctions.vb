@@ -694,82 +694,9 @@ Module modFunction
         nConn.Close()
     End Function
 
-    ''' <summary>
-    ''' Check if the current version of the program is out-of-date
-    ''' </summary>
-    ''' <returns></returns>
-    ''' <remarks></remarks>
-    Public Function HasNewVersion()
-        Try
-            Dim nCon As New SqlConnection
-            Dim strSQL As String = "SELECT TOP (1) * FROM tblVersion ORDER BY VersionDate DESC, VersionNumber DESC"
-
-
-            HasNewVersion = False
-
-            strUpdates = String.Empty
-
-            nCon = New SqlConnection
-
-            With nCon
-                If .State = ConnectionState.Open Then .Close()
-                .ConnectionString = cnString
-                .Open()
-            End With
-
-            Dim cmdCust As New SqlCommand
-            cmdCust.Connection = nCon
-            cmdCust.CommandText = strSQL
-            Dim drV As SqlDataReader = cmdCust.ExecuteReader()
-            If drV.HasRows Then
-                While drV.Read()
-                    If CDate(drV(1)) > CDate(VersionDate) Then
-                        HasNewVersion = True
-                        strUpdates = drV(2)
-                    ElseIf CDate(drV(1)) = CDate(VersionDate) And CInt(drV(0).ToString) > CInt(NZ(Revision)) Then
-                        HasNewVersion = True
-                        strUpdates = drV(2)
-                    End If
-                    Exit While
-                End While
-            End If
-
-            ''if the version  is not exist then append latest version
-            'If isRecordExist("SELECT * FROM tblVersion WHERE VersionDate='" & vdate & "' AND VersionNumber=" & NZ(Revision)) = False Then
-            '    ExecNonQuery("_AddVersion " & NZ(Revision) & ",'" & vdate & "','" & VersionChanges & "'")
-            'End If
 
 
 
-            drV.Close()
-            nCon.Close()
-            connectionError = False
-        Catch ex As Exception
-            connectionError = True
-            MsgBox(ex.Message, MsgBoxStyle.Exclamation, "Please check the connection")
-
-        End Try
-    End Function
-
-    ''' <summary>
-    ''' Update table version
-    ''' </summary>
-    ''' <remarks></remarks>
-    Public vdate As Date = FormatDateTime(CDate(VersionDate), DateFormat.ShortDate)
-    Public Sub UpdateVersion()
-        Try
-
-            Dim nCon As New SqlConnection
-
-            If isRecordExist("SELECT * FROM tblVersion WHERE VersionDate='" & vdate & "' AND VersionNumber=" & NZ(Revision)) = False Then
-                ExecNonQuery("_AddVersion " & NZ(Revision) & ",'" & vdate.ToShortDateString & "','" & VersionChanges & "'")
-            End If
-
-        Catch ex As Exception
-            MsgBox(ex.Message)
-        End Try
-
-    End Sub
 
     ''' <summary>
     ''' Resize form
