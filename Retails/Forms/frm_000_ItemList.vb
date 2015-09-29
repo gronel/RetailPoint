@@ -164,7 +164,7 @@ Public Class frm_000_ItemList
         Call RefreshRecord("GetItemSub'" & MainForm.tsSearch.Text & "'")
     End Sub
     Sub ViewFilterBack()
-        Call RefreshRecord("GetItemSub '" & cboItemCode.Text & "'")
+        '  Call RefreshRecord("GetItemSub '" & cboItemCode.Text & "'")
         If FillFindON = True Then
 
             Dim sortColumn As String
@@ -235,68 +235,6 @@ Public Class frm_000_ItemList
 
 #End Region
 
-
-
-
-    Public Sub navigationButton(ByVal isVergin As Boolean)
-        btnback.Visible = isVergin
-        btnNext.Visible = isVergin
-    End Sub
-
-    Sub LoadComboBox_DataTable()
-        Try
-            Dim sqlConn As New SqlConnection(cnString)
-            Dim sqlReader As SqlDataReader
-            Dim sqlCommand As New SqlCommand("GetItemCodes", sqlConn)
-            Dim dtLoading As New DataTable("tbl_000_Item")
-
-            sqlConn.Open()
-            sqlReader = sqlCommand.ExecuteReader(CommandBehavior.CloseConnection)
-            dtLoading.Load(sqlReader)
-
-            With cboItemCode
-                .ColumnNum = 4
-                .ColumnWidth = "100;200;200;200"
-                .GridLineHorizontal = True
-                .GridLineVertical = True
-                ''.SelectedIndex = -1
-                .Items.Clear()
-                .LoadingType = MTGCComboBox.CaricamentoCombo.DataTable
-                .SourceDataString = New String(3) {"ItemCode", "ItemName", "Category", "SubCategory"}
-                .SourceDataTable = dtLoading
-            End With
-        Catch ex As Exception
-            MsgBox(ex.Message, MsgBoxStyle.Exclamation, "ERROR item")
-        End Try
-
-    End Sub
-
-    Sub FillTextBox()
-        Try
-            If Not cboItemCode.SelectedValue Is Nothing Then
-                txtItemName.Text = cboItemCode.SelectedItem.Col2
-                txtCategory.Text = cboItemCode.SelectedItem.Col3
-                txtSubCategory.Text = cboItemCode.SelectedItem.Col4
-            Else
-                txtItemName.Text = String.Empty
-                txtCategory.Text = String.Empty
-                txtSubCategory.Text = String.Empty
-            End If
-            Call RefreshRecord("GetItemSub '" & cboItemCode.Text & "'")
-        Catch ex As Exception
-            MsgBox(ex.Message, MsgBoxStyle.Exclamation, "ERROR")
-        End Try
-
-    End Sub
-
-    'Sub RefreshRecord()
-    '    ''LoadComboBox_DataTable()
-    '    ActivateCommands(FormState.LoadState)
-    '    FillDataGrid(dgList, "GetItemSub '" & cboItemCode.Text & "'", 0, 9)
-
-
-    'End Sub
-
     Public Sub ProcessFormCommand(ByVal strCmd As String) Implements IBPSCommand.ProcessFormCommand
         Select Case strCmd
             Case "New"
@@ -312,7 +250,7 @@ Public Class frm_000_ItemList
             Case "Refresh"
                 MainForm.tsSearch.Text = String.Empty
 
-                RefreshRecord("GetItemSub '" & cboItemCode.Text & "'")
+                ' RefreshRecord("GetItemSub '" & cboItemCode.Text & "'")
             Case "Filter"
                 Call FilterOn()
             Case "FilterClear"
@@ -320,37 +258,7 @@ Public Class frm_000_ItemList
         End Select
     End Sub
 
-    Private Function GetImg(ByVal path As String) As Image
-        Dim bm As Bitmap
-        Dim currentpath As String = currPath & "\tmpIMG\" & dgList.Item(1, dgList.CurrentRow.Index).Value & ".png"
-        Try
-            If File.Exists(currentpath) Then
-                If File.Exists(currentpath) Then
-                    bm = New Bitmap(currentpath)
-                    GetImg = bm
-                End If
 
-            Else
-                If File.Exists(path) Then
-                    bm = New Bitmap(path)
-                    bm.Save(currPath & "\tmpIMG\" & dgList.Item(1, dgList.CurrentRow.Index).Value & ".png", _
-                                   System.Drawing.Imaging.ImageFormat.Png)
-
-                    bm = New Bitmap(currentpath)
-                    GetImg = bm
-                Else
-                    GetImg = PictureBox1.Image
-                End If
-
-
-
-            End If
-
-
-        Catch ex As Exception
-            MsgBox(ex.Message, MsgBoxStyle.Exclamation, "Prompt")
-        End Try
-    End Function
 
     Sub DeleteRecord()
         If vbYes = MsgBox("Are you sure you want to delete this Item?", MsgBoxStyle.Question + MsgBoxStyle.YesNo + MsgBoxStyle.DefaultButton2, "Confirm Delete") Then
@@ -358,7 +266,7 @@ Public Class frm_000_ItemList
             RunQuery("Delete tbl_000_Item_Sub where SpecificCode='" & dgList.Item(1, dgList.CurrentCell.RowIndex).Value & "' ")
 
             Call SaveAuditTrail("Delete Specific item code", dgList.Item(1, dgList.CurrentCell.RowIndex).Value)
-            RefreshRecord("GetItemSub '" & cboItemCode.Text & "'")
+            ' RefreshRecord("GetItemSub '" & cboItemCode.Text & "'")
             SelectDataGridViewRow(dgList)
 
         End If
@@ -366,6 +274,7 @@ Public Class frm_000_ItemList
 
     Sub NewRecord()
         With frm_000_Item
+
             .myParent = Me
             .bolFormState = FormState.AddState
             .ShowDialog()
@@ -376,7 +285,7 @@ Public Class frm_000_ItemList
         With frm_000_Item
             .myParent = Me
             .bolFormState = FormState.EditState
-            ._Picbox = New Bitmap(picPhoto.Image)
+
             .ShowDialog()
         End With
     End Sub
@@ -435,8 +344,8 @@ Public Class frm_000_ItemList
     End Sub
 
     Private Sub frm_000_ItemList_FormClosing(ByVal sender As Object, ByVal e As System.Windows.Forms.FormClosingEventArgs) Handles Me.FormClosing
-        Me.txtItemName.Focus()
-        cboItemCode.Items.Clear()
+        ' Me.txtItemName.Focus()
+        ' cboItemCode.Items.Clear()
         bolFormState = FormState.LoadState
 
     End Sub
@@ -457,7 +366,7 @@ Public Class frm_000_ItemList
         ElseIf e.KeyCode = Keys.Escape Then
             frmDeleteItem.frmparent = Me
             frmDeleteItem.ShowDialog()
-            LoadComboBox_DataTable()
+
             Me.Refresh()
         End If
     End Sub
@@ -465,26 +374,12 @@ Public Class frm_000_ItemList
     Private Sub frm_000_ItemList_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         ResizeForm(Me)
         picLogo.Image = MainForm.picLogo.Image
-        LoadComboBox_DataTable()
-        cboItemCode.Text = String.Empty
-        picPhoto.Image = MainForm.picLogo.Image
+        ' RefreshRecord()
+        ActivateCommands(FormState.ViewState)
 
-        txtItemName.Focus()
-        ActivateCommands(FormState.LoadState)
-
-        Call RefreshRecord("GetItemSub '" & cboItemCode.Text & "'")
-        inc = 0
-        isnext = False
-
+      
     End Sub
 
-    Private Sub cboItemCode_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cboItemCode.SelectedIndexChanged
-        Call FillTextBox()
-    End Sub
-
-    Private Sub cboItemCode_Validated(ByVal sender As Object, ByVal e As System.EventArgs) Handles cboItemCode.Validated
-        Call FillTextBox()
-    End Sub
 
     Private Sub frm_000_ItemList_Resize(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Resize
         CenterControl(lblTitle, Me)
@@ -498,13 +393,6 @@ Public Class frm_000_ItemList
             Else
                 ActivateCommands(FormState.LoadState)
             End If
-
-            _imagePath = strVarImgPath & dgList.Item(1, dgList.CurrentRow.Index).Value & ".png"
-
-            picPhoto.Image = GetImg(_imagePath)
-
-
-           
         Catch ex As Exception
             MsgBox(ex.Message, MsgBoxStyle.Exclamation, "Prompt")
         End Try
@@ -512,92 +400,12 @@ Public Class frm_000_ItemList
 
     End Sub
 
-    Private Sub SearchITemName()
-        FillDataGrid(dgList, "sp_000_Get_ItemFromMasterFile '" & "itemname" & "','" & txtItemName.Text & "'", 0, 8)
 
-        txtCategory.Text = String.Empty
-        txtSubCategory.Text = String.Empty
-        cboItemCode.SelectedIndex = -1
-    End Sub
-
-    Private Sub SearchCategory()
-        FillDataGrid(dgList, "sp_000_Get_ItemFromMasterFile '" & "Category" & "','" & txtCategory.Text & "'", 0, 8)
-
-        txtItemName.Text = String.Empty
-        txtSubCategory.Text = String.Empty
-        cboItemCode.SelectedIndex = -1
-    End Sub
-
-    Private Sub SearchSubCategory()
-        FillDataGrid(dgList, "sp_000_Get_ItemFromMasterFile '" & "Sub-Category" & "','" & txtSubCategory.Text & "'", 0, 8)
-
-        txtItemName.Text = String.Empty
-        txtCategory.Text = String.Empty
-        cboItemCode.SelectedIndex = -1
-    End Sub
-
-    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        Call SearchITemName()
-    End Sub
-
-
-    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        Call SearchCategory()
-    End Sub
-
-
-    Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        Call SearchSubCategory()
-    End Sub
-
-    Private Sub LinkLabel1_LinkClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
-        With frmPicFrame
-            .Picbox1.Image = picPhoto.Image
-            .ShowDialog()
-        End With
-
-    End Sub
 
 #End Region
 
 
 
-
-    Private Sub Button1_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
-        'With frm_SearchTransNO
-        '    .ItemList = Me
-        '    .param1 = "ItemList"
-
-        '    If category <> String.Empty And value <> String.Empty Then
-        '        .cboCategory.Text = category
-        '        .txtValue.Text = value
-        '    Else
-        '        .cboCategory.Text = String.Empty
-        '        .txtValue.Text = String.Empty
-        '    End If
-        '    .ShowDialog()
-        '    Call RefreshRecord("GetItemSub '" & cboItemCode.Text & "'")
-        '    rownum = inc
-
-
-        'End With
-    End Sub
-
-    Private Sub btnNext_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnNext.Click
-        If rownum <> 0 Then inc = rownum
-        cboItemCode.Text = Navigation("sp_SearchITem_for_ISS'" & category & "','" & value & "'", "tbl_000_ITem", "ItemCode", "Next")
-        Call RefreshRecord("GetItemSub '" & cboItemCode.Text & "'")
-        rownum = inc
-    End Sub
-
-    Private Sub btnback_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnback.Click
-        If rownum <> 0 Then inc = rownum
-        cboItemCode.Text = Navigation("sp_SearchITem_for_ISS'" & category & "','" & value & "'", "tbl_000_Item", "ItemCode", "Back")
-        rownum = inc
-        Call RefreshRecord("GetItemSub '" & cboItemCode.Text & "'")
-
-
-    End Sub
 
     Private Sub tsPageSize_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles tsPageSize.Click
         Dim intCanceled As Integer

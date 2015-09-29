@@ -64,7 +64,7 @@ Public Class tbl_000_Department
         Try
 
             Dim strMSG As String
-            Using com As New SqlCommand("SaveDepartment", _Connection, _Transaction)
+            Using com As New SqlCommand("sproc_100_department", _Connection, _Transaction)
                 com.CommandType = CommandType.StoredProcedure
 
                 If isEdit Then

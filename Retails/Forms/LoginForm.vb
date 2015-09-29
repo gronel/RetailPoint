@@ -5,22 +5,6 @@ Public Class LoginForm
 
 #Region "User Difination"
 
-
-    Private Sub DeleteTmp()
-        Try
-            Dim path As String = currPath & "\tmpIMG"
-            If Directory.Exists(path) Then
-                System.IO.Directory.Delete(path, True)
-            End If
-        Catch ex As Exception
-
-        End Try
-
-
-
-    End Sub
-
-
   
     Private Function intINI() As Boolean
 
@@ -145,16 +129,6 @@ Public Class LoginForm
         PasswordTextBox.SelectAll()
     End Sub
 
-    Private Sub FlowLayoutPanel1_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs)
 
-    End Sub
-
-    Private Sub r1_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        Me.Text = "TOPC - Warehouse System"
-    End Sub
-
-    Private Sub r2_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        Me.Text = "TOPC - Sales System"
-    End Sub
 #End Region
 End Class

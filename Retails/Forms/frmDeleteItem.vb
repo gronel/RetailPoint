@@ -13,7 +13,7 @@
             _OpenTransaction()
             _Result = _DeleteRecord("tbl_000_Item", "WHERE ItemCode='" & txtitemcode.Text & "' AND CategoryCode='" & txtcategory.Text & "' and SubCategoryCode='" & txtsubcategory.Text & "'")
             _CloseTransaction(_Result)
-            frmparent.RefreshRecord("GetItemSub '" & frmparent.cboItemCode.Text & "'")
+            ' frmparent.RefreshRecord("GetItemSub '" & frmparent.cboItemCode.Text & "'")
             frmparent.Refresh()
             Me.Close()
         Else

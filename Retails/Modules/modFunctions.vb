@@ -517,7 +517,7 @@ Module modFunction
                 CurrUser.isActive = xReader("isActive")
                 CurrUser.USER_PHOTO = IIf(IsDBNull(xReader("UserPhoto")), Nothing, xReader("UserPhoto"))
 
-                strVarImgPath = DBLookUp("SELECT     isnull((imgFolderPath),'') as imgFolderPath  FROM         tbl_000_ImgPath", "imgFolderPath") & "\"
+
                 If xReader("UserGroup").ToString = "Admin" Then
                     CurrUser.USER_ISADMIN = True
                 Else

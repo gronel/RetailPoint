@@ -141,9 +141,6 @@ Public Class MainForm
 
     End Sub
 
-    Private Sub SetImageLocation()
-        frm_000_ImageLocation.ShowDialog()
-    End Sub
 
     Sub SelectChildMenu(ByVal sender As Object)
         Dim frmName As String = ""
@@ -164,8 +161,7 @@ Public Class MainForm
                 LogOutUser()
             ElseIf frmName = "Exit" Then
                 Application.Exit()
-            ElseIf frmName = "Image Link" Then
-                Call SetImageLocation()
+    
             ElseIf frmName = "Options" Then
                 MsgBox("wala pa")
             ElseIf frmName = "About" Then

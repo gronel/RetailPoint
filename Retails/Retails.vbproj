@@ -45,7 +45,8 @@
     <ApplicationVersion>1.0.0.2</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
-    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -78,9 +79,7 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
-    <Reference Include="System.Design" />
     <Reference Include="System.Drawing" />
-    <Reference Include="System.Web" />
     <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\WINDOWS\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
@@ -144,12 +143,6 @@
     <Compile Include="Forms\frm_000_EditUPrice.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\frm_000_ImageLocation.Designer.vb">
-      <DependentUpon>frm_000_ImageLocation.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\frm_000_ImageLocation.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Forms\frm_000_Customer.Designer.vb">
       <DependentUpon>frm_000_Customer.vb</DependentUpon>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -174,6 +167,12 @@
       <DependentUpon>frm_000_CustomerList.vb</DependentUpon>
     </Compile>
     <Compile Include="Forms\frm_000_CustomerList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_000_Item.Designer.vb">
+      <DependentUpon>frm_000_Item.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_000_Item.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\frm_000_ItemCategory.Designer.vb">
@@ -222,12 +221,6 @@
       <DependentUpon>frm_000_Company.vb</DependentUpon>
     </Compile>
     <Compile Include="Forms\frm_000_Company.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\frm_000_Item.Designer.vb">
-      <DependentUpon>frm_000_Item.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\frm_000_Item.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\frm_000_ItemList.Designer.vb">
@@ -321,10 +314,6 @@
       <DependentUpon>frm_000_EditUPrice.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frm_000_ImageLocation.resx">
-      <DependentUpon>frm_000_ImageLocation.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\frm_000_Customer.resx">
       <DependentUpon>frm_000_Customer.vb</DependentUpon>
       <SubType>Designer</SubType>
@@ -341,6 +330,9 @@
     <EmbeddedResource Include="Forms\frm_000_CustomerList.resx">
       <DependentUpon>frm_000_CustomerList.vb</DependentUpon>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_000_Item.resx">
+      <DependentUpon>frm_000_Item.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frm_000_ItemCategory.resx">
       <DependentUpon>frm_000_ItemCategory.vb</DependentUpon>
@@ -372,10 +364,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frm_000_Company.resx">
       <DependentUpon>frm_000_Company.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frm_000_Item.resx">
-      <DependentUpon>frm_000_Item.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frm_000_ItemList.resx">
