@@ -137,3 +137,4 @@ D:\PROJECT SYS\VB.NET\RetailPoint\Retails\obj\Debug\Retails.application
 D:\PROJECT SYS\VB.NET\RetailPoint\Retails\obj\Debug\Retails.frm_100_SalesScreen.resources
 D:\PROJECT SYS\VB.NET\RetailPoint\Retails\obj\Debug\Retails.frm_000_Location.resources
 D:\PROJECT SYS\VB.NET\RetailPoint\Retails\obj\Debug\Retails.frm_000_ItemCategory.resources
+D:\PROJECT SYS\VB.NET\RetailPoint\Retails\obj\Debug\Retails.vbprojResolveAssemblyReference.cache
