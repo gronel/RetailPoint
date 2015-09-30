@@ -130,6 +130,7 @@
     <Compile Include="Classes\tbl_000_Supplier.vb" />
     <Compile Include="Classes\tbl_000_User.vb" />
     <Compile Include="Classes\tbl_000_Location.vb" />
+    <Compile Include="Classes\tbl_100_PO.vb" />
     <Compile Include="Classes\_xDatabase.vb" />
     <Compile Include="DatagridViewMulticolumn\DataGridViewMultiColumnComboColumn.vb">
       <SubType>Component</SubType>
@@ -179,6 +180,18 @@
       <DependentUpon>frm_000_ItemCategory.vb</DependentUpon>
     </Compile>
     <Compile Include="Forms\frm_000_ItemCategory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_100_PO.Designer.vb">
+      <DependentUpon>frm_100_PO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_100_PO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_100_POList.Designer.vb">
+      <DependentUpon>frm_100_POList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_100_POList.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\frm_000_Ulility.Designer.vb">
@@ -336,6 +349,13 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frm_000_ItemCategory.resx">
       <DependentUpon>frm_000_ItemCategory.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_100_PO.resx">
+      <DependentUpon>frm_100_PO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_100_POList.resx">
+      <DependentUpon>frm_100_POList.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frm_000_Ulility.resx">

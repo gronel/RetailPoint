@@ -121,7 +121,7 @@ Public Class tbl_000_User
         Try
 
             Dim strMSG As String
-            Using com As New SqlCommand("SaveUser", _Connection, _Transaction)
+            Using com As New SqlCommand("sproc_100_user", _Connection, _Transaction)
                 com.CommandType = CommandType.StoredProcedure
 
                 If isEdit Then
@@ -172,7 +172,7 @@ Public Class tbl_000_User
                 End Using
 
                 For Each row As DataGridViewRow In dgRigths.Rows
-                    Using com As New SqlCommand("SaveUserRights", _Connection, _Transaction)
+                    Using com As New SqlCommand("sproc_100_user_rights", _Connection, _Transaction)
                         com.CommandType = CommandType.StoredProcedure
 
                         com.Parameters.Add(New SqlParameter("@UserID", UserID))

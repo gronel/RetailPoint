@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class frm_000_ItemList
+Partial Class frm_100_POList
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -23,21 +23,23 @@ Partial Class frm_000_ItemList
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_000_ItemList))
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_100_POList))
         Me.dgList = New System.Windows.Forms.DataGridView()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.picLogo = New System.Windows.Forms.PictureBox()
-        Me.lblTitle = New System.Windows.Forms.Label()
+        Me.colItemId = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colitemcode = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colDescription = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colItemDescription = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colBrandType = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colActualUOM = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Location = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colCategory = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colStockLevel = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.isActive = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.tsPagination = New System.Windows.Forms.ToolStrip()
-        Me.tsPageSize = New System.Windows.Forms.ToolStripButton()
-        Me.tsFirst = New System.Windows.Forms.ToolStripButton()
-        Me.tsPrev = New System.Windows.Forms.ToolStripButton()
         Me.tsPage = New System.Windows.Forms.ToolStripLabel()
-        Me.tsNext = New System.Windows.Forms.ToolStripButton()
-        Me.tsLast = New System.Windows.Forms.ToolStripButton()
         Me.tsRecordCount = New System.Windows.Forms.ToolStripLabel()
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -49,20 +51,18 @@ Partial Class frm_000_ItemList
         Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn10 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colItemId = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colitemcode = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colDescription = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colItemDescription = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colBrandType = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colActualUOM = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Location = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colCategory = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colStockLevel = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.isActive = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.tsPageSize = New System.Windows.Forms.ToolStripButton()
+        Me.tsFirst = New System.Windows.Forms.ToolStripButton()
+        Me.tsPrev = New System.Windows.Forms.ToolStripButton()
+        Me.tsNext = New System.Windows.Forms.ToolStripButton()
+        Me.tsLast = New System.Windows.Forms.ToolStripButton()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.lblTitle = New System.Windows.Forms.Label()
+        Me.picLogo = New System.Windows.Forms.PictureBox()
         CType(Me.dgList, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.tsPagination.SuspendLayout()
         Me.Panel1.SuspendLayout()
         CType(Me.picLogo, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.tsPagination.SuspendLayout()
         Me.SuspendLayout()
         '
         'dgList
@@ -87,40 +87,92 @@ Partial Class frm_000_ItemList
         Me.dgList.Size = New System.Drawing.Size(832, 409)
         Me.dgList.TabIndex = 39
         '
-        'Panel1
+        'colItemId
         '
-        Me.Panel1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Panel1.BackgroundImage = CType(resources.GetObject("Panel1.BackgroundImage"), System.Drawing.Image)
-        Me.Panel1.Controls.Add(Me.picLogo)
-        Me.Panel1.Controls.Add(Me.lblTitle)
-        Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(859, 36)
-        Me.Panel1.TabIndex = 30
+        Me.colItemId.DataPropertyName = "ItemId"
+        Me.colItemId.HeaderText = "ItemId"
+        Me.colItemId.Name = "colItemId"
+        Me.colItemId.ReadOnly = True
+        Me.colItemId.Visible = False
         '
-        'picLogo
+        'colitemcode
         '
-        Me.picLogo.Location = New System.Drawing.Point(0, 0)
-        Me.picLogo.Name = "picLogo"
-        Me.picLogo.Size = New System.Drawing.Size(115, 36)
-        Me.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.picLogo.TabIndex = 9
-        Me.picLogo.TabStop = False
+        Me.colitemcode.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.colitemcode.DataPropertyName = "ItemCode"
+        Me.colitemcode.HeaderText = "Item Code"
+        Me.colitemcode.MinimumWidth = 100
+        Me.colitemcode.Name = "colitemcode"
+        Me.colitemcode.ReadOnly = True
         '
-        'lblTitle
+        'colDescription
         '
-        Me.lblTitle.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lblTitle.AutoSize = True
-        Me.lblTitle.BackColor = System.Drawing.Color.Transparent
-        Me.lblTitle.Font = New System.Drawing.Font("Tahoma", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTitle.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.lblTitle.Location = New System.Drawing.Point(245, 0)
-        Me.lblTitle.Name = "lblTitle"
-        Me.lblTitle.Size = New System.Drawing.Size(238, 33)
-        Me.lblTitle.TabIndex = 7
-        Me.lblTitle.Text = "Item Master File"
+        Me.colDescription.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.colDescription.DataPropertyName = "ItemName"
+        Me.colDescription.HeaderText = "Item Name"
+        Me.colDescription.MinimumWidth = 100
+        Me.colDescription.Name = "colDescription"
+        Me.colDescription.ReadOnly = True
+        '
+        'colItemDescription
+        '
+        Me.colItemDescription.DataPropertyName = "ItemDescription"
+        Me.colItemDescription.HeaderText = "Description"
+        Me.colItemDescription.Name = "colItemDescription"
+        Me.colItemDescription.ReadOnly = True
+        '
+        'colBrandType
+        '
+        Me.colBrandType.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.colBrandType.DataPropertyName = "BrandType"
+        Me.colBrandType.HeaderText = "Brand"
+        Me.colBrandType.MinimumWidth = 100
+        Me.colBrandType.Name = "colBrandType"
+        Me.colBrandType.ReadOnly = True
+        '
+        'colActualUOM
+        '
+        Me.colActualUOM.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.colActualUOM.DataPropertyName = "UOM"
+        Me.colActualUOM.HeaderText = "UOM"
+        Me.colActualUOM.MinimumWidth = 100
+        Me.colActualUOM.Name = "colActualUOM"
+        Me.colActualUOM.ReadOnly = True
+        '
+        'Location
+        '
+        Me.Location.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Location.DataPropertyName = "location"
+        Me.Location.HeaderText = "Location"
+        Me.Location.Name = "Location"
+        Me.Location.ReadOnly = True
+        '
+        'colCategory
+        '
+        Me.colCategory.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.colCategory.DataPropertyName = "itemCategory"
+        Me.colCategory.HeaderText = "Category"
+        Me.colCategory.Name = "colCategory"
+        Me.colCategory.ReadOnly = True
+        '
+        'colStockLevel
+        '
+        Me.colStockLevel.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.colStockLevel.DataPropertyName = "StockLevelQty"
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        Me.colStockLevel.DefaultCellStyle = DataGridViewCellStyle2
+        Me.colStockLevel.FillWeight = 60.0!
+        Me.colStockLevel.HeaderText = "Stock Level"
+        Me.colStockLevel.MinimumWidth = 75
+        Me.colStockLevel.Name = "colStockLevel"
+        Me.colStockLevel.ReadOnly = True
+        '
+        'isActive
+        '
+        Me.isActive.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.isActive.DataPropertyName = "isActive"
+        Me.isActive.HeaderText = "isActive"
+        Me.isActive.Name = "isActive"
+        Me.isActive.ReadOnly = True
         '
         'tsPagination
         '
@@ -132,60 +184,12 @@ Partial Class frm_000_ItemList
         Me.tsPagination.TabIndex = 171
         Me.tsPagination.Text = "ToolStrip1"
         '
-        'tsPageSize
-        '
-        Me.tsPageSize.Image = Global.Retails.My.Resources.Resources.Wrench
-        Me.tsPageSize.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.tsPageSize.Name = "tsPageSize"
-        Me.tsPageSize.Size = New System.Drawing.Size(56, 22)
-        Me.tsPageSize.Text = "Page:"
-        '
-        'tsFirst
-        '
-        Me.tsFirst.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.tsFirst.Enabled = False
-        Me.tsFirst.Image = Global.Retails.My.Resources.Resources.MoveFirst
-        Me.tsFirst.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.tsFirst.Name = "tsFirst"
-        Me.tsFirst.Size = New System.Drawing.Size(23, 22)
-        Me.tsFirst.Text = "First Page"
-        '
-        'tsPrev
-        '
-        Me.tsPrev.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.tsPrev.Enabled = False
-        Me.tsPrev.Image = Global.Retails.My.Resources.Resources.MovePrevious
-        Me.tsPrev.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.tsPrev.Name = "tsPrev"
-        Me.tsPrev.Size = New System.Drawing.Size(23, 22)
-        Me.tsPrev.Text = "Previous"
-        '
         'tsPage
         '
         Me.tsPage.BackColor = System.Drawing.Color.White
         Me.tsPage.Name = "tsPage"
         Me.tsPage.Size = New System.Drawing.Size(36, 22)
         Me.tsPage.Text = "1 of 1"
-        '
-        'tsNext
-        '
-        Me.tsNext.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.tsNext.Enabled = False
-        Me.tsNext.Image = Global.Retails.My.Resources.Resources.MoveNext
-        Me.tsNext.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.tsNext.Name = "tsNext"
-        Me.tsNext.Size = New System.Drawing.Size(23, 22)
-        Me.tsNext.Text = "Next Page"
-        '
-        'tsLast
-        '
-        Me.tsLast.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.tsLast.Enabled = False
-        Me.tsLast.Image = Global.Retails.My.Resources.Resources.MoveLast
-        Me.tsLast.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.tsLast.Name = "tsLast"
-        Me.tsLast.Size = New System.Drawing.Size(23, 22)
-        Me.tsLast.Text = "Last Page"
         '
         'tsRecordCount
         '
@@ -290,92 +294,88 @@ Partial Class frm_000_ItemList
         Me.DataGridViewTextBoxColumn10.Name = "DataGridViewTextBoxColumn10"
         Me.DataGridViewTextBoxColumn10.ReadOnly = True
         '
-        'colItemId
+        'tsPageSize
         '
-        Me.colItemId.DataPropertyName = "ItemId"
-        Me.colItemId.HeaderText = "ItemId"
-        Me.colItemId.Name = "colItemId"
-        Me.colItemId.ReadOnly = True
-        Me.colItemId.Visible = False
+        Me.tsPageSize.Image = Global.Retails.My.Resources.Resources.Wrench
+        Me.tsPageSize.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.tsPageSize.Name = "tsPageSize"
+        Me.tsPageSize.Size = New System.Drawing.Size(56, 22)
+        Me.tsPageSize.Text = "Page:"
         '
-        'colitemcode
+        'tsFirst
         '
-        Me.colitemcode.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.colitemcode.DataPropertyName = "ItemCode"
-        Me.colitemcode.HeaderText = "Item Code"
-        Me.colitemcode.MinimumWidth = 100
-        Me.colitemcode.Name = "colitemcode"
-        Me.colitemcode.ReadOnly = True
+        Me.tsFirst.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.tsFirst.Enabled = False
+        Me.tsFirst.Image = Global.Retails.My.Resources.Resources.MoveFirst
+        Me.tsFirst.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.tsFirst.Name = "tsFirst"
+        Me.tsFirst.Size = New System.Drawing.Size(23, 22)
+        Me.tsFirst.Text = "First Page"
         '
-        'colDescription
+        'tsPrev
         '
-        Me.colDescription.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.colDescription.DataPropertyName = "ItemName"
-        Me.colDescription.HeaderText = "Item Name"
-        Me.colDescription.MinimumWidth = 100
-        Me.colDescription.Name = "colDescription"
-        Me.colDescription.ReadOnly = True
+        Me.tsPrev.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.tsPrev.Enabled = False
+        Me.tsPrev.Image = Global.Retails.My.Resources.Resources.MovePrevious
+        Me.tsPrev.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.tsPrev.Name = "tsPrev"
+        Me.tsPrev.Size = New System.Drawing.Size(23, 22)
+        Me.tsPrev.Text = "Previous"
         '
-        'colItemDescription
+        'tsNext
         '
-        Me.colItemDescription.DataPropertyName = "ItemDescription"
-        Me.colItemDescription.HeaderText = "Description"
-        Me.colItemDescription.Name = "colItemDescription"
-        Me.colItemDescription.ReadOnly = True
+        Me.tsNext.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.tsNext.Enabled = False
+        Me.tsNext.Image = Global.Retails.My.Resources.Resources.MoveNext
+        Me.tsNext.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.tsNext.Name = "tsNext"
+        Me.tsNext.Size = New System.Drawing.Size(23, 22)
+        Me.tsNext.Text = "Next Page"
         '
-        'colBrandType
+        'tsLast
         '
-        Me.colBrandType.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.colBrandType.DataPropertyName = "BrandType"
-        Me.colBrandType.HeaderText = "Brand"
-        Me.colBrandType.MinimumWidth = 100
-        Me.colBrandType.Name = "colBrandType"
-        Me.colBrandType.ReadOnly = True
+        Me.tsLast.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.tsLast.Enabled = False
+        Me.tsLast.Image = Global.Retails.My.Resources.Resources.MoveLast
+        Me.tsLast.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.tsLast.Name = "tsLast"
+        Me.tsLast.Size = New System.Drawing.Size(23, 22)
+        Me.tsLast.Text = "Last Page"
         '
-        'colActualUOM
+        'Panel1
         '
-        Me.colActualUOM.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.colActualUOM.DataPropertyName = "UOM"
-        Me.colActualUOM.HeaderText = "UOM"
-        Me.colActualUOM.MinimumWidth = 100
-        Me.colActualUOM.Name = "colActualUOM"
-        Me.colActualUOM.ReadOnly = True
+        Me.Panel1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Panel1.BackgroundImage = CType(resources.GetObject("Panel1.BackgroundImage"), System.Drawing.Image)
+        Me.Panel1.Controls.Add(Me.picLogo)
+        Me.Panel1.Controls.Add(Me.lblTitle)
+        Me.Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(859, 36)
+        Me.Panel1.TabIndex = 30
         '
-        'Location
+        'lblTitle
         '
-        Me.Location.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.Location.DataPropertyName = "location"
-        Me.Location.HeaderText = "Location"
-        Me.Location.Name = "Location"
-        Me.Location.ReadOnly = True
+        Me.lblTitle.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lblTitle.AutoSize = True
+        Me.lblTitle.BackColor = System.Drawing.Color.Transparent
+        Me.lblTitle.Font = New System.Drawing.Font("Tahoma", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTitle.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.lblTitle.Location = New System.Drawing.Point(245, 0)
+        Me.lblTitle.Name = "lblTitle"
+        Me.lblTitle.Size = New System.Drawing.Size(281, 33)
+        Me.lblTitle.TabIndex = 7
+        Me.lblTitle.Text = "Purchase Order List"
         '
-        'colCategory
+        'picLogo
         '
-        Me.colCategory.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.colCategory.DataPropertyName = "itemCategory"
-        Me.colCategory.HeaderText = "Category"
-        Me.colCategory.Name = "colCategory"
-        Me.colCategory.ReadOnly = True
-        '
-        'colStockLevel
-        '
-        Me.colStockLevel.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.colStockLevel.DataPropertyName = "StockLevelQty"
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        Me.colStockLevel.DefaultCellStyle = DataGridViewCellStyle2
-        Me.colStockLevel.FillWeight = 60.0!
-        Me.colStockLevel.HeaderText = "Stock Level"
-        Me.colStockLevel.MinimumWidth = 75
-        Me.colStockLevel.Name = "colStockLevel"
-        Me.colStockLevel.ReadOnly = True
-        '
-        'isActive
-        '
-        Me.isActive.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.isActive.DataPropertyName = "isActive"
-        Me.isActive.HeaderText = "isActive"
-        Me.isActive.Name = "isActive"
-        Me.isActive.ReadOnly = True
+        Me.picLogo.Location = New System.Drawing.Point(0, 0)
+        Me.picLogo.Name = "picLogo"
+        Me.picLogo.Size = New System.Drawing.Size(115, 36)
+        Me.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picLogo.TabIndex = 9
+        Me.picLogo.TabStop = False
         '
         'frm_000_ItemList
         '
@@ -390,11 +390,11 @@ Partial Class frm_000_ItemList
         Me.Name = "frm_000_ItemList"
         Me.Text = "frm_000_Item"
         CType(Me.dgList, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.tsPagination.ResumeLayout(False)
+        Me.tsPagination.PerformLayout()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         CType(Me.picLogo, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.tsPagination.ResumeLayout(False)
-        Me.tsPagination.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -402,7 +402,6 @@ Partial Class frm_000_ItemList
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents lblTitle As System.Windows.Forms.Label
     Friend WithEvents dgList As System.Windows.Forms.DataGridView
-    Friend WithEvents picLogo As System.Windows.Forms.PictureBox
     Friend WithEvents tsPagination As System.Windows.Forms.ToolStrip
     Friend WithEvents tsPageSize As System.Windows.Forms.ToolStripButton
     Friend WithEvents tsFirst As System.Windows.Forms.ToolStripButton
@@ -431,4 +430,5 @@ Partial Class frm_000_ItemList
     Friend WithEvents colCategory As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents colStockLevel As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents isActive As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents picLogo As System.Windows.Forms.PictureBox
 End Class

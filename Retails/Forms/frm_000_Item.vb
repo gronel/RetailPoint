@@ -13,7 +13,6 @@ Public Class frm_000_Item
     Dim item As New tbl_000_Item
     Dim ErrProvider As New ErrorProviderExtended
     Dim strImagePath As String
-
     Public ItemId As Integer
 
     Public _Picbox As Bitmap
@@ -110,6 +109,7 @@ Public Class frm_000_Item
             Else
 
                 With item
+                    .ItemId = ItemId
                     .ItemCode = txtcode.Text
                     .ItemName = txtName.Text.Trim
                     .ItemDescription = txtDesc.Text
@@ -124,8 +124,6 @@ Public Class frm_000_Item
                     .CreateDte = Date.Today
                     .StackOH = 0
 
-
-
                     _OpenTransaction()
                     _Result = .Save()
                     _CloseTransaction(_Result)
@@ -135,20 +133,12 @@ Public Class frm_000_Item
                 If _Result Then
                     MsgBox("Successfully Saved", MsgBoxStyle.Information, "Prompt")
                     With myParent
-                        'If .FillFindON = True Then
-                        '    .ViewFilterBack()
-                        'Else
-                        '    If MainForm.tsSearch.Text <> String.Empty Then
-                        '        .RefreshRecord("GetItemSub '" & MainForm.tsSearch.Text & "'")
-                        '    Else
-                        '        .LoadComboBox_DataTable()
-                        '        .cboItemCode.SelectedValue = cboItemCode.Text
-                        '        .FillTextBox()
-                        '        .RefreshRecord("GetItemSub '" & myParent.cboItemCode.Text & "'")
-                        '        SelectDataGridViewRow(.dgList, 0, txtSpecificCode.Text.Trim)
-                        '    End If
+                        If .FillFindON = True Then
+                            .ViewFilterBack()
+                        Else
+                            .RefreshRecord("sproc_100_item_list '" & MainForm.tsSearch.Text & "'")
 
-                        'End If
+                        End If
                     End With
 
                     Me.Close()
@@ -168,7 +158,6 @@ Public Class frm_000_Item
         txtBrand.Text = String.Empty
         txtUom.Text = String.Empty
         txtSLQ.Text = 0
-        txtUom.Text = String.Empty
 
         chkIsActive.Checked = True
         picPhoto.Image = MainForm.picDefault.Image
@@ -182,23 +171,18 @@ Public Class frm_000_Item
 
         Try
             With item
-                '.FetchRecord(itemCode, speficificCode)
-                'txtName.Text = .SpecificCode
-                'txtDescription.Text = .SpecificDescription
-                'txtDesc.Text = .TOCCode
-                'txtBrand.Text = .BrandType
-                'txtUsage.Text = .Usage
-                'txtUom.Text = .StockLevelQTY
-                'txtProductCode.Text = .ProductCode
-                'cboActualUOM.Text = .ActualUOM
-                'cboInventoryUOM.Text = .InventoryUOM
-                'chkIsActive.Checked = .isActive
-                'cboCategory.Text = .CategoryCode
-                'cboSubCategory.Text = .SubCategoryCode
-                'cboRack.Text = .RackNo
-                'chckDefault.Checked = .isDefault
-                'picPhoto.Image = _Picbox
-
+                .FetchRecord(itemCode)
+                ItemId = .ItemId
+                txtcode.Text = .ItemCode
+                txtName.Text = .ItemName
+                txtDesc.Text = .ItemDescription
+                txtBrand.Text = .BrandType
+                cboCategory.SelectedValue = .ItemCategoryId
+                cboLocation.SelectedValue = .LocationId
+                txtUom.Text = .UOM
+                txtSLQ.Text = .StockLevelQTY
+                chkIsActive.Checked = .isActive
+                picPhoto.Image = BytesToImage(.ItemImg)
 
 
             End With
@@ -243,10 +227,10 @@ Public Class frm_000_Item
             Call ClearFields()
             Call fillcombo()
             txtcode.ReadOnly = False
-            txtUom.Text = 0
             cboLocation.SelectedIndex = -1
             cboCategory.SelectedIndex = -1
             Me.Text = "New Item Entry Form"
+            ItemId = 0
 
 
         Else
@@ -255,7 +239,7 @@ Public Class frm_000_Item
             txtcode.ReadOnly = True
 
             Call fillcombo()
-            'itemCode = DBLookUp("Select ITemCode from tbl_000_Item_Sub where  SpecificCode='" & myParent.dgList.Item("colSpecificCode", myParent.dgList.CurrentRow.Index).Value & "'", "ItemCode")
+            itemCode = myParent.dgList.Item("colitemcode", myParent.dgList.CurrentRow.Index).Value
             'speficificCode = myParent.dgList.Item("colSpecificCode", myParent.dgList.CurrentRow.Index).Value
             Call SetEditValue()
    

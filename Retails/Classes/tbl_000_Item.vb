@@ -177,45 +177,45 @@ Public Class tbl_000_Item
         End Try
 
 
-        'Public Sub FetchRecord(ByVal strItemCode As String, ByVal strSpecificCode As String)
-        '    Dim con As New SqlConnection(cnString)
-        '    Dim rdr As SqlDataReader
-        '    Dim cmd As New SqlCommand("GetItem '" & strItemCode & "', '" & strSpecificCode & "'", con)
-
-        '    Try
-
-        '        con.Open()
-        '        rdr = cmd.ExecuteReader(CommandBehavior.CloseConnection)
-
-        '        While rdr.Read
-        '            ItemCode = rdr("ItemCode")
-        '            CategoryCode = rdr("CategoryCode")
-        '            SubCategoryCode = rdr("SubCategoryCode")
-        '            SpecificCode = rdr("SpecificCode")
-        '            TOCCode = rdr("TOCCode")
-        '            SpecificDescription = rdr("SpecificDescription")
-        '            Usage = rdr("Usage")
-        '            BrandType = rdr("BrandType")
-        '            ProductCode = rdr("ProductCode")
-        '            ActualUOM = rdr("ActualUOM")
-        '            InventoryUOM = rdr("InventoryUOM")
-        '            StockLevelQTY = rdr("StockLevelQTY")
-        '            isActive = rdr("isActive")
-        '            RackNo = rdr("RackNo")
-        '            isDefault = rdr("isDefault")
-        '        End While
-
-        '        rdr.Close()
-
-
-        '    Catch ex As Exception
-        '        MsgBox(ex.Message, MsgBoxStyle.Exclamation, "ERROR")
-        '    Finally
-        '        con.Close()
-
-        '    End Try
-
     End Function
+    Public Sub FetchRecord(ByVal strItemCode As String)
+        Dim con As New SqlConnection(cnString)
+        Dim rdr As SqlDataReader
+        Dim cmd As New SqlCommand(String.Format("SELECT     ItemId, ItemCode, ItemName, ItemDescription, LocationId, ItemCategoryId, BrandType, UOM, StockLevelQTY, StackOH, isActive, ItemImg " +
+                                    "FROM         tbl_000_Item where (ItemCode='{0}')", strItemCode), con)
+
+        Try
+
+            con.Open()
+            rdr = cmd.ExecuteReader(CommandBehavior.CloseConnection)
+
+            While rdr.Read
+                ItemId = rdr("ItemId")
+                ItemCode = rdr("ItemCode")
+                ItemName = rdr("ItemName")
+                ItemDescription = rdr("ItemDescription")
+                LocationId = rdr("LocationId")
+                ItemCategoryId = rdr("ItemCategoryId")
+                BrandType = rdr("BrandType")
+                UOM = rdr("UOM")
+                StockLevelQTY = rdr("StockLevelQTY")
+                StackOH = rdr("StackOH")
+                isActive = rdr("isActive")
+                ItemImg = rdr("ItemImg")
+
+            End While
+
+            rdr.Close()
+
+
+        Catch ex As Exception
+            MsgBox(ex.Message, MsgBoxStyle.Exclamation, "ERROR")
+        Finally
+            con.Close()
+
+        End Try
+
+    End Sub
 
 
 

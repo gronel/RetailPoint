@@ -4,7 +4,7 @@ Imports System.Runtime.InteropServices
 Imports System.IO
 Imports System.IO.Directory
 
-Public Class frm_000_ItemList
+Public Class frm_100_POList
 
 #Region "Variable"
 
@@ -273,16 +273,18 @@ Public Class frm_000_ItemList
     End Sub
 
     Sub NewRecord()
-        With frm_000_Item
-
+        With frm_100_PO
+            .MdiParent = MainForm
             .myParent = Me
             .bolFormState = FormState.AddState
-            .ShowDialog()
+            '.ShowDialog()
+            .Show()
+            .Focus()
         End With
     End Sub
 
     Sub EditRecord()
-        With frm_000_Item
+        With frm_100_PO
             .myParent = Me
             .bolFormState = FormState.EditState
 
@@ -364,8 +366,8 @@ Public Class frm_000_ItemList
         ElseIf e.KeyCode = Keys.Escape And MainForm.tsCancel.Visible = True And MainForm.tsCancel.Enabled = True Then
             ProcessFormCommand("Cancel")
         ElseIf e.KeyCode = Keys.Escape Then
-            frmDeleteItem.frmparent = Me
-            frmDeleteItem.ShowDialog()
+            'frmDeleteItem.frmparent = Me
+            'frmDeleteItem.ShowDialog()
 
             Me.Refresh()
         End If
@@ -377,7 +379,7 @@ Public Class frm_000_ItemList
         Call RefreshRecord("sproc_100_item_list'" & MainForm.tsSearch.Text & "'")
         ActivateCommands(FormState.ViewState)
 
-      
+
     End Sub
 
 

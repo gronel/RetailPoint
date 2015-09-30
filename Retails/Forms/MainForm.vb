@@ -102,16 +102,6 @@ Public Class MainForm
             i = i + 1
         Next
 
-
-        'add Separator and Image path menu
-        If CurrUser.USER_ISADMIN = True Then
-            If ParentMenuID = 1 Then
-                cms.Items.Add("-", Nothing, New System.EventHandler(AddressOf SelectedChildMenu_OnClick)).Tag = "-"
-                cms.Items.Add("Image Link " & CurrUser.USER_NAME & "...", imgList.Images("img"), New System.EventHandler(AddressOf SelectedChildMenu_OnClick)).Tag = "Image Link"
-            End If
-        End If
-
-
         ' add Separator and Log Out Sub Menu
         If ParentMenuID = 1 Then
             cms.Items.Add("-", Nothing, New System.EventHandler(AddressOf SelectedChildMenu_OnClick)).Tag = "-"

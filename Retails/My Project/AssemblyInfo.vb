@@ -10,7 +10,7 @@ Imports System.Runtime.InteropServices
 
 <Assembly: AssemblyTitle("Retail Point")> 
 <Assembly: AssemblyDescription("")> 
-<Assembly: AssemblyCompany("Tokiwa Optical Philippines Corporation")> 
+<Assembly: AssemblyCompany("")> 
 <Assembly: AssemblyProduct("Retail Point")> 
 <Assembly: AssemblyCopyright("Copyright © RetailsPoint@gronel 2015")> 
 <Assembly: AssemblyTrademark("")> 
