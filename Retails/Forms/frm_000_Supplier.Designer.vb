@@ -32,6 +32,8 @@ Partial Class frm_000_Supplier
         Me.lblRecordCount = New System.Windows.Forms.Label()
         Me.LabelCount = New System.Windows.Forms.Label()
         Me.dgList = New System.Windows.Forms.DataGridView()
+        Me.colSupplierCode = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colSupplierName = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtSupplierCode = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -69,8 +71,6 @@ Partial Class frm_000_Supplier
         Me.ErrorProvider1 = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.SplitContainer1 = New System.Windows.Forms.SplitContainer()
         Me.grpList = New System.Windows.Forms.GroupBox()
-        Me.colSupplierCode = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colSupplierName = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Panel1.SuspendLayout()
         CType(Me.picLogo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel3.SuspendLayout()
@@ -169,6 +169,22 @@ Partial Class frm_000_Supplier
         Me.dgList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.dgList.Size = New System.Drawing.Size(286, 345)
         Me.dgList.TabIndex = 0
+        '
+        'colSupplierCode
+        '
+        Me.colSupplierCode.DataPropertyName = "SupplierID"
+        Me.colSupplierCode.HeaderText = "Code"
+        Me.colSupplierCode.Name = "colSupplierCode"
+        Me.colSupplierCode.ReadOnly = True
+        Me.colSupplierCode.Visible = False
+        '
+        'colSupplierName
+        '
+        Me.colSupplierName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.colSupplierName.DataPropertyName = "SupplierName"
+        Me.colSupplierName.HeaderText = "Supplier Name"
+        Me.colSupplierName.Name = "colSupplierName"
+        Me.colSupplierName.ReadOnly = True
         '
         'Label1
         '
@@ -534,22 +550,6 @@ Partial Class frm_000_Supplier
         Me.grpList.TabIndex = 1
         Me.grpList.TabStop = False
         Me.grpList.Text = "List:"
-        '
-        'colSupplierCode
-        '
-        Me.colSupplierCode.DataPropertyName = "SupplierID"
-        Me.colSupplierCode.HeaderText = "Code"
-        Me.colSupplierCode.Name = "colSupplierCode"
-        Me.colSupplierCode.ReadOnly = True
-        Me.colSupplierCode.Visible = False
-        '
-        'colSupplierName
-        '
-        Me.colSupplierName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.colSupplierName.DataPropertyName = "SupplierName"
-        Me.colSupplierName.HeaderText = "Supplier Name"
-        Me.colSupplierName.Name = "colSupplierName"
-        Me.colSupplierName.ReadOnly = True
         '
         'frm_000_Supplier
         '

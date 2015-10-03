@@ -4,7 +4,7 @@ Imports System.Runtime.InteropServices
 Imports System.IO
 Imports System.IO.Directory
 
-Public Class frm_100_POList
+Public Class frm_100_WRList
 
 #Region "Variable"
 
@@ -86,13 +86,13 @@ Public Class frm_100_POList
 
         dv = New DataView(ds.Tables(tableName))
 
-        dgList.DataSource = dv
+        dgList1.DataSource = dv
 
         tsPage.Text = currentPage & " of " & pageCount
-        tsRecordCount.Text = "Showing " & dgList.RowCount & " of " & recordCount & " records"
+        tsRecordCount.Text = "Showing " & dgList1.RowCount & " of " & recordCount & " records"
 
         MainForm.tsFilterClear.Enabled = False
-        MainForm.tsFilterOn.Enabled = dgList.RowCount > 0
+        MainForm.tsFilterOn.Enabled = dgList1.RowCount > 0
     End Sub
 
     Sub RefreshRecord(ByVal sql As String)
@@ -138,17 +138,73 @@ Public Class frm_100_POList
         tsNext.Enabled = ds.Tables(tableName).Rows.Count < recordCount
         tsLast.Enabled = ds.Tables(tableName).Rows.Count < recordCount
 
-        dgList.DataSource = dv
+        dgList1.DataSource = dv
 
         tsPage.Text = currentPage & " of " & pageCount
-        tsRecordCount.Text = "Showing " & dgList.RowCount & " of " & recordCount & " records"
+        tsRecordCount.Text = "Showing " & dgList1.RowCount & " of " & recordCount & " records"
 
         MainForm.tsFilterClear.Enabled = False
-        MainForm.tsFilterOn.Enabled = dgList.RowCount > 0
+        MainForm.tsFilterOn.Enabled = dgList1.RowCount > 0
 
         Cursor = Cursors.Default
         connection.Close()
     End Sub
+
+    Sub RefreshRecord2(ByVal sql As String)
+
+        Cursor = Cursors.WaitCursor
+
+        strFilter = String.Empty
+
+        strSQL = sql
+
+        Dim connection As New SqlConnection(cnString)
+
+        da = New SqlDataAdapter(strSQL, connection)
+        ds = New DataSet()
+
+        connection.Open()
+
+        Dim dsCount As New DataSet
+        Dim daCount As New SqlDataAdapter(strSQL, connection)
+
+        dsCount.Clear()
+        daCount.Fill(dsCount, "TableCount")
+        recordCount = dsCount.Tables(0).Rows.Count
+
+        If pageSize = 0 Then
+            pageSize = recordCount
+        End If
+
+        pageCount = recordCount \ pageSize
+        If recordCount Mod pageSize <> 0 Then
+            pageCount = pageCount + 1
+        End If
+
+        currentPage = 1
+        scrollVal = 0
+
+        da.Fill(ds, scrollVal, pageSize, tableName)
+
+        dv = New DataView(ds.Tables(tableName))
+
+        tsFirst.Enabled = False
+        tsPrev.Enabled = False
+        tsNext.Enabled = ds.Tables(tableName).Rows.Count < recordCount
+        tsLast.Enabled = ds.Tables(tableName).Rows.Count < recordCount
+
+        dgList2.DataSource = dv
+
+        tsPage.Text = currentPage & " of " & pageCount
+        tsRecordCount.Text = "Showing " & dgList2.RowCount & " of " & recordCount & " records"
+
+        MainForm.tsFilterClear.Enabled = False
+        MainForm.tsFilterOn.Enabled = dgList2.RowCount > 0
+
+        Cursor = Cursors.Default
+        connection.Close()
+    End Sub
+
     Private Function StrPtr(ByVal obj As Object) As Integer
         Dim Handle As GCHandle = _
            GCHandle.Alloc(obj, GCHandleType.Pinned)
@@ -161,10 +217,12 @@ Public Class frm_100_POList
 
 
     Public Sub ProcessSearchData(ByVal str As String) Implements IBPS_SEARCH.ProcessSearchData
-        Call RefreshRecord("sproc_100_po_list'" & MainForm.tsSearch.Text & "'")
+        Call RefreshRecord("sproc_100_wr_list " & False & ",'" & MainForm.tsSearch.Text & "'")
+        Call RefreshRecord2("sproc_100_wr_list " & True & ",'" & MainForm.tsSearch.Text & "'")
     End Sub
     Sub ViewFilterBack()
-        Call RefreshRecord("sproc_100_po_list'" & MainForm.tsSearch.Text & "'")
+        Call RefreshRecord("sproc_100_wr_list " & False & ",'" & MainForm.tsSearch.Text & "'")
+        Call RefreshRecord2("sproc_100_wr_list " & True & ",'" & MainForm.tsSearch.Text & "'")
         If FillFindON = True Then
 
             Dim sortColumn As String
@@ -177,17 +235,17 @@ Public Class frm_100_POList
                 strFilter = strFilter & " AND  " & newFilter
             End If
 
-            If dgList.SortedColumn Is Nothing Then
-                sortColumn = dgList.Columns(0).DataPropertyName
+            If dgList1.SortedColumn Is Nothing Then
+                sortColumn = dgList1.Columns(0).DataPropertyName
             Else
-                sortColumn = dgList.SortedColumn.DataPropertyName
+                sortColumn = dgList1.SortedColumn.DataPropertyName
             End If
 
             dv = New DataView(ds.Tables(0), strFilter, sortColumn, DataViewRowState.CurrentRows)
 
-            dgList.DataSource = dv
+            dgList1.DataSource = dv
 
-            tsRecordCount.Text = "Showing " & dgList.RowCount & " of " & recordCount & " records (filtered)"
+            tsRecordCount.Text = "Showing " & dgList1.RowCount & " of " & recordCount & " records (filtered)"
 
             MainForm.tsFilterClear.Enabled = True
 
@@ -201,7 +259,7 @@ Public Class frm_100_POList
 
         Dim sortColumn As String
 
-        Dim newFilter As String = Me.dgList.Columns(Me.dgList.CurrentCell.ColumnIndex).DataPropertyName.ToString & "='" & Me.dgList.CurrentCell.Value & "'"
+        Dim newFilter As String = Me.dgList1.Columns(Me.dgList1.CurrentCell.ColumnIndex).DataPropertyName.ToString & "='" & Me.dgList1.CurrentCell.Value & "'"
 
         If strFilter = String.Empty Then
             strFilter = newFilter
@@ -209,17 +267,17 @@ Public Class frm_100_POList
             strFilter = strFilter & " AND  " & newFilter
         End If
 
-        If dgList.SortedColumn Is Nothing Then
-            sortColumn = dgList.Columns(0).DataPropertyName
+        If dgList1.SortedColumn Is Nothing Then
+            sortColumn = dgList1.Columns(0).DataPropertyName
         Else
-            sortColumn = dgList.SortedColumn.DataPropertyName
+            sortColumn = dgList1.SortedColumn.DataPropertyName
         End If
 
         dv = New DataView(ds.Tables(0), strFilter, sortColumn, DataViewRowState.CurrentRows)
 
-        dgList.DataSource = dv
+        dgList1.DataSource = dv
 
-        tsRecordCount.Text = "Showing " & dgList.RowCount & " of " & recordCount & " records (filtered)"
+        tsRecordCount.Text = "Showing " & dgList1.RowCount & " of " & recordCount & " records (filtered)"
 
         MainForm.tsFilterClear.Enabled = True
 
@@ -249,8 +307,8 @@ Public Class frm_100_POList
 
             Case "Refresh"
                 MainForm.tsSearch.Text = String.Empty
-
-                Call RefreshRecord("sproc_100_po_list'" & MainForm.tsSearch.Text & "'")
+                Call RefreshRecord("sproc_100_wr_list " & False & ",'" & MainForm.tsSearch.Text & "'")
+                Call RefreshRecord2("sproc_100_wr_list " & True & ",'" & MainForm.tsSearch.Text & "'")
             Case "Filter"
                 Call FilterOn()
             Case "FilterClear"
@@ -263,17 +321,18 @@ Public Class frm_100_POList
     Sub DeleteRecord()
         If vbYes = MsgBox("Are you sure you want to delete this Item?", MsgBoxStyle.Question + MsgBoxStyle.YesNo + MsgBoxStyle.DefaultButton2, "Confirm Delete") Then
 
-            RunQuery("Delete tbl_000_Item where ItemId=" & dgList.Item("colItemId", dgList.CurrentCell.RowIndex).Value)
+            RunQuery("Delete tbl_100_DR where drCode=" & dgList1.Item("colDRCode", dgList1.CurrentCell.RowIndex).Value)
 
-            Call SaveAuditTrail("Delete item code", dgList.Item("colitemcode", dgList.CurrentCell.RowIndex).Value)
-            Call RefreshRecord("sproc_100_po_list'" & MainForm.tsSearch.Text & "'")
-            SelectDataGridViewRow(dgList)
+            Call SaveAuditTrail("Delete DR code", dgList1.Item("colDRCode", dgList1.CurrentCell.RowIndex).Value)
+            Call RefreshRecord("sproc_100_wr_list " & False & ",'" & MainForm.tsSearch.Text & "'")
+            '  Call RefreshRecord2("sproc_100_wr_list " & True & ",'" & MainForm.tsSearch.Text & "'")
+            SelectDataGridViewRow(dgList1)
 
         End If
     End Sub
 
     Sub NewRecord()
-        With frm_100_PO
+        With frm_100_WR
             .MdiParent = MainForm
             .myParent = Me
             .bolFormState = FormState.AddState
@@ -284,7 +343,7 @@ Public Class frm_100_POList
     End Sub
 
     Sub EditRecord()
-        With frm_100_PO
+        With frm_100_WR
             .MdiParent = MainForm
             .myParent = Me
             .bolFormState = FormState.EditState
@@ -378,7 +437,8 @@ Public Class frm_100_POList
     Private Sub frm_000_ItemList_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         ResizeForm(Me)
         picLogo.Image = MainForm.picLogo.Image
-        Call RefreshRecord("sproc_100_po_list'" & MainForm.tsSearch.Text & "'")
+        Call RefreshRecord("sproc_100_wr_list " & False & ",'" & MainForm.tsSearch.Text & "'")
+        Call RefreshRecord2("sproc_100_wr_list " & True & ",'" & MainForm.tsSearch.Text & "'")
         ActivateCommands(FormState.ViewState)
 
 
@@ -389,10 +449,10 @@ Public Class frm_100_POList
         CenterControl(lblTitle, Me)
     End Sub
 
-    Private Sub dgList_CellEnter(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles dgList.CellEnter
+    Private Sub dgList_CellEnter(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs)
 
         Try
-            If dgList.RowCount > 0 Then
+            If dgList1.RowCount > 0 Then
                 ActivateCommands(FormState.ViewState)
             Else
                 ActivateCommands(FormState.LoadState)
@@ -444,7 +504,11 @@ Public Class frm_100_POList
         Navigate(Pagination.LastPage)
     End Sub
 
-    Private Sub dgList_CellContentClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles dgList.CellContentClick
+    Private Sub dgList_CellContentClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs)
+
+    End Sub
+
+    Private Sub dgList1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgList1.CellContentClick
 
     End Sub
 End Class

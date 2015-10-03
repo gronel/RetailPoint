@@ -2,14 +2,14 @@
 Imports System.Data.SqlClient
 Imports CrystalDecisions.CrystalReports.Engine
 Imports CrystalDecisions.Shared
-Public Class frm_100_PO
+Public Class frm_100_DR
 #Region "variable"
     Implements IBPSCommand
-    Public myParent As frm_100_POList
+    Public myParent As frm_100_DRList
     Public bolFormState As clsPublic.FormState
     Public itemCode As String
     Public speficificCode As String
-    Public PONo As String
+    Public DRcode As String
     Dim oldDepartment As String
     Dim oldSection As String
     Dim ErrProvider As New ErrorProviderExtended
@@ -24,11 +24,11 @@ Public Class frm_100_PO
                 ''NewRecord()
             Case "Edit"
                 ''EditRecord()
-           
+
             Case "Delete"
                 ''DeleteRecord()
             Case "Save"
-                SaveRecord()
+                ' SaveRecord()
             Case "Cancel"
                 If vbYes = MsgBox("Are you sure you want to cancel?", MsgBoxStyle.Question + MsgBoxStyle.YesNo + MsgBoxStyle.DefaultButton2, "Confirm") Then
                     doCancel()
@@ -55,8 +55,8 @@ Public Class frm_100_PO
         End With
     End Sub
 
-    Sub SaveRecord()
-        Dim PO As New tbl_100_PO
+    Sub SaveRecord(ByVal ispost As Boolean)
+        Dim DR As New tbl_100_DR
         'SQL = DBLookUp("Select PONo from tbl_100_PO_Sub where PONo='" & PONo & "' and ((Status='" & isDelivered & "') or (Status='" & isLacking & "')  or (Status='" & isExcess & "'))", "PONo")
         'If PONo = "" Then
         'Else
@@ -71,9 +71,9 @@ Public Class frm_100_PO
         Dim strResult As Boolean
         Try
             If ErrProvider.CheckAndShowSummaryErrorMessage Then
-                If bolFormState = FormState.AddState And isRecordExist("Select poCode from tbl_100_PO where poCode='" & txtPONo.Text & "'") Then
-                    ErrProvider.SetError(txtPONo, "PO Number already exists.")
-              
+                If bolFormState = FormState.AddState And isRecordExist("Select poCode from tbl_100_PO where poCode='" & txtdrcode.Text & "'") Then
+                    ErrProvider.SetError(txtdrcode, "PO Number already exists.")
+
                 ElseIf CountGridRows(dgDetails) = 0 Then
                     MsgBox("Empty item(s)!", MsgBoxStyle.Exclamation)
                     Exit Sub
@@ -91,14 +91,16 @@ Public Class frm_100_PO
                     'End If
 
 
-                    With PO
-                        .poCode = txtPONo.Text
-                        .poVendor = cboVendor.SelectedValue
-                        .status = cboStatus.Text
+                    With DR
+                        .drCode = txtdrcode.Text
+                        .vendor = cboVendor.SelectedValue
+                        .drDate = dtepRD.Text
                         .totalCost = txtTotalAmount.Text
-                        .orderDte = dtepOD.Text
-                        .shippingDte = dtepSD.Text
-                        .closedDte = dtepCD.Text
+                        .createdBy = CurrUser.USER_FULLNAME
+                        .createdDte = Date.Now
+                        .remarks = txtremakrs.Text
+                        .isPosted = ispost
+                        .pocode = cboPoCode.SelectedValue
 
 
                         If bolFormState = FormState.EditState Then
@@ -108,8 +110,9 @@ Public Class frm_100_PO
                             MsgBox("Updated Complete", MsgBoxStyle.Information, "Update")
 
                             Me.Close()
-                            myParent.RefreshRecord("sproc_100_po_list'" & MainForm.tsSearch.Text & "'")
 
+                            myParent.RefreshRecord("sproc_100_dr_list " & False & ",'" & MainForm.tsSearch.Text & "'")
+                            myParent.RefreshRecord2("sproc_100_dr_list " & True & ",'" & MainForm.tsSearch.Text & "'")
                         Else
 
                             If MsgBox("Do you want to Save?", MsgBoxStyle.Question + MsgBoxStyle.YesNo, "Save Prompt") = MsgBoxResult.Yes Then
@@ -117,7 +120,8 @@ Public Class frm_100_PO
                                 strResult = .Save(bolFormState = FormState.EditState, dgDetails)
                                 _CloseTransaction(strResult)
                                 Me.Close()
-                                myParent.RefreshRecord("sproc_100_po_list'" & MainForm.tsSearch.Text & "'")
+                                myParent.RefreshRecord("sproc_100_dr_list " & False & ",'" & MainForm.tsSearch.Text & "'")
+                                myParent.RefreshRecord2("sproc_100_dr_list " & True & ",'" & MainForm.tsSearch.Text & "'")
                             End If
                         End If
                     End With
@@ -146,7 +150,7 @@ Public Class frm_100_PO
                     .tsNew.Enabled = False
                     .tsEdit.Enabled = False
                     .tsDelete.Enabled = False
-                    .tsSave.Enabled = True
+                    .tsSave.Enabled = False
                     .tsCancel.Enabled = True
                     .tsRefresh.Enabled = False
                     .tsClose.Enabled = False
@@ -160,7 +164,7 @@ Public Class frm_100_PO
                     .tsNew.Enabled = False
                     .tsEdit.Enabled = False
                     .tsDelete.Enabled = False
-                    .tsSave.Enabled = True
+                    .tsSave.Enabled = False
                     .tsCancel.Enabled = True
                     .tsRefresh.Enabled = False
                     .tsClose.Enabled = False
@@ -201,7 +205,7 @@ Public Class frm_100_PO
 
     Sub fillcombo()
         FillCombobox(cboVendor, "SELECT  SupplierID, SupplierName FROM  tbl_000_Supplier", "tbl_000_Location", "SupplierName", "SupplierID")
-
+        FillCombobox(cboPoCode, "SELECT  poCode FROM  tbl_100_PO where (status='OPEN')", "tbl_100_PO", "poCode", "poCode")
     End Sub
 
     Sub ComputeAllRows()
@@ -215,24 +219,24 @@ Public Class frm_100_PO
     End Sub
 
     Sub SetEditValue()
-        Dim PO As New tbl_100_PO
-        With PO
-            PONo = myParent.dgList.Item("colPoCode", myParent.dgList.CurrentRow.Index).Value
+        Dim DR As New tbl_100_DR
+        With DR
+            DRcode = myParent.dgList1.Item("colDRCode", myParent.dgList1.CurrentRow.Index).Value
             'PONo = myParent.dgList.Item(0, myParent.dgList.CurrentCell.Index).Value
             'PONo = myParent.dgList.CurrentCell.Value
-            .FetchRecord(PONo)
-            txtPONo.Text = PONo
-            cboStatus.Text = .status
-            cboVendor.SelectedValue = .poVendor
-            dtepCD.Text = .closedDte
-            dtepOD.Text = .orderDte
-            dtepSD.Text = .shippingDte
+            .FetchRecord(DRcode)
+            txtdrcode.Text = DRcode
+            txtremakrs.Text = .remarks
+            cboVendor.SelectedValue = .vendor
+            cboPoCode.Text = .pocode
+            dtepRD.Text = .drDate
             txtTotalAmount.Text = FormatNumber(.totalCost)
-          
-        End With
 
-        FillDataGrid(dgDetails, String.Format("select ItemId, ItemCode, ItemName, ItemDescription, BrandType, poQty, UOM, poCost, poAmount from v_po_item where (poCode='{0}')", PONo), 1, 9)
-        txtPONo.Enabled = False
+        End With
+        '  FillGrid(dgDetails, String.Format("select  itemId, ItemCode, ItemName, ItemDescription, BrandType, drQty, UOM, drCost, drAmount from v_dr_item where (drCode='{0}')", DRcode), "v_dr_item")
+
+        FillDataGrid(dgDetails, String.Format("select  itemId, ItemCode, ItemName, ItemDescription, BrandType, drQty, UOM, drCost, drAmount from v_dr_item where (drCode='{0}')", DRcode), 1, 9)
+        txtdrcode.Enabled = False
 
         For i = 0 To dgDetails.RowCount - 1
             AddFields(i)
@@ -246,7 +250,7 @@ Public Class frm_100_PO
             SetEditValue()
         Else
             cboVendor.SelectedIndex = -1
-
+            cboPoCode.SelectedIndex = -1
 
         End If
         ActivateCommands(bolFormState)
@@ -256,7 +260,7 @@ Public Class frm_100_PO
         If e.KeyCode = Keys.Enter Then
             ProcessTabKey(True)
         ElseIf e.Control And e.KeyCode = Keys.S Then
-            SaveRecord()
+            ' SaveRecord()
         End If
     End Sub
 
@@ -268,17 +272,17 @@ Public Class frm_100_PO
 
         With ErrProvider 'Get the error or empty text
             .Controls.Clear()
-            .Controls.Add(txtPONo, "PO Code")
+            .Controls.Add(txtdrcode, "DR Code")
             .Controls.Add(cboVendor, "Vendor")
-            .Controls.Add(cboStatus, "Po Status")
-           
+
+
 
         End With
     End Sub
 
     Private Sub btnAddItem_Click(sender As Object, e As EventArgs) Handles btnAddItem.Click
-        frm_100_PO_Search_Item.myParent = Me
-        frm_100_PO_Search_Item.ShowDialog()
+        frm_100_DR_Search_Item.myParent = Me
+        frm_100_DR_Search_Item.ShowDialog()
     End Sub
 
     Private Sub dgDetails_CellValidated(sender As Object, e As DataGridViewCellEventArgs) Handles dgDetails.CellValidated
@@ -292,7 +296,7 @@ Public Class frm_100_PO
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-  
+
         For Each row As DataGridViewRow In dgDetails.Rows
             If row.Cells("colSelect").Value = True Then
                 dgDetails.Rows.Remove(row)
@@ -309,5 +313,16 @@ Public Class frm_100_PO
     Private Sub dgDetails_RowsRemoved(sender As Object, e As DataGridViewRowsRemovedEventArgs) Handles dgDetails.RowsRemoved
         lblCountSub.Text = CountGridRows(dgDetails)
         ComputeAllRows()
+    End Sub
+
+   
+
+   
+    Private Sub btnSavepost_Click(sender As Object, e As EventArgs) Handles btnSavepost.Click
+        SaveRecord(True)
+    End Sub
+
+    Private Sub btnsave_Click(sender As Object, e As EventArgs) Handles btnsave.Click
+        SaveRecord(False)
     End Sub
 End Class

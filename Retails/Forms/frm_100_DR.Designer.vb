@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class frm_100_PO
+Partial Class frm_100_DR
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -25,13 +25,13 @@ Partial Class frm_100_PO
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_100_PO))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_100_DR))
         Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Me.txtPONo = New System.Windows.Forms.TextBox()
+        Me.txtdrcode = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.Button1 = New System.Windows.Forms.Button()
@@ -55,16 +55,12 @@ Partial Class frm_100_PO
         Me.lblCountSub = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.cboVendor = New System.Windows.Forms.ComboBox()
-        Me.cboStatus = New System.Windows.Forms.ComboBox()
-        Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.dtepOD = New System.Windows.Forms.DateTimePicker()
-        Me.dtepSD = New System.Windows.Forms.DateTimePicker()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.dtepCD = New System.Windows.Forms.DateTimePicker()
-        Me.Label6 = New System.Windows.Forms.Label()
+        Me.dtepRD = New System.Windows.Forms.DateTimePicker()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.lblTitle = New System.Windows.Forms.Label()
+        Me.txtremakrs = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -74,29 +70,33 @@ Partial Class frm_100_PO
         Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.btnSavepost = New System.Windows.Forms.Button()
+        Me.btnsave = New System.Windows.Forms.Button()
+        Me.cboPoCode = New System.Windows.Forms.ComboBox()
+        Me.Label5 = New System.Windows.Forms.Label()
         Me.GroupBox2.SuspendLayout()
         CType(Me.dgDetails, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
-        'txtPONo
+        'txtdrcode
         '
-        Me.txtPONo.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.txtPONo.Location = New System.Drawing.Point(81, 50)
-        Me.txtPONo.Name = "txtPONo"
-        Me.txtPONo.Size = New System.Drawing.Size(217, 20)
-        Me.txtPONo.TabIndex = 95
+        Me.txtdrcode.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.txtdrcode.Location = New System.Drawing.Point(87, 50)
+        Me.txtdrcode.Name = "txtdrcode"
+        Me.txtdrcode.Size = New System.Drawing.Size(217, 20)
+        Me.txtdrcode.TabIndex = 0
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(9, 52)
+        Me.Label1.Location = New System.Drawing.Point(14, 52)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(66, 16)
+        Me.Label1.Size = New System.Drawing.Size(67, 16)
         Me.Label1.TabIndex = 96
-        Me.Label1.Text = "PO Code:"
+        Me.Label1.Text = "DR Code:"
         '
         'GroupBox2
         '
@@ -108,9 +108,9 @@ Partial Class frm_100_PO
         Me.GroupBox2.Controls.Add(Me.dgDetails)
         Me.GroupBox2.Controls.Add(Me.Label15)
         Me.GroupBox2.Controls.Add(Me.Panel2)
-        Me.GroupBox2.Location = New System.Drawing.Point(13, 148)
+        Me.GroupBox2.Location = New System.Drawing.Point(13, 157)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(970, 137)
+        Me.GroupBox2.Size = New System.Drawing.Size(970, 163)
         Me.GroupBox2.TabIndex = 97
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Details"
@@ -120,7 +120,7 @@ Partial Class frm_100_PO
         Me.Button1.Location = New System.Drawing.Point(92, 16)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 79
+        Me.Button1.TabIndex = 2
         Me.Button1.Text = "Remove Item"
         Me.Button1.UseVisualStyleBackColor = True
         '
@@ -129,7 +129,7 @@ Partial Class frm_100_PO
         Me.btnAddItem.Location = New System.Drawing.Point(9, 16)
         Me.btnAddItem.Name = "btnAddItem"
         Me.btnAddItem.Size = New System.Drawing.Size(75, 23)
-        Me.btnAddItem.TabIndex = 78
+        Me.btnAddItem.TabIndex = 0
         Me.btnAddItem.Text = "Add Item"
         Me.btnAddItem.UseVisualStyleBackColor = True
         '
@@ -149,8 +149,8 @@ Partial Class frm_100_PO
         Me.dgDetails.Name = "dgDetails"
         Me.dgDetails.RowHeadersVisible = False
         Me.dgDetails.RowHeadersWidth = 25
-        Me.dgDetails.Size = New System.Drawing.Size(955, 51)
-        Me.dgDetails.TabIndex = 77
+        Me.dgDetails.Size = New System.Drawing.Size(955, 77)
+        Me.dgDetails.TabIndex = 1
         '
         'colSelect
         '
@@ -206,7 +206,7 @@ Partial Class frm_100_PO
         'colQty
         '
         Me.colQty.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.colQty.DataPropertyName = "poQty"
+        Me.colQty.DataPropertyName = "drQty"
         DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
         DataGridViewCellStyle1.BackColor = System.Drawing.Color.Lavender
         Me.colQty.DefaultCellStyle = DataGridViewCellStyle1
@@ -227,7 +227,7 @@ Partial Class frm_100_PO
         'colCost
         '
         Me.colCost.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.colCost.DataPropertyName = "poCost"
+        Me.colCost.DataPropertyName = "drCost"
         DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
         DataGridViewCellStyle2.Format = "N2"
         DataGridViewCellStyle2.NullValue = "0.00"
@@ -235,11 +235,12 @@ Partial Class frm_100_PO
         Me.colCost.HeaderText = "Unit Cost"
         Me.colCost.MinimumWidth = 100
         Me.colCost.Name = "colCost"
+        Me.colCost.ReadOnly = True
         '
         'colAmount
         '
         Me.colAmount.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.colAmount.DataPropertyName = "poAmount"
+        Me.colAmount.DataPropertyName = "drAmount"
         DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
         DataGridViewCellStyle3.Format = "N2"
         DataGridViewCellStyle3.NullValue = "0.00"
@@ -254,7 +255,7 @@ Partial Class frm_100_PO
         Me.Label15.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label15.AutoSize = True
         Me.Label15.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label15.Location = New System.Drawing.Point(657, 110)
+        Me.Label15.Location = New System.Drawing.Point(657, 136)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(104, 16)
         Me.Label15.TabIndex = 74
@@ -267,7 +268,7 @@ Partial Class frm_100_PO
         Me.Panel2.Controls.Add(Me.txtTotalAmount)
         Me.Panel2.Controls.Add(Me.lblCountSub)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel2.Location = New System.Drawing.Point(3, 107)
+        Me.Panel2.Location = New System.Drawing.Point(3, 133)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(964, 27)
         Me.Panel2.TabIndex = 76
@@ -323,7 +324,7 @@ Partial Class frm_100_PO
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(31, 79)
+        Me.Label2.Location = New System.Drawing.Point(37, 106)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(44, 13)
         Me.Label2.TabIndex = 98
@@ -332,85 +333,27 @@ Partial Class frm_100_PO
         'cboVendor
         '
         Me.cboVendor.FormattingEnabled = True
-        Me.cboVendor.Location = New System.Drawing.Point(81, 76)
+        Me.cboVendor.Location = New System.Drawing.Point(87, 103)
         Me.cboVendor.Name = "cboVendor"
         Me.cboVendor.Size = New System.Drawing.Size(217, 21)
-        Me.cboVendor.TabIndex = 99
-        '
-        'cboStatus
-        '
-        Me.cboStatus.FormattingEnabled = True
-        Me.cboStatus.Items.AddRange(New Object() {"OPEN", "CLOSE"})
-        Me.cboStatus.Location = New System.Drawing.Point(81, 103)
-        Me.cboStatus.Name = "cboStatus"
-        Me.cboStatus.Size = New System.Drawing.Size(217, 21)
-        Me.cboStatus.TabIndex = 101
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(35, 106)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(40, 13)
-        Me.Label3.TabIndex = 100
-        Me.Label3.Text = "Status:"
+        Me.cboVendor.TabIndex = 2
         '
         'Label4
         '
-        Me.Label4.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(28, 297)
+        Me.Label4.Location = New System.Drawing.Point(4, 133)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(62, 13)
+        Me.Label4.Size = New System.Drawing.Size(76, 13)
         Me.Label4.TabIndex = 102
-        Me.Label4.Text = "Order Date:"
+        Me.Label4.Text = "Receive Date:"
         '
-        'dtepOD
+        'dtepRD
         '
-        Me.dtepOD.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.dtepOD.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.dtepOD.Location = New System.Drawing.Point(96, 291)
-        Me.dtepOD.Name = "dtepOD"
-        Me.dtepOD.Size = New System.Drawing.Size(136, 20)
-        Me.dtepOD.TabIndex = 103
-        '
-        'dtepSD
-        '
-        Me.dtepSD.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.dtepSD.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.dtepSD.Location = New System.Drawing.Point(96, 317)
-        Me.dtepSD.Name = "dtepSD"
-        Me.dtepSD.Size = New System.Drawing.Size(136, 20)
-        Me.dtepSD.TabIndex = 105
-        '
-        'Label5
-        '
-        Me.Label5.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(13, 323)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(77, 13)
-        Me.Label5.TabIndex = 104
-        Me.Label5.Text = "Shipping Date:"
-        '
-        'dtepCD
-        '
-        Me.dtepCD.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.dtepCD.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.dtepCD.Location = New System.Drawing.Point(96, 343)
-        Me.dtepCD.Name = "dtepCD"
-        Me.dtepCD.Size = New System.Drawing.Size(136, 20)
-        Me.dtepCD.TabIndex = 107
-        '
-        'Label6
-        '
-        Me.Label6.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(28, 349)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(62, 13)
-        Me.Label6.TabIndex = 106
-        Me.Label6.Text = "Close Date:"
+        Me.dtepRD.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.dtepRD.Location = New System.Drawing.Point(87, 130)
+        Me.dtepRD.Name = "dtepRD"
+        Me.dtepRD.Size = New System.Drawing.Size(217, 20)
+        Me.dtepRD.TabIndex = 3
         '
         'Panel1
         '
@@ -432,9 +375,28 @@ Partial Class frm_100_PO
         Me.lblTitle.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.lblTitle.Location = New System.Drawing.Point(7, 0)
         Me.lblTitle.Name = "lblTitle"
-        Me.lblTitle.Size = New System.Drawing.Size(225, 33)
+        Me.lblTitle.Size = New System.Drawing.Size(254, 33)
         Me.lblTitle.TabIndex = 7
-        Me.lblTitle.Text = "Purchase Order"
+        Me.lblTitle.Text = "Receiving History"
+        '
+        'txtremakrs
+        '
+        Me.txtremakrs.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.txtremakrs.Location = New System.Drawing.Point(664, 50)
+        Me.txtremakrs.Multiline = True
+        Me.txtremakrs.Name = "txtremakrs"
+        Me.txtremakrs.Size = New System.Drawing.Size(319, 56)
+        Me.txtremakrs.TabIndex = 4
+        '
+        'Label3
+        '
+        Me.Label3.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(608, 54)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(52, 13)
+        Me.Label3.TabIndex = 105
+        Me.Label3.Text = "Remarks:"
         '
         'DataGridViewTextBoxColumn1
         '
@@ -493,7 +455,7 @@ Partial Class frm_100_PO
         'DataGridViewTextBoxColumn6
         '
         Me.DataGridViewTextBoxColumn6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.DataGridViewTextBoxColumn6.DataPropertyName = "poQty"
+        Me.DataGridViewTextBoxColumn6.DataPropertyName = "drQty"
         DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
         DataGridViewCellStyle5.Format = "N2"
         DataGridViewCellStyle5.NullValue = "0.00"
@@ -519,7 +481,7 @@ Partial Class frm_100_PO
         'DataGridViewTextBoxColumn8
         '
         Me.DataGridViewTextBoxColumn8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.DataGridViewTextBoxColumn8.DataPropertyName = "poCost"
+        Me.DataGridViewTextBoxColumn8.DataPropertyName = "drCost"
         DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
         DataGridViewCellStyle7.Format = "N2"
         DataGridViewCellStyle7.NullValue = "0.00"
@@ -527,11 +489,12 @@ Partial Class frm_100_PO
         Me.DataGridViewTextBoxColumn8.HeaderText = "Unit Cost"
         Me.DataGridViewTextBoxColumn8.MinimumWidth = 100
         Me.DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8"
+        Me.DataGridViewTextBoxColumn8.ReadOnly = True
         '
         'DataGridViewTextBoxColumn9
         '
         Me.DataGridViewTextBoxColumn9.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.DataGridViewTextBoxColumn9.DataPropertyName = "poAmount"
+        Me.DataGridViewTextBoxColumn9.DataPropertyName = "drAmount"
         DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
         DataGridViewCellStyle8.Format = "N2"
         DataGridViewCellStyle8.NullValue = "0.00"
@@ -541,29 +504,70 @@ Partial Class frm_100_PO
         Me.DataGridViewTextBoxColumn9.Name = "DataGridViewTextBoxColumn9"
         Me.DataGridViewTextBoxColumn9.ReadOnly = True
         '
-        'frm_100_PO
+        'btnSavepost
+        '
+        Me.btnSavepost.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnSavepost.Image = CType(resources.GetObject("btnSavepost.Image"), System.Drawing.Image)
+        Me.btnSavepost.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnSavepost.Location = New System.Drawing.Point(860, 332)
+        Me.btnSavepost.Name = "btnSavepost"
+        Me.btnSavepost.Size = New System.Drawing.Size(106, 28)
+        Me.btnSavepost.TabIndex = 6
+        Me.btnSavepost.Text = "Save && Post"
+        Me.btnSavepost.UseVisualStyleBackColor = True
+        '
+        'btnsave
+        '
+        Me.btnsave.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnsave.Image = CType(resources.GetObject("btnsave.Image"), System.Drawing.Image)
+        Me.btnsave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnsave.Location = New System.Drawing.Point(779, 332)
+        Me.btnsave.Name = "btnsave"
+        Me.btnsave.Size = New System.Drawing.Size(75, 28)
+        Me.btnsave.TabIndex = 5
+        Me.btnsave.Text = "Save"
+        Me.btnsave.UseVisualStyleBackColor = True
+        '
+        'cboPoCode
+        '
+        Me.cboPoCode.FormattingEnabled = True
+        Me.cboPoCode.Location = New System.Drawing.Point(87, 76)
+        Me.cboPoCode.Name = "cboPoCode"
+        Me.cboPoCode.Size = New System.Drawing.Size(217, 21)
+        Me.cboPoCode.TabIndex = 1
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(28, 79)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(53, 13)
+        Me.Label5.TabIndex = 108
+        Me.Label5.Text = "PO Code:"
+        '
+        'frm_100_DR
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(995, 383)
+        Me.ClientSize = New System.Drawing.Size(995, 372)
         Me.ControlBox = False
-        Me.Controls.Add(Me.dtepCD)
-        Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.dtepSD)
+        Me.Controls.Add(Me.cboPoCode)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.dtepOD)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.cboStatus)
+        Me.Controls.Add(Me.btnsave)
+        Me.Controls.Add(Me.btnSavepost)
         Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.txtremakrs)
+        Me.Controls.Add(Me.dtepRD)
+        Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.cboVendor)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.GroupBox2)
-        Me.Controls.Add(Me.txtPONo)
+        Me.Controls.Add(Me.txtdrcode)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.MinimizeBox = False
-        Me.Name = "frm_100_PO"
+        Me.Name = "frm_100_DR"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "frm_100_PO"
         Me.GroupBox2.ResumeLayout(False)
@@ -579,7 +583,7 @@ Partial Class frm_100_PO
     End Sub
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents lblTitle As System.Windows.Forms.Label
-    Friend WithEvents txtPONo As System.Windows.Forms.TextBox
+    Friend WithEvents txtdrcode As System.Windows.Forms.TextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
     Friend WithEvents dgDetails As System.Windows.Forms.DataGridView
@@ -591,14 +595,8 @@ Partial Class frm_100_PO
     Friend WithEvents lblCountSub As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents cboVendor As System.Windows.Forms.ComboBox
-    Friend WithEvents cboStatus As System.Windows.Forms.ComboBox
-    Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents dtepOD As System.Windows.Forms.DateTimePicker
-    Friend WithEvents dtepSD As System.Windows.Forms.DateTimePicker
-    Friend WithEvents Label5 As System.Windows.Forms.Label
-    Friend WithEvents dtepCD As System.Windows.Forms.DateTimePicker
-    Friend WithEvents Label6 As System.Windows.Forms.Label
+    Friend WithEvents dtepRD As System.Windows.Forms.DateTimePicker
     Friend WithEvents btnAddItem As System.Windows.Forms.Button
     Friend WithEvents DataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
@@ -608,6 +606,8 @@ Partial Class frm_100_PO
     Friend WithEvents DataGridViewTextBoxColumn6 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn7 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents txtremakrs As System.Windows.Forms.TextBox
+    Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents colSelect As System.Windows.Forms.DataGridViewCheckBoxColumn
     Friend WithEvents colItemId As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents colItemCode As System.Windows.Forms.DataGridViewTextBoxColumn
@@ -620,4 +620,8 @@ Partial Class frm_100_PO
     Friend WithEvents colAmount As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn8 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn9 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents btnSavepost As System.Windows.Forms.Button
+    Friend WithEvents btnsave As System.Windows.Forms.Button
+    Friend WithEvents cboPoCode As System.Windows.Forms.ComboBox
+    Friend WithEvents Label5 As System.Windows.Forms.Label
 End Class

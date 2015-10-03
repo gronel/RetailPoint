@@ -42,10 +42,15 @@ Partial Class frm_000_Item
         Me.cboCategory = New System.Windows.Forms.ComboBox()
         Me.txtcode = New System.Windows.Forms.TextBox()
         Me.txtName = New System.Windows.Forms.TextBox()
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.btnBrowse = New System.Windows.Forms.Button()
         Me.picPhoto = New System.Windows.Forms.PictureBox()
-        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.btnSave = New System.Windows.Forms.Button()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.txtCost = New System.Windows.Forms.TextBox()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.txtSellingPrice = New System.Windows.Forms.TextBox()
+        Me.chkboxConvert = New System.Windows.Forms.CheckBox()
         Me.GroupBox1.SuspendLayout()
         CType(Me.picPhoto, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -155,6 +160,10 @@ Partial Class frm_000_Item
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.GroupBox1.BackColor = System.Drawing.SystemColors.Control
+        Me.GroupBox1.Controls.Add(Me.Label7)
+        Me.GroupBox1.Controls.Add(Me.txtSellingPrice)
+        Me.GroupBox1.Controls.Add(Me.Label6)
+        Me.GroupBox1.Controls.Add(Me.txtCost)
         Me.GroupBox1.Controls.Add(Me.Label4)
         Me.GroupBox1.Controls.Add(Me.txtSLQ)
         Me.GroupBox1.Controls.Add(Me.cboLocation)
@@ -249,7 +258,7 @@ Partial Class frm_000_Item
         Me.btnBrowse.Location = New System.Drawing.Point(543, 170)
         Me.btnBrowse.Name = "btnBrowse"
         Me.btnBrowse.Size = New System.Drawing.Size(129, 22)
-        Me.btnBrowse.TabIndex = 17
+        Me.btnBrowse.TabIndex = 19
         Me.btnBrowse.Text = "Browse Photo"
         Me.btnBrowse.UseVisualStyleBackColor = True
         '
@@ -271,9 +280,60 @@ Partial Class frm_000_Item
         Me.btnSave.Location = New System.Drawing.Point(630, 271)
         Me.btnSave.Name = "btnSave"
         Me.btnSave.Size = New System.Drawing.Size(75, 28)
-        Me.btnSave.TabIndex = 2
+        Me.btnSave.TabIndex = 1
         Me.btnSave.Text = "Save"
         Me.btnSave.UseVisualStyleBackColor = True
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(387, 201)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(31, 13)
+        Me.Label6.TabIndex = 88
+        Me.Label6.Text = "Cost:"
+        '
+        'txtCost
+        '
+        Me.txtCost.BackColor = System.Drawing.Color.White
+        Me.txtCost.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtCost.Location = New System.Drawing.Point(424, 198)
+        Me.txtCost.MaxLength = 10
+        Me.txtCost.Name = "txtCost"
+        Me.txtCost.Size = New System.Drawing.Size(100, 21)
+        Me.txtCost.TabIndex = 17
+        Me.txtCost.Text = "0"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(350, 228)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(68, 13)
+        Me.Label7.TabIndex = 90
+        Me.Label7.Text = "Selling Price:"
+        '
+        'txtSellingPrice
+        '
+        Me.txtSellingPrice.BackColor = System.Drawing.Color.White
+        Me.txtSellingPrice.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtSellingPrice.Location = New System.Drawing.Point(424, 225)
+        Me.txtSellingPrice.MaxLength = 10
+        Me.txtSellingPrice.Name = "txtSellingPrice"
+        Me.txtSellingPrice.Size = New System.Drawing.Size(100, 21)
+        Me.txtSellingPrice.TabIndex = 18
+        Me.txtSellingPrice.Text = "0"
+        '
+        'chkboxConvert
+        '
+        Me.chkboxConvert.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.chkboxConvert.AutoSize = True
+        Me.chkboxConvert.Location = New System.Drawing.Point(70, 271)
+        Me.chkboxConvert.Name = "chkboxConvert"
+        Me.chkboxConvert.Size = New System.Drawing.Size(63, 17)
+        Me.chkboxConvert.TabIndex = 2
+        Me.chkboxConvert.Text = "Convert"
+        Me.chkboxConvert.UseVisualStyleBackColor = True
         '
         'frm_000_Item
         '
@@ -281,6 +341,7 @@ Partial Class frm_000_Item
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Control
         Me.ClientSize = New System.Drawing.Size(714, 311)
+        Me.Controls.Add(Me.chkboxConvert)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.btnSave)
         Me.Controls.Add(Me.chkIsActive)
@@ -322,4 +383,9 @@ Partial Class frm_000_Item
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents cboCategory As System.Windows.Forms.ComboBox
     Friend WithEvents txtcode As System.Windows.Forms.TextBox
+    Friend WithEvents Label7 As System.Windows.Forms.Label
+    Friend WithEvents txtSellingPrice As System.Windows.Forms.TextBox
+    Friend WithEvents Label6 As System.Windows.Forms.Label
+    Friend WithEvents txtCost As System.Windows.Forms.TextBox
+    Friend WithEvents chkboxConvert As System.Windows.Forms.CheckBox
 End Class

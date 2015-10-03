@@ -93,7 +93,7 @@ Public Class tbl_000_Company
             _Connection = New SqlConnection(cnString)
             If _Connection.State = ConnectionState.Closed Then _Connection.Open()
 
-            Using com As New SqlCommand("sproc_100_company", _Connection)
+            Using com As New SqlCommand("sproc_000_company", _Connection)
                 com.CommandType = CommandType.StoredProcedure
 
                 If isEdit Then

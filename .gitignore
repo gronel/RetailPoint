@@ -12,3 +12,14 @@ Retails/bin/Debug/Retails.vshost.application
 Retails/bin/Debug/Retails.vshost.exe.manifest
 Retails/obj/Debug/Retails.frm_100_POList.resources
 Retails/obj/Debug/Retails.MainForm.resources
+Retails/obj/Debug/Retails.frm_100_DR.resources
+Retails/obj/Debug/Retails.frm_100_DRList.resources
+Retails/obj/Debug/Retails.frm_100_DR_Search_Item.resources
+Retails/obj/Debug/Retails.frm_100_DoctorPay.resources
+Retails/obj/Debug/Retails.frm_100_DoctorPayList.resources
+Retails/obj/Debug/Retails.frm_100_PO_Search_Item.resources
+Retails/obj/Debug/Retails.frm_100_Payout.resources
+Retails/obj/Debug/Retails.frm_100_PayoutList.resources
+Retails/obj/Debug/Retails.frm_100_WR.resources
+Retails/obj/Debug/Retails.frm_100_WRList.resources
+Retails/obj/Debug/Retails.frm_100_WR_Search_Item.resources

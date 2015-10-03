@@ -3,12 +3,14 @@ Public Class tbl_100_PO
     Public Sub New()
     End Sub
 
+
     Private _poCode As String
     Private _poVendor As String
     Private _orderDte As Date
     Private _shippingDte As Date
     Private _closedDte As Date
     Private _totalCost As Decimal
+    Private _status As String
 
     Public Property poCode() As String
         Get
@@ -64,6 +66,17 @@ Public Class tbl_100_PO
         End Set
     End Property
 
+    Public Property status() As String
+        Get
+            Return _status
+        End Get
+        Set(ByVal value As String)
+            _status = value
+        End Set
+    End Property
+
+
+
     Public Function Save(ByVal isEdit As Boolean, ByVal dgSub As DataGridView) As Boolean
         Try
             Dim strMsg As String
@@ -74,7 +87,7 @@ Public Class tbl_100_PO
                 strMsg = "Add New PO"
             End If
 
-            Using cmd As New SqlCommand("sp_savetbl_100_PO", _Connection, _Transaction)
+            Using cmd As New SqlCommand("sproc_100_po_master", _Connection, _Transaction)
                 With cmd
                     .CommandType = CommandType.StoredProcedure
                     .Parameters.Add(New SqlParameter("@poCode", _poCode))
@@ -83,7 +96,9 @@ Public Class tbl_100_PO
                     .Parameters.Add(New SqlParameter("@shippingDte", _shippingDte))
                     .Parameters.Add(New SqlParameter("@closedDte", _closedDte))
                     .Parameters.Add(New SqlParameter("@totalCost", _totalCost))
+                    .Parameters.Add(New SqlParameter("@status", _status))
                     .ExecuteNonQuery()
+
                 End With
             End Using
 
@@ -94,13 +109,14 @@ Public Class tbl_100_PO
             dgSub.CommitEdit(DataGridViewDataErrorContexts.Commit)
             For Each row As DataGridViewRow In dgSub.Rows
                 If row.IsNewRow = False Then
-                    Using cmd As New SqlCommand("sp_savetbl_100_PO_Sub", _Connection, _Transaction)
+                    Using cmd As New SqlCommand("sproc_100_po_sub", _Connection, _Transaction)
                         With cmd
                             .CommandType = CommandType.StoredProcedure
                             .Parameters.Add(New SqlParameter("@poCode", _poCode))
-                            .Parameters.Add(New SqlParameter("@itemId", row.Cells("colSpecificCode").Value))
-                            .Parameters.Add(New SqlParameter("@poQty", row.Cells("colSpecificCode").Value))
-                            .Parameters.Add(New SqlParameter("@poCost", row.Cells("colSpecificCode").Value))
+                            .Parameters.Add(New SqlParameter("@itemId", CInt(row.Cells("colItemId").Value)))
+                            .Parameters.Add(New SqlParameter("@poQty", Integer.Parse(row.Cells("colQty").Value)))
+                            .Parameters.Add(New SqlParameter("@poCost", Decimal.Parse(row.Cells("colCost").Value)))
+                            .Parameters.Add(New SqlParameter("@poAmount", Decimal.Parse(row.Cells("colAmount").Value)))
                             .ExecuteNonQuery()
                         End With
                     End Using
@@ -114,4 +130,39 @@ Public Class tbl_100_PO
             Throw ex
         End Try
     End Function
+
+    Public Sub FetchRecord(ByVal pocode As String)
+        Dim con As New SqlConnection(cnString)
+        Dim rdr As SqlDataReader
+        Dim cmd As New SqlCommand(String.Format("SELECT     poCode, poVendor, orderDte, shippingDte, closedDte, totalCost, status " +
+                                    "FROM   tbl_100_PO where (poCode='{0}')", pocode), con)
+
+        Try
+
+            con.Open()
+            rdr = cmd.ExecuteReader(CommandBehavior.CloseConnection)
+
+            While rdr.Read
+                pocode = rdr("poCode")
+                poVendor = rdr("poVendor")
+                status = rdr("status")
+                orderDte = rdr("orderDte")
+                shippingDte = rdr("shippingDte")
+                closedDte = rdr("closedDte")
+                totalCost = rdr("totalCost")
+
+            End While
+
+            rdr.Close()
+
+
+        Catch ex As Exception
+            MsgBox(ex.Message, MsgBoxStyle.Exclamation, "ERROR")
+        Finally
+            con.Close()
+
+        End Try
+
+    End Sub
+
 End Class

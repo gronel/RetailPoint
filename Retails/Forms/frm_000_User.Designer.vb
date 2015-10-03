@@ -23,11 +23,11 @@ Partial Class frm_000_User
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_000_User))
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_000_User))
         Me.grpProfile = New System.Windows.Forms.GroupBox()
         Me.txtuserId = New System.Windows.Forms.TextBox()
         Me.txtEmpName = New System.Windows.Forms.TextBox()
@@ -36,14 +36,20 @@ Partial Class frm_000_User
         Me.txtVerify = New System.Windows.Forms.TextBox()
         Me.cboGroup = New System.Windows.Forms.ComboBox()
         Me.chkIsActive = New System.Windows.Forms.CheckBox()
+        Me.btnBrowse = New System.Windows.Forms.Button()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.lblCountSub = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
+        Me.picPhoto = New System.Windows.Forms.PictureBox()
+        Me.btnRemove = New System.Windows.Forms.Button()
+        Me.btnAdd = New System.Windows.Forms.Button()
         Me.dgRights = New System.Windows.Forms.DataGridView()
         Me.colMenuID = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colFormName = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colCanAdd = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.cntxtrights = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.CkeckToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.UncheckAllToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.colCanEdit = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.colCanDelete = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.colCanView = New System.Windows.Forms.DataGridViewCheckBoxColumn()
@@ -70,17 +76,12 @@ Partial Class frm_000_User
         Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.btnBrowse = New System.Windows.Forms.Button()
-        Me.picPhoto = New System.Windows.Forms.PictureBox()
-        Me.btnRemove = New System.Windows.Forms.Button()
-        Me.btnAdd = New System.Windows.Forms.Button()
-        Me.CkeckToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.UncheckAllToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.picLogo = New System.Windows.Forms.PictureBox()
         Me.lblTitle = New System.Windows.Forms.Label()
         Me.grpProfile.SuspendLayout()
         Me.Panel2.SuspendLayout()
+        CType(Me.picPhoto, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgRights, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.cntxtrights.SuspendLayout()
         CType(Me.dgList, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -89,7 +90,6 @@ Partial Class frm_000_User
         Me.SplitContainer1.Panel1.SuspendLayout()
         Me.SplitContainer1.Panel2.SuspendLayout()
         Me.SplitContainer1.SuspendLayout()
-        CType(Me.picPhoto, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         CType(Me.picLogo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -135,7 +135,7 @@ Partial Class frm_000_User
         '
         'txtEmpName
         '
-        Me.txtEmpName.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.txtEmpName.BackColor = System.Drawing.SystemColors.Window
         Me.txtEmpName.Location = New System.Drawing.Point(102, 46)
         Me.txtEmpName.Name = "txtEmpName"
         Me.txtEmpName.Size = New System.Drawing.Size(228, 20)
@@ -186,6 +186,17 @@ Partial Class frm_000_User
         Me.chkIsActive.Text = "Active"
         Me.chkIsActive.UseVisualStyleBackColor = True
         '
+        'btnBrowse
+        '
+        Me.btnBrowse.Image = CType(resources.GetObject("btnBrowse.Image"), System.Drawing.Image)
+        Me.btnBrowse.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnBrowse.Location = New System.Drawing.Point(372, 148)
+        Me.btnBrowse.Name = "btnBrowse"
+        Me.btnBrowse.Size = New System.Drawing.Size(129, 22)
+        Me.btnBrowse.TabIndex = 84
+        Me.btnBrowse.Text = "Browse Photo"
+        Me.btnBrowse.UseVisualStyleBackColor = True
+        '
         'Panel2
         '
         Me.Panel2.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
@@ -215,6 +226,40 @@ Partial Class frm_000_User
         Me.Label9.Size = New System.Drawing.Size(82, 13)
         Me.Label9.TabIndex = 1
         Me.Label9.Text = "No. of Records:"
+        '
+        'picPhoto
+        '
+        Me.picPhoto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.picPhoto.Location = New System.Drawing.Point(372, 21)
+        Me.picPhoto.Name = "picPhoto"
+        Me.picPhoto.Size = New System.Drawing.Size(129, 122)
+        Me.picPhoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picPhoto.TabIndex = 16
+        Me.picPhoto.TabStop = False
+        '
+        'btnRemove
+        '
+        Me.btnRemove.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.btnRemove.Image = CType(resources.GetObject("btnRemove.Image"), System.Drawing.Image)
+        Me.btnRemove.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnRemove.Location = New System.Drawing.Point(91, 367)
+        Me.btnRemove.Name = "btnRemove"
+        Me.btnRemove.Size = New System.Drawing.Size(79, 21)
+        Me.btnRemove.TabIndex = 15
+        Me.btnRemove.Text = "Remove"
+        Me.btnRemove.UseVisualStyleBackColor = True
+        '
+        'btnAdd
+        '
+        Me.btnAdd.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.btnAdd.Image = CType(resources.GetObject("btnAdd.Image"), System.Drawing.Image)
+        Me.btnAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnAdd.Location = New System.Drawing.Point(6, 367)
+        Me.btnAdd.Name = "btnAdd"
+        Me.btnAdd.Size = New System.Drawing.Size(79, 22)
+        Me.btnAdd.TabIndex = 14
+        Me.btnAdd.Text = "Add"
+        Me.btnAdd.UseVisualStyleBackColor = True
         '
         'dgRights
         '
@@ -268,6 +313,20 @@ Partial Class frm_000_User
         Me.cntxtrights.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CkeckToolStripMenuItem, Me.UncheckAllToolStripMenuItem})
         Me.cntxtrights.Name = "cntxtrights"
         Me.cntxtrights.Size = New System.Drawing.Size(138, 48)
+        '
+        'CkeckToolStripMenuItem
+        '
+        Me.CkeckToolStripMenuItem.Image = CType(resources.GetObject("CkeckToolStripMenuItem.Image"), System.Drawing.Image)
+        Me.CkeckToolStripMenuItem.Name = "CkeckToolStripMenuItem"
+        Me.CkeckToolStripMenuItem.Size = New System.Drawing.Size(137, 22)
+        Me.CkeckToolStripMenuItem.Text = "Check All"
+        '
+        'UncheckAllToolStripMenuItem
+        '
+        Me.UncheckAllToolStripMenuItem.Image = CType(resources.GetObject("UncheckAllToolStripMenuItem.Image"), System.Drawing.Image)
+        Me.UncheckAllToolStripMenuItem.Name = "UncheckAllToolStripMenuItem"
+        Me.UncheckAllToolStripMenuItem.Size = New System.Drawing.Size(137, 22)
+        Me.UncheckAllToolStripMenuItem.Text = "Uncheck All"
         '
         'colCanEdit
         '
@@ -533,65 +592,6 @@ Partial Class frm_000_User
         Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
         Me.DataGridViewTextBoxColumn5.ReadOnly = True
         '
-        'btnBrowse
-        '
-        Me.btnBrowse.Image = CType(resources.GetObject("btnBrowse.Image"), System.Drawing.Image)
-        Me.btnBrowse.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnBrowse.Location = New System.Drawing.Point(372, 148)
-        Me.btnBrowse.Name = "btnBrowse"
-        Me.btnBrowse.Size = New System.Drawing.Size(129, 22)
-        Me.btnBrowse.TabIndex = 84
-        Me.btnBrowse.Text = "Browse Photo"
-        Me.btnBrowse.UseVisualStyleBackColor = True
-        '
-        'picPhoto
-        '
-        Me.picPhoto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.picPhoto.Location = New System.Drawing.Point(372, 21)
-        Me.picPhoto.Name = "picPhoto"
-        Me.picPhoto.Size = New System.Drawing.Size(129, 122)
-        Me.picPhoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.picPhoto.TabIndex = 16
-        Me.picPhoto.TabStop = False
-        '
-        'btnRemove
-        '
-        Me.btnRemove.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.btnRemove.Image = CType(resources.GetObject("btnRemove.Image"), System.Drawing.Image)
-        Me.btnRemove.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnRemove.Location = New System.Drawing.Point(91, 367)
-        Me.btnRemove.Name = "btnRemove"
-        Me.btnRemove.Size = New System.Drawing.Size(79, 21)
-        Me.btnRemove.TabIndex = 15
-        Me.btnRemove.Text = "Remove"
-        Me.btnRemove.UseVisualStyleBackColor = True
-        '
-        'btnAdd
-        '
-        Me.btnAdd.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.btnAdd.Image = CType(resources.GetObject("btnAdd.Image"), System.Drawing.Image)
-        Me.btnAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnAdd.Location = New System.Drawing.Point(6, 367)
-        Me.btnAdd.Name = "btnAdd"
-        Me.btnAdd.Size = New System.Drawing.Size(79, 22)
-        Me.btnAdd.TabIndex = 14
-        Me.btnAdd.Text = "Add"
-        Me.btnAdd.UseVisualStyleBackColor = True
-        '
-        'CkeckToolStripMenuItem
-        '
-        Me.CkeckToolStripMenuItem.Image = CType(resources.GetObject("CkeckToolStripMenuItem.Image"), System.Drawing.Image)
-        Me.CkeckToolStripMenuItem.Name = "CkeckToolStripMenuItem"
-        Me.CkeckToolStripMenuItem.Size = New System.Drawing.Size(137, 22)
-        Me.CkeckToolStripMenuItem.Text = "Check All"
-        '
-        'UncheckAllToolStripMenuItem
-        '
-        Me.UncheckAllToolStripMenuItem.Image = CType(resources.GetObject("UncheckAllToolStripMenuItem.Image"), System.Drawing.Image)
-        Me.UncheckAllToolStripMenuItem.Name = "UncheckAllToolStripMenuItem"
-        Me.UncheckAllToolStripMenuItem.Size = New System.Drawing.Size(137, 22)
-        Me.UncheckAllToolStripMenuItem.Text = "Uncheck All"
-        '
         'Panel1
         '
         Me.Panel1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
@@ -643,6 +643,7 @@ Partial Class frm_000_User
         Me.grpProfile.PerformLayout()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
+        CType(Me.picPhoto, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dgRights, System.ComponentModel.ISupportInitialize).EndInit()
         Me.cntxtrights.ResumeLayout(False)
         CType(Me.dgList, System.ComponentModel.ISupportInitialize).EndInit()
@@ -652,7 +653,6 @@ Partial Class frm_000_User
         Me.SplitContainer1.Panel1.ResumeLayout(False)
         Me.SplitContainer1.Panel2.ResumeLayout(False)
         Me.SplitContainer1.ResumeLayout(False)
-        CType(Me.picPhoto, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         CType(Me.picLogo, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

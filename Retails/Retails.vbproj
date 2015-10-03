@@ -130,7 +130,11 @@
     <Compile Include="Classes\tbl_000_Supplier.vb" />
     <Compile Include="Classes\tbl_000_User.vb" />
     <Compile Include="Classes\tbl_000_Location.vb" />
+    <Compile Include="Classes\tbl_100_DoctorsPay.vb" />
+    <Compile Include="Classes\tbl_100_DR.vb" />
+    <Compile Include="Classes\tbl_100_PayOut.vb" />
     <Compile Include="Classes\tbl_100_PO.vb" />
+    <Compile Include="Classes\tbl_100_WR.vb" />
     <Compile Include="Classes\_xDatabase.vb" />
     <Compile Include="DatagridViewMulticolumn\DataGridViewMultiColumnComboColumn.vb">
       <SubType>Component</SubType>
@@ -182,10 +186,64 @@
     <Compile Include="Forms\frm_000_ItemCategory.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Forms\frm_100_DoctorPay.Designer.vb">
+      <DependentUpon>frm_100_DoctorPay.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_100_DoctorPay.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_100_WR_Search_Item.Designer.vb">
+      <DependentUpon>frm_100_WR_Search_Item.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_100_WR_Search_Item.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_100_WR.Designer.vb">
+      <DependentUpon>frm_100_WR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_100_WR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_100_WRList.Designer.vb">
+      <DependentUpon>frm_100_WRList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_100_WRList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_100_Payout.Designer.vb">
+      <DependentUpon>frm_100_Payout.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_100_Payout.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_100_DoctorPayList.Designer.vb">
+      <DependentUpon>frm_100_DoctorPayList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_100_DoctorPayList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_100_DR.Designer.vb">
+      <DependentUpon>frm_100_DR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_100_DR.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\frm_100_PO.Designer.vb">
       <DependentUpon>frm_100_PO.vb</DependentUpon>
     </Compile>
     <Compile Include="Forms\frm_100_PO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_100_PayoutList.Designer.vb">
+      <DependentUpon>frm_100_PayoutList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_100_PayoutList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_100_DRList.Designer.vb">
+      <DependentUpon>frm_100_DRList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_100_DRList.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\frm_100_POList.Designer.vb">
@@ -264,6 +322,18 @@
       <DependentUpon>frm_000_Location.vb</DependentUpon>
     </Compile>
     <Compile Include="Forms\frm_000_Location.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_100_DR_Search_Item.Designer.vb">
+      <DependentUpon>frm_100_DR_Search_Item.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_100_DR_Search_Item.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_100_PO_Search_Item.Designer.vb">
+      <DependentUpon>frm_100_PO_Search_Item.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_100_PO_Search_Item.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\frm_100_SalesScreen.Designer.vb">
@@ -351,8 +421,39 @@
       <DependentUpon>frm_000_ItemCategory.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_100_DoctorPay.resx">
+      <DependentUpon>frm_100_DoctorPay.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_100_WR_Search_Item.resx">
+      <DependentUpon>frm_100_WR_Search_Item.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_100_WR.resx">
+      <DependentUpon>frm_100_WR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_100_WRList.resx">
+      <DependentUpon>frm_100_WRList.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_100_Payout.resx">
+      <DependentUpon>frm_100_Payout.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_100_DoctorPayList.resx">
+      <DependentUpon>frm_100_DoctorPayList.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_100_DR.resx">
+      <DependentUpon>frm_100_DR.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\frm_100_PO.resx">
       <DependentUpon>frm_100_PO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_100_PayoutList.resx">
+      <DependentUpon>frm_100_PayoutList.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_100_DRList.resx">
+      <DependentUpon>frm_100_DRList.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frm_100_POList.resx">
       <DependentUpon>frm_100_POList.vb</DependentUpon>
@@ -405,6 +506,12 @@
     <EmbeddedResource Include="Forms\frm_000_Location.resx">
       <DependentUpon>frm_000_Location.vb</DependentUpon>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_100_DR_Search_Item.resx">
+      <DependentUpon>frm_100_DR_Search_Item.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_100_PO_Search_Item.resx">
+      <DependentUpon>frm_100_PO_Search_Item.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frm_100_SalesScreen.resx">
       <DependentUpon>frm_100_SalesScreen.vb</DependentUpon>

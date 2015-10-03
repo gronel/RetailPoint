@@ -161,10 +161,10 @@ Public Class frm_000_ItemList
 
 
     Public Sub ProcessSearchData(ByVal str As String) Implements IBPS_SEARCH.ProcessSearchData
-        Call RefreshRecord("sproc_100_item_list'" & MainForm.tsSearch.Text & "'")
+        Call RefreshRecord("sproc_000_item_list'" & MainForm.tsSearch.Text & "'")
     End Sub
     Sub ViewFilterBack()
-        Call RefreshRecord("sproc_100_item_list'" & MainForm.tsSearch.Text & "'")
+        Call RefreshRecord("sproc_000_item_list'" & MainForm.tsSearch.Text & "'")
         If FillFindON = True Then
 
             Dim sortColumn As String
@@ -250,7 +250,7 @@ Public Class frm_000_ItemList
             Case "Refresh"
                 MainForm.tsSearch.Text = String.Empty
 
-                Call RefreshRecord("sproc_100_item_list'" & MainForm.tsSearch.Text & "'")
+                Call RefreshRecord("sproc_000_item_list'" & MainForm.tsSearch.Text & "'")
             Case "Filter"
                 Call FilterOn()
             Case "FilterClear"
@@ -266,7 +266,7 @@ Public Class frm_000_ItemList
             RunQuery("Delete tbl_000_Item where ItemId=" & dgList.Item("colItemId", dgList.CurrentCell.RowIndex).Value)
 
             Call SaveAuditTrail("Delete item code", dgList.Item("colitemcode", dgList.CurrentCell.RowIndex).Value)
-            Call RefreshRecord("sproc_100_item_list'" & MainForm.tsSearch.Text & "'")
+            Call RefreshRecord("sproc_000_item_list'" & MainForm.tsSearch.Text & "'")
             SelectDataGridViewRow(dgList)
 
         End If
@@ -374,10 +374,10 @@ Public Class frm_000_ItemList
     Private Sub frm_000_ItemList_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         ResizeForm(Me)
         picLogo.Image = MainForm.picLogo.Image
-        Call RefreshRecord("sproc_100_item_list'" & MainForm.tsSearch.Text & "'")
+        Call RefreshRecord("sproc_000_item_list'" & MainForm.tsSearch.Text & "'")
         ActivateCommands(FormState.ViewState)
 
-      
+
     End Sub
 
 

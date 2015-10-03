@@ -18,6 +18,20 @@ Public Class tbl_000_Item
     Private _ItemImg As Byte()
     Private _CreateBy As String
     Private _CreateDte As Date
+    Private _CostPrice As Decimal
+    Private _SellingPrice As Decimal
+    Private _ModifyBy As String
+    Private _ModifyDte As Date
+    Private _IsConverted As Boolean
+    Public Property IsConverted() As Boolean
+        Get
+            Return _IsConverted
+        End Get
+        Set(ByVal value As Boolean)
+            _IsConverted = value
+        End Set
+    End Property
+
 
     Public Property ItemId() As Integer
         Get
@@ -144,11 +158,53 @@ Public Class tbl_000_Item
             _CreateDte = value
         End Set
     End Property
+    Public Property CostPrice() As Decimal
+        Get
+            Return _CostPrice
+        End Get
+        Set(ByVal value As Decimal)
+            _CostPrice = value
+        End Set
+    End Property
 
-    Public Function Save() As Boolean
+    Public Property SellingPrice() As Decimal
+        Get
+            Return _SellingPrice
+        End Get
+        Set(ByVal value As Decimal)
+            _SellingPrice = value
+        End Set
+    End Property
+
+    Public Property ModifyBy() As String
+        Get
+            Return _ModifyBy
+        End Get
+        Set(ByVal value As String)
+            _ModifyBy = value
+        End Set
+    End Property
+
+    Public Property ModifyDte() As Date
+        Get
+            Return _ModifyDte
+        End Get
+        Set(ByVal value As Date)
+            _ModifyDte = value
+        End Set
+    End Property
+
+    Public Function Save(ByVal isEdit As Boolean) As Boolean
         Try
+            Dim strMSG As String
 
-            Using cmd As New SqlCommand("sproc_100_item", _Connection, _Transaction)
+            If isEdit Then
+                strMSG = "Update Item"
+            Else
+                strMSG = "Add New Item"
+            End If
+
+            Using cmd As New SqlCommand("sproc_000_item", _Connection, _Transaction)
                 With cmd
                     .CommandType = CommandType.StoredProcedure
                     .Parameters.Add(New SqlParameter("@ItemId", _ItemId))
@@ -165,10 +221,16 @@ Public Class tbl_000_Item
                     .Parameters.Add(New SqlParameter("@ItemImg", _ItemImg))
                     .Parameters.Add(New SqlParameter("@CreateBy", _CreateBy))
                     .Parameters.Add(New SqlParameter("@CreateDte", _CreateDte))
+                    .Parameters.Add(New SqlParameter("@CostPrice", _CostPrice))
+                    .Parameters.Add(New SqlParameter("@SellingPrice", _SellingPrice))
+                    .Parameters.Add(New SqlParameter("@ModifyBy", _CreateBy))
+                    .Parameters.Add(New SqlParameter("@ModifyDte", _CreateDte))
+                    .Parameters.Add(New SqlParameter("@IsConverted", _IsConverted))
+
                     .ExecuteNonQuery()
 
                     Return True
-                    'Call SaveAuditTrail(strMSG, DepartmentCode, True)
+                    Call SaveAuditTrail(strMSG, _ItemCode, True)
                 End With
             End Using
         Catch ex As Exception
@@ -181,7 +243,7 @@ Public Class tbl_000_Item
     Public Sub FetchRecord(ByVal strItemCode As String)
         Dim con As New SqlConnection(cnString)
         Dim rdr As SqlDataReader
-        Dim cmd As New SqlCommand(String.Format("SELECT     ItemId, ItemCode, ItemName, ItemDescription, LocationId, ItemCategoryId, BrandType, UOM, StockLevelQTY, StackOH, isActive, ItemImg " +
+        Dim cmd As New SqlCommand(String.Format("SELECT     ItemId, ItemCode, ItemName, ItemDescription, LocationId, ItemCategoryId, BrandType, UOM, StockLevelQTY, StackOH, isActive, ItemImg, IsConverted, CostPrice, SellingPrice " +
                                     "FROM         tbl_000_Item where (ItemCode='{0}')", strItemCode), con)
 
         Try
@@ -202,7 +264,9 @@ Public Class tbl_000_Item
                 StackOH = rdr("StackOH")
                 isActive = rdr("isActive")
                 ItemImg = rdr("ItemImg")
-
+                CostPrice = NZ(rdr("CostPrice"))
+                SellingPrice = NZ(rdr("SellingPrice"))
+                IsConverted = rdr("IsConverted")
             End While
 
             rdr.Close()

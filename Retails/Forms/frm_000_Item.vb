@@ -120,12 +120,15 @@ Public Class frm_000_Item
                     .StockLevelQTY = txtSLQ.Text
                     .isActive = chkIsActive.Checked
                     .ItemImg = ImageToByte(picPhoto.Image)
-                    .CreateBy = CurrUser.USER_NAME
+                    .CreateBy = CurrUser.USER_FULLNAME
                     .CreateDte = Date.Today
                     .StackOH = 0
+                    .IsConverted = chkboxConvert.Checked
+                    .CostPrice = txtCost.Text
+                    .SellingPrice = txtSellingPrice.Text
 
                     _OpenTransaction()
-                    _Result = .Save()
+                    _Result = .Save(bolFormState = FormState.EditState)
                     _CloseTransaction(_Result)
 
                 End With
@@ -136,7 +139,7 @@ Public Class frm_000_Item
                         If .FillFindON = True Then
                             .ViewFilterBack()
                         Else
-                            .RefreshRecord("sproc_100_item_list '" & MainForm.tsSearch.Text & "'")
+                            .RefreshRecord("sproc_000_item_list '" & MainForm.tsSearch.Text & "'")
 
                         End If
                     End With
@@ -158,7 +161,9 @@ Public Class frm_000_Item
         txtBrand.Text = String.Empty
         txtUom.Text = String.Empty
         txtSLQ.Text = 0
-
+        txtCost.Text = 0
+        txtSellingPrice.Text = 0
+        chkboxConvert.Checked = False
         chkIsActive.Checked = True
         picPhoto.Image = MainForm.picDefault.Image
         cboLocation.SelectedIndex = -1
@@ -183,7 +188,9 @@ Public Class frm_000_Item
                 txtSLQ.Text = .StockLevelQTY
                 chkIsActive.Checked = .isActive
                 picPhoto.Image = BytesToImage(.ItemImg)
-
+                txtCost.Text = .CostPrice
+                txtSellingPrice.Text = .SellingPrice
+                chkboxConvert.Checked = .IsConverted
 
             End With
             ''FillDataGrid(dgWarehouse, "SELECT WHCode,RackNo,isDefault FROM tbl_000_Item_Warehouse WHERE SpecificCode='" & speficificCode & "'", 0, 2)
@@ -220,6 +227,9 @@ Public Class frm_000_Item
             .Controls.Add(cboLocation, "Location")
             .Controls.Add(txtUom, "Unit Of Measure")
             .Controls.Add(txtSLQ, "Stock Level Quantity")
+            .Controls.Add(txtCost, "Cost Price")
+            .Controls.Add(txtSellingPrice, "Selling Price")
+
         End With
 
         

@@ -53,18 +53,15 @@ Public Class frm_000_Supplier
     End Sub
 
     Sub DeleteRecord()
+        SupplierCode = dgList.Item("colSupplierCode", dgList.CurrentRow.Index).Value
         If grpProfile.Enabled Then
             If vbYes = MsgBox("Are you sure you want to delete this Supplier?", MsgBoxStyle.Question + MsgBoxStyle.YesNo + MsgBoxStyle.DefaultButton2, "Confirm Delete") Then
-                _intDeletedRow = dgList.CurrentRow.Index
-                _OpenTransaction()
-                _Result = _DeleteRecord("tbl_000_Supplier", "WHERE SupplierID='" & SupplierCode & "'")
-                _CloseTransaction(_Result)
-                If _Result Then
-                    RefreshRecord()
-                    doCancel()
-                    ClearFields()
-                    SelectDataGridViewRow(dgList)
-                End If
+
+                RunQuery("Delete tbl_000_Supplier where SupplierID=" & SupplierCode)
+                RefreshRecord()
+                doCancel()
+                ClearFields()
+                SelectDataGridViewRow(dgList)
             End If
         End If
     End Sub
@@ -145,7 +142,7 @@ Public Class frm_000_Supplier
         Dim Supplier As New tbl_000_Supplier
 
         Try
-            SupplierCode = dgList.Item(0, dgList.CurrentRow.Index).Value
+            SupplierCode = dgList.Item("colSupplierCode", dgList.CurrentRow.Index).Value
 
             With Supplier
                 .FetchRecord(SupplierCode)
@@ -372,4 +369,8 @@ Public Class frm_000_Supplier
     End Sub
 
 #End Region
+
+    Private Sub SplitContainer1_Panel1_Paint(sender As Object, e As PaintEventArgs) Handles SplitContainer1.Panel1.Paint
+
+    End Sub
 End Class

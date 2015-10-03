@@ -27,7 +27,7 @@ Public Class frm_100_PayoutList
 
 
 
-    Dim tableName As String = "tbl_000_ITEM"
+    Dim tableName As String = "tbl_100_Payout"
     Dim strSQL As String
     Dim da As SqlDataAdapter
     Dim ds As New DataSet
@@ -161,10 +161,10 @@ Public Class frm_100_PayoutList
 
 
     Public Sub ProcessSearchData(ByVal str As String) Implements IBPS_SEARCH.ProcessSearchData
-        Call RefreshRecord("sproc_100_item_list'" & MainForm.tsSearch.Text & "'")
+        Call RefreshRecord("sproc_100_payout_list'" & MainForm.tsSearch.Text & "'")
     End Sub
     Sub ViewFilterBack()
-        Call RefreshRecord("sproc_100_item_list'" & MainForm.tsSearch.Text & "'")
+        Call RefreshRecord("sproc_100_payout_list'" & MainForm.tsSearch.Text & "'")
         If FillFindON = True Then
 
             Dim sortColumn As String
@@ -250,7 +250,7 @@ Public Class frm_100_PayoutList
             Case "Refresh"
                 MainForm.tsSearch.Text = String.Empty
 
-                Call RefreshRecord("sproc_100_item_list'" & MainForm.tsSearch.Text & "'")
+                Call RefreshRecord("sproc_100_payout_list'" & MainForm.tsSearch.Text & "'")
             Case "Filter"
                 Call FilterOn()
             Case "FilterClear"
@@ -263,31 +263,27 @@ Public Class frm_100_PayoutList
     Sub DeleteRecord()
         If vbYes = MsgBox("Are you sure you want to delete this Item?", MsgBoxStyle.Question + MsgBoxStyle.YesNo + MsgBoxStyle.DefaultButton2, "Confirm Delete") Then
 
-            RunQuery("Delete tbl_000_Item where ItemId=" & dgList.Item("colItemId", dgList.CurrentCell.RowIndex).Value)
+            RunQuery("Delete tbl_100_PayOut where Id=" & dgList.Item("colId", dgList.CurrentCell.RowIndex).Value)
 
-            Call SaveAuditTrail("Delete item code", dgList.Item("colitemcode", dgList.CurrentCell.RowIndex).Value)
-            Call RefreshRecord("sproc_100_item_list'" & MainForm.tsSearch.Text & "'")
+            Call SaveAuditTrail("Delete Payout ", dgList.Item("colId", dgList.CurrentCell.RowIndex).Value)
+            Call RefreshRecord("sproc_100_payout_list'" & MainForm.tsSearch.Text & "'")
             SelectDataGridViewRow(dgList)
 
         End If
     End Sub
 
     Sub NewRecord()
-        With frm_100_PO
-            .MdiParent = MainForm
+        With frm_100_Payout
             .myParent = Me
             .bolFormState = FormState.AddState
-            '.ShowDialog()
-            .Show()
-            .Focus()
+            .ShowDialog()
         End With
     End Sub
 
     Sub EditRecord()
-        With frm_100_PO
+       With frm_100_Payout
             .myParent = Me
             .bolFormState = FormState.EditState
-
             .ShowDialog()
         End With
     End Sub
@@ -376,7 +372,7 @@ Public Class frm_100_PayoutList
     Private Sub frm_000_ItemList_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         ResizeForm(Me)
         picLogo.Image = MainForm.picLogo.Image
-        Call RefreshRecord("sproc_100_item_list'" & MainForm.tsSearch.Text & "'")
+        Call RefreshRecord("sproc_100_payout_list'" & MainForm.tsSearch.Text & "'")
         ActivateCommands(FormState.ViewState)
 
 
