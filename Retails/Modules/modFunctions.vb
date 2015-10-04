@@ -708,7 +708,7 @@ Module modFunction
         frm.Left = 0
         frm.Width = frm.Parent.DisplayRectangle.Width
         frm.Height = frm.Parent.DisplayRectangle.Height
-
+        frm.BackColor = Color.PaleTurquoise
         frm.KeyPreview = True
     End Sub
 

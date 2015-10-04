@@ -1,4 +1,4 @@
-﻿Imports Retails.clsPublic
+﻿Imports RetailPoint.clsPublic
 Imports CrystalDecisions.CrystalReports.Engine
 Imports CrystalDecisions.Shared
 Imports System.Drawing.Drawing2D
@@ -12,7 +12,7 @@ Module modPublicVar
     ' changes, modification
     Public Const VersionChanges As String = "DR Report"
     ' the date of new version
-    Public Const VersionDate As String = "2015.09.22"
+    Public Const VersionDate As String = "2015.10.04"
     ' this is the revision number,Ex. 2, "" if no revision
     Public Const Revision As String = "1"
     Public Const Version As String = "v." & VersionDate & " " & Revision
