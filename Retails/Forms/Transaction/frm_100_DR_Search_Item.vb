@@ -43,7 +43,7 @@
                     .Item("colBrand", newRow).Value = row.Cells("colBrand").Value
                     .Item("colCost", newRow).Value = row.Cells("colCost").Value
                     .Item("colUOM", newRow).Value = row.Cells("colUOM").Value
-
+                    .Item("colQty", newRow).Value = 0
                 End With
             End If
         Next

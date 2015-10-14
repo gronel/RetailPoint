@@ -39,10 +39,9 @@ Public Class frm_100_SalesScreen
     End Sub
 
     Sub doCancel()
-        'ErrProvider.ClearAllErrorMessages()
-        'LockFields(True)
-        'grpList.Enabled = True
-        'ActivateCommands(FormState.LoadState)
+        ErrProvider.ClearAllErrorMessages()
+        ActivateCommands(FormState.LoadState)
+        Me.Close()
     End Sub
 
     Sub ActivateCommands(ByVal frmState As clsPublic.FormState)

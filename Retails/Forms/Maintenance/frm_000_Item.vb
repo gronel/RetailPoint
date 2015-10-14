@@ -246,7 +246,7 @@ Public Class frm_000_Item
         Else
             Me.Text = "Update Item Entry Form"
             Call ClearFields()
-            txtcode.ReadOnly = True
+
 
             Call fillcombo()
             itemCode = myParent.dgList.Item("colitemcode", myParent.dgList.CurrentRow.Index).Value

@@ -134,11 +134,8 @@ Public Class frm_100_DR
 
     Sub doCancel()
         ErrProvider.ClearAllErrorMessages()
-
-        ''grpList.Enabled = True
         ActivateCommands(FormState.LoadState)
         Me.Close()
-
     End Sub
 
     Sub ActivateCommands(ByVal frmState As clsPublic.FormState)

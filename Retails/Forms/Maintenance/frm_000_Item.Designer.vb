@@ -277,7 +277,7 @@ Partial Class frm_000_Item
         '
         Me.txtcode.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtcode.Location = New System.Drawing.Point(115, 21)
-        Me.txtcode.MaxLength = 14
+        Me.txtcode.MaxLength = 100
         Me.txtcode.Name = "txtcode"
         Me.txtcode.Size = New System.Drawing.Size(409, 20)
         Me.txtcode.TabIndex = 9
@@ -286,7 +286,7 @@ Partial Class frm_000_Item
         '
         Me.txtName.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtName.Location = New System.Drawing.Point(115, 47)
-        Me.txtName.MaxLength = 14
+        Me.txtName.MaxLength = 300
         Me.txtName.Name = "txtName"
         Me.txtName.Size = New System.Drawing.Size(409, 20)
         Me.txtName.TabIndex = 10
