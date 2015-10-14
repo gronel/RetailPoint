@@ -9,11 +9,11 @@
 
 
     Private Sub frm_100_PO_Search_Item_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        FillGrid(dgList, "sproc_100_po_item '" & txtfind.Text & "'", "v_ItemMasterFile")
+        FillGrid(dgList, "sproc_100_wr_item '" & txtfind.Text & "'", "v_ItemMasterFileWithStock")
     End Sub
 
     Private Sub txtfind_KeyDown(sender As Object, e As KeyEventArgs) Handles txtfind.KeyDown
-        FillGrid(dgList, "sproc_100_po_item '" & txtfind.Text & "'", "v_ItemMasterFile")
+        FillGrid(dgList, "sproc_100_wr_item '" & txtfind.Text & "'", "v_ItemMasterFileWithStock")
     End Sub
 
     Sub Filter()
