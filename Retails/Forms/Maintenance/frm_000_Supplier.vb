@@ -39,7 +39,7 @@ Public Class frm_000_Supplier
         LockFields(False)
         grpList.Enabled = False
         ClearFields()
-        txtSupplierCode.Text = tbl_000_Supplier.GenerateID
+        txtSupplierCode.Text = 0
         txtSupplierName.Focus()
         txtSupplierCode.ReadOnly = True
         ActivateCommands(FormState.AddState)
@@ -207,20 +207,20 @@ Public Class frm_000_Supplier
         Try
             If ErrProvider.CheckAndShowSummaryErrorMessage Then
 
-                If bolFormState = FormState.AddState And isRecordExist("SELECT SupplierID FROM tbl_000_Supplier WHERE SupplierID='" & txtSupplierCode.Text.Trim & "'") Then
-                    ''ErrProvider.SetError(txtSupplierCode, "Existing Supplier Code")
-                    txtSupplierCode.Text = tbl_000_Supplier.GenerateID
-                    SaveRecord()
+                If bolFormState = FormState.AddState And isRecordExist("SELECT SupplierName FROM tbl_000_Supplier WHERE SupplierName='" & txtSupplierName.Text & "'") Then
+                    MessageBox.Show("Supplier Name is exist!", "System Prompt", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
+
+
                 Else
                     ErrorProvider1.SetError(txtSupplierCode, "")
                     With Supplier
-                        .SupplierID = txtSupplierCode.Text.Trim
-                        .SupplierName = txtSupplierName.Text.Trim
-                        .Address = txtAddress.Text.Trim
-                        .TelNo = txtTelNo.Text.Trim
-                        .FaxNo = txtFaxNo.Text.Trim
-                        .CellNo = txtCellNo.Text.Trim
-                        .Website = txtWebsite.Text.Trim
+                        .SupplierID = txtSupplierCode.Text
+                        .SupplierName = txtSupplierName.Text
+                        .Address = txtAddress.Text
+                        .TelNo = txtTelNo.Text
+                        .FaxNo = txtFaxNo.Text
+                        .CellNo = txtCellNo.Text
+                        .Website = txtWebsite.Text
                         .Accreditation = CDate(dtDate.Text)
                         .SupplierType = cboSupType.SelectedValue
                         .ComCategory = cboComCategory.SelectedValue

@@ -23,7 +23,7 @@ Public Class clsPublic
         Dim intcount As Integer = 0
 
         For Each Row As DataGridViewRow In dg.Rows
-            If Row.Cells(intCol).Value = strSearch Then
+            If Row.Cells(intCol).Value.ToString() = strSearch Then
                 dg.CurrentCell = dg.Item(dg.CurrentCell.ColumnIndex, Row.Index)
                 Exit For
                 intcount += 1

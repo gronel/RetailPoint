@@ -22,12 +22,12 @@ Public Class tbl_000_Supplier
         End Set
     End Property
 
-    Private _SupplierID As String
-    Public Property SupplierID() As String
+    Private _SupplierID As Integer
+    Public Property SupplierID() As Integer
         Get
             Return _SupplierID
         End Get
-        Set(ByVal value As String)
+        Set(ByVal value As Integer)
             _SupplierID = value
         End Set
     End Property
@@ -248,41 +248,7 @@ Public Class tbl_000_Supplier
     End Sub
 
 
-    Public Shared Function GenerateID() As String
-        Dim con As New SqlConnection(cnString)
-        Dim rdr As SqlDataReader
-        Dim cmd As New SqlCommand("SELECT MAX(convert(int,SupplierID)) as ID FROM tbl_000_Supplier ORDER BY ID", con)
 
-        Try
-            GenerateID = "0000001"
-            con.Open()
-            rdr = cmd.ExecuteReader(CommandBehavior.CloseConnection)
-
-            If rdr.HasRows Then
-                While rdr.Read
-                    GenerateID = rdr("ID")
-                End While
-                GenerateID = Format(Long.Parse(GenerateID) + 1, "0000000")
-            Else
-                GenerateID = "0000001"
-            End If
-
-
-            rdr.Close()
-
-
-
-        Catch ex As Exception
-            MsgBox(ex.Message, MsgBoxStyle.Exclamation, "ERROR")
-            Return "ERROR"
-        Finally
-
-
-        End Try
-
-    End Function
-
-    
 
 #End Region
 
