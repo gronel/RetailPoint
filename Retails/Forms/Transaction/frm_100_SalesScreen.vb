@@ -133,10 +133,9 @@ Public Class frm_100_SalesScreen
         txtOh.Clear()
         txtUnitPrice.Clear()
 
-        For Each row As DataGridViewRow In dgList2.Rows
-            dgList2.Rows.Remove(row)
-        Next
-
+   
+        dgList2.Rows.Clear()
+        txtSearch_KeyDown(Me, Nothing)
        
     End Sub
 
@@ -253,6 +252,7 @@ Public Class frm_100_SalesScreen
             frm_100_ItemSelected.ItemDescription = txtdescription.Text
             frm_100_ItemSelected.UOM = txtUOM.Text
             frm_100_ItemSelected.UnitPrice = txtUnitPrice.Text
+            frm_100_ItemSelected.StockOH = txtOh.Text
             frm_100_ItemSelected.ShowDialog()
         End If
     End Sub

@@ -22,6 +22,7 @@ Partial Class frm_100_SalesScreen_Pay
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_100_SalesScreen_Pay))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.lblAmountDue = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -82,10 +83,11 @@ Partial Class frm_100_SalesScreen_Pay
         'lblchange
         '
         Me.lblchange.AutoSize = True
-        Me.lblchange.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblchange.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblchange.ForeColor = System.Drawing.Color.Yellow
         Me.lblchange.Location = New System.Drawing.Point(121, 160)
         Me.lblchange.Name = "lblchange"
-        Me.lblchange.Size = New System.Drawing.Size(31, 20)
+        Me.lblchange.Size = New System.Drawing.Size(34, 20)
         Me.lblchange.TabIndex = 5
         Me.lblchange.Text = "0.0"
         '
@@ -112,6 +114,7 @@ Partial Class frm_100_SalesScreen_Pay
         Me.Controls.Add(Me.lblAmountDue)
         Me.Controls.Add(Me.Label1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.KeyPreview = True
         Me.MaximizeBox = False
         Me.MinimizeBox = False

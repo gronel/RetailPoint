@@ -22,21 +22,21 @@ Partial Class frm_100_SalesScreen
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle31 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle32 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle33 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle34 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle35 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle36 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle37 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle38 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle39 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle40 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle41 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle42 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle43 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle44 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle45 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle13 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle14 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle15 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_100_SalesScreen))
         Me.SplitContainer1 = New System.Windows.Forms.SplitContainer()
         Me.SplitContainer2 = New System.Windows.Forms.SplitContainer()
@@ -175,8 +175,9 @@ Partial Class frm_100_SalesScreen
         '
         Me.dglist1.AllowUserToAddRows = False
         Me.dglist1.AllowUserToDeleteRows = False
-        DataGridViewCellStyle31.BackColor = System.Drawing.Color.LightSteelBlue
-        Me.dglist1.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle31
+        Me.dglist1.AllowUserToResizeRows = False
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.LightSteelBlue
+        Me.dglist1.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         Me.dglist1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
@@ -234,10 +235,10 @@ Partial Class frm_100_SalesScreen
         '
         Me.colOh.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
         Me.colOh.DataPropertyName = "StackOH"
-        DataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        DataGridViewCellStyle32.Format = "N2"
-        DataGridViewCellStyle32.NullValue = Nothing
-        Me.colOh.DefaultCellStyle = DataGridViewCellStyle32
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        DataGridViewCellStyle2.Format = "N2"
+        DataGridViewCellStyle2.NullValue = Nothing
+        Me.colOh.DefaultCellStyle = DataGridViewCellStyle2
         Me.colOh.HeaderText = "On-Hand"
         Me.colOh.Name = "colOh"
         Me.colOh.ReadOnly = True
@@ -255,10 +256,10 @@ Partial Class frm_100_SalesScreen
         '
         Me.colUnitPrice.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
         Me.colUnitPrice.DataPropertyName = "SellingPrice"
-        DataGridViewCellStyle33.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        DataGridViewCellStyle33.Format = "N2"
-        DataGridViewCellStyle33.NullValue = Nothing
-        Me.colUnitPrice.DefaultCellStyle = DataGridViewCellStyle33
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        DataGridViewCellStyle3.Format = "N2"
+        DataGridViewCellStyle3.NullValue = Nothing
+        Me.colUnitPrice.DefaultCellStyle = DataGridViewCellStyle3
         Me.colUnitPrice.HeaderText = "Unit Price"
         Me.colUnitPrice.Name = "colUnitPrice"
         Me.colUnitPrice.ReadOnly = True
@@ -360,8 +361,8 @@ Partial Class frm_100_SalesScreen
         '
         Me.dgList2.AllowUserToAddRows = False
         Me.dgList2.AllowUserToResizeRows = False
-        DataGridViewCellStyle34.BackColor = System.Drawing.Color.LightSteelBlue
-        Me.dgList2.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle34
+        DataGridViewCellStyle4.BackColor = System.Drawing.Color.LightSteelBlue
+        Me.dgList2.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle4
         Me.dgList2.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
@@ -399,10 +400,10 @@ Partial Class frm_100_SalesScreen
         'Qty
         '
         Me.Qty.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        DataGridViewCellStyle35.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        DataGridViewCellStyle35.Format = "N0"
-        DataGridViewCellStyle35.NullValue = Nothing
-        Me.Qty.DefaultCellStyle = DataGridViewCellStyle35
+        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        DataGridViewCellStyle5.Format = "N0"
+        DataGridViewCellStyle5.NullValue = Nothing
+        Me.Qty.DefaultCellStyle = DataGridViewCellStyle5
         Me.Qty.HeaderText = "Qty"
         Me.Qty.Name = "Qty"
         Me.Qty.ReadOnly = True
@@ -417,10 +418,10 @@ Partial Class frm_100_SalesScreen
         'colUnitPrice2
         '
         Me.colUnitPrice2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        DataGridViewCellStyle36.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        DataGridViewCellStyle36.Format = "N2"
-        DataGridViewCellStyle36.NullValue = Nothing
-        Me.colUnitPrice2.DefaultCellStyle = DataGridViewCellStyle36
+        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        DataGridViewCellStyle6.Format = "N2"
+        DataGridViewCellStyle6.NullValue = Nothing
+        Me.colUnitPrice2.DefaultCellStyle = DataGridViewCellStyle6
         Me.colUnitPrice2.HeaderText = "Unit Price"
         Me.colUnitPrice2.Name = "colUnitPrice2"
         Me.colUnitPrice2.ReadOnly = True
@@ -428,10 +429,10 @@ Partial Class frm_100_SalesScreen
         'Subtotal
         '
         Me.Subtotal.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        DataGridViewCellStyle37.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        DataGridViewCellStyle37.Format = "N2"
-        DataGridViewCellStyle37.NullValue = Nothing
-        Me.Subtotal.DefaultCellStyle = DataGridViewCellStyle37
+        DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        DataGridViewCellStyle7.Format = "N2"
+        DataGridViewCellStyle7.NullValue = Nothing
+        Me.Subtotal.DefaultCellStyle = DataGridViewCellStyle7
         Me.Subtotal.HeaderText = "Sub Total"
         Me.Subtotal.Name = "Subtotal"
         Me.Subtotal.ReadOnly = True
@@ -466,7 +467,8 @@ Partial Class frm_100_SalesScreen
         Me.txtUnitPrice.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtUnitPrice.BackColor = System.Drawing.SystemColors.Window
-        Me.txtUnitPrice.Location = New System.Drawing.Point(102, 192)
+        Me.txtUnitPrice.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtUnitPrice.Location = New System.Drawing.Point(103, 167)
         Me.txtUnitPrice.Name = "txtUnitPrice"
         Me.txtUnitPrice.ReadOnly = True
         Me.txtUnitPrice.Size = New System.Drawing.Size(167, 20)
@@ -475,7 +477,7 @@ Partial Class frm_100_SalesScreen
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(40, 195)
+        Me.Label10.Location = New System.Drawing.Point(41, 170)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(56, 13)
         Me.Label10.TabIndex = 13
@@ -521,7 +523,7 @@ Partial Class frm_100_SalesScreen
         Me.txtUOM.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtUOM.BackColor = System.Drawing.SystemColors.Window
-        Me.txtUOM.Location = New System.Drawing.Point(102, 166)
+        Me.txtUOM.Location = New System.Drawing.Point(103, 141)
         Me.txtUOM.Name = "txtUOM"
         Me.txtUOM.ReadOnly = True
         Me.txtUOM.Size = New System.Drawing.Size(167, 20)
@@ -531,8 +533,9 @@ Partial Class frm_100_SalesScreen
         '
         Me.txtOh.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.txtOh.BackColor = System.Drawing.SystemColors.Window
-        Me.txtOh.Location = New System.Drawing.Point(102, 141)
+        Me.txtOh.BackColor = System.Drawing.Color.Khaki
+        Me.txtOh.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtOh.Location = New System.Drawing.Point(103, 193)
         Me.txtOh.Name = "txtOh"
         Me.txtOh.ReadOnly = True
         Me.txtOh.Size = New System.Drawing.Size(167, 20)
@@ -575,7 +578,7 @@ Partial Class frm_100_SalesScreen
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(61, 169)
+        Me.Label8.Location = New System.Drawing.Point(62, 144)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(35, 13)
         Me.Label8.TabIndex = 4
@@ -584,7 +587,7 @@ Partial Class frm_100_SalesScreen
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(39, 144)
+        Me.Label7.Location = New System.Drawing.Point(40, 196)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(57, 13)
         Me.Label7.TabIndex = 3
@@ -661,10 +664,10 @@ Partial Class frm_100_SalesScreen
         '
         Me.DataGridViewTextBoxColumn6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
         Me.DataGridViewTextBoxColumn6.DataPropertyName = "location"
-        DataGridViewCellStyle38.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        DataGridViewCellStyle38.Format = "N2"
-        DataGridViewCellStyle38.NullValue = Nothing
-        Me.DataGridViewTextBoxColumn6.DefaultCellStyle = DataGridViewCellStyle38
+        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        DataGridViewCellStyle8.Format = "N2"
+        DataGridViewCellStyle8.NullValue = Nothing
+        Me.DataGridViewTextBoxColumn6.DefaultCellStyle = DataGridViewCellStyle8
         Me.DataGridViewTextBoxColumn6.HeaderText = "Subtotal"
         Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
         Me.DataGridViewTextBoxColumn6.ReadOnly = True
@@ -683,10 +686,10 @@ Partial Class frm_100_SalesScreen
         '
         Me.DataGridViewTextBoxColumn8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
         Me.DataGridViewTextBoxColumn8.DataPropertyName = "StackOH"
-        DataGridViewCellStyle39.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        DataGridViewCellStyle39.Format = "N2"
-        DataGridViewCellStyle39.NullValue = Nothing
-        Me.DataGridViewTextBoxColumn8.DefaultCellStyle = DataGridViewCellStyle39
+        DataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        DataGridViewCellStyle9.Format = "N2"
+        DataGridViewCellStyle9.NullValue = Nothing
+        Me.DataGridViewTextBoxColumn8.DefaultCellStyle = DataGridViewCellStyle9
         Me.DataGridViewTextBoxColumn8.HeaderText = "Unit Price"
         Me.DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8"
         Me.DataGridViewTextBoxColumn8.ReadOnly = True
@@ -705,10 +708,10 @@ Partial Class frm_100_SalesScreen
         '
         Me.DataGridViewTextBoxColumn10.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
         Me.DataGridViewTextBoxColumn10.DataPropertyName = "SellingPrice"
-        DataGridViewCellStyle40.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        DataGridViewCellStyle40.Format = "N2"
-        DataGridViewCellStyle40.NullValue = Nothing
-        Me.DataGridViewTextBoxColumn10.DefaultCellStyle = DataGridViewCellStyle40
+        DataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        DataGridViewCellStyle10.Format = "N2"
+        DataGridViewCellStyle10.NullValue = Nothing
+        Me.DataGridViewTextBoxColumn10.DefaultCellStyle = DataGridViewCellStyle10
         Me.DataGridViewTextBoxColumn10.HeaderText = "Item Name"
         Me.DataGridViewTextBoxColumn10.Name = "DataGridViewTextBoxColumn10"
         Me.DataGridViewTextBoxColumn10.ReadOnly = True
@@ -724,10 +727,10 @@ Partial Class frm_100_SalesScreen
         'DataGridViewTextBoxColumn12
         '
         Me.DataGridViewTextBoxColumn12.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        DataGridViewCellStyle41.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        DataGridViewCellStyle41.Format = "N0"
-        DataGridViewCellStyle41.NullValue = Nothing
-        Me.DataGridViewTextBoxColumn12.DefaultCellStyle = DataGridViewCellStyle41
+        DataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        DataGridViewCellStyle11.Format = "N0"
+        DataGridViewCellStyle11.NullValue = Nothing
+        Me.DataGridViewTextBoxColumn12.DefaultCellStyle = DataGridViewCellStyle11
         Me.DataGridViewTextBoxColumn12.HeaderText = "Qty"
         Me.DataGridViewTextBoxColumn12.Name = "DataGridViewTextBoxColumn12"
         Me.DataGridViewTextBoxColumn12.ReadOnly = True
@@ -742,10 +745,10 @@ Partial Class frm_100_SalesScreen
         'DataGridViewTextBoxColumn14
         '
         Me.DataGridViewTextBoxColumn14.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        DataGridViewCellStyle42.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        DataGridViewCellStyle42.Format = "N2"
-        DataGridViewCellStyle42.NullValue = Nothing
-        Me.DataGridViewTextBoxColumn14.DefaultCellStyle = DataGridViewCellStyle42
+        DataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        DataGridViewCellStyle12.Format = "N2"
+        DataGridViewCellStyle12.NullValue = Nothing
+        Me.DataGridViewTextBoxColumn14.DefaultCellStyle = DataGridViewCellStyle12
         Me.DataGridViewTextBoxColumn14.HeaderText = "Unit Price"
         Me.DataGridViewTextBoxColumn14.Name = "DataGridViewTextBoxColumn14"
         Me.DataGridViewTextBoxColumn14.ReadOnly = True
@@ -753,10 +756,10 @@ Partial Class frm_100_SalesScreen
         'DataGridViewTextBoxColumn15
         '
         Me.DataGridViewTextBoxColumn15.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        DataGridViewCellStyle43.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        DataGridViewCellStyle43.Format = "N2"
-        DataGridViewCellStyle43.NullValue = Nothing
-        Me.DataGridViewTextBoxColumn15.DefaultCellStyle = DataGridViewCellStyle43
+        DataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        DataGridViewCellStyle13.Format = "N2"
+        DataGridViewCellStyle13.NullValue = Nothing
+        Me.DataGridViewTextBoxColumn15.DefaultCellStyle = DataGridViewCellStyle13
         Me.DataGridViewTextBoxColumn15.HeaderText = "Sub Total"
         Me.DataGridViewTextBoxColumn15.Name = "DataGridViewTextBoxColumn15"
         Me.DataGridViewTextBoxColumn15.ReadOnly = True
@@ -764,10 +767,10 @@ Partial Class frm_100_SalesScreen
         'DataGridViewTextBoxColumn16
         '
         Me.DataGridViewTextBoxColumn16.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        DataGridViewCellStyle44.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        DataGridViewCellStyle44.Format = "N2"
-        DataGridViewCellStyle44.NullValue = Nothing
-        Me.DataGridViewTextBoxColumn16.DefaultCellStyle = DataGridViewCellStyle44
+        DataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        DataGridViewCellStyle14.Format = "N2"
+        DataGridViewCellStyle14.NullValue = Nothing
+        Me.DataGridViewTextBoxColumn16.DefaultCellStyle = DataGridViewCellStyle14
         Me.DataGridViewTextBoxColumn16.HeaderText = "Unit Price"
         Me.DataGridViewTextBoxColumn16.Name = "DataGridViewTextBoxColumn16"
         Me.DataGridViewTextBoxColumn16.ReadOnly = True
@@ -775,10 +778,10 @@ Partial Class frm_100_SalesScreen
         'DataGridViewTextBoxColumn17
         '
         Me.DataGridViewTextBoxColumn17.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        DataGridViewCellStyle45.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        DataGridViewCellStyle45.Format = "N2"
-        DataGridViewCellStyle45.NullValue = Nothing
-        Me.DataGridViewTextBoxColumn17.DefaultCellStyle = DataGridViewCellStyle45
+        DataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        DataGridViewCellStyle15.Format = "N2"
+        DataGridViewCellStyle15.NullValue = Nothing
+        Me.DataGridViewTextBoxColumn17.DefaultCellStyle = DataGridViewCellStyle15
         Me.DataGridViewTextBoxColumn17.HeaderText = "Sub Total"
         Me.DataGridViewTextBoxColumn17.Name = "DataGridViewTextBoxColumn17"
         Me.DataGridViewTextBoxColumn17.ReadOnly = True

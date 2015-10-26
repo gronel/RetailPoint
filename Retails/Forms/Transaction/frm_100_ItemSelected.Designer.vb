@@ -22,6 +22,7 @@ Partial Class frm_100_ItemSelected
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_100_ItemSelected))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.txtitemName = New System.Windows.Forms.TextBox()
@@ -29,6 +30,7 @@ Partial Class frm_100_ItemSelected
         Me.txtqty = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.bntOk = New System.Windows.Forms.Button()
+        Me.lblinfo = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Label1
@@ -94,12 +96,23 @@ Partial Class frm_100_ItemSelected
         Me.bntOk.Text = "Done"
         Me.bntOk.UseVisualStyleBackColor = True
         '
+        'lblinfo
+        '
+        Me.lblinfo.AutoSize = True
+        Me.lblinfo.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblinfo.Location = New System.Drawing.Point(249, 131)
+        Me.lblinfo.Name = "lblinfo"
+        Me.lblinfo.Size = New System.Drawing.Size(45, 13)
+        Me.lblinfo.TabIndex = 5
+        Me.lblinfo.Text = "Label4"
+        '
         'frm_100_ItemSelected
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.PaleTurquoise
         Me.ClientSize = New System.Drawing.Size(392, 222)
+        Me.Controls.Add(Me.lblinfo)
         Me.Controls.Add(Me.bntOk)
         Me.Controls.Add(Me.txtqty)
         Me.Controls.Add(Me.Label3)
@@ -108,6 +121,7 @@ Partial Class frm_100_ItemSelected
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.KeyPreview = True
         Me.MaximizeBox = False
         Me.MinimizeBox = False
@@ -126,4 +140,5 @@ Partial Class frm_100_ItemSelected
     Friend WithEvents txtqty As System.Windows.Forms.TextBox
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents bntOk As System.Windows.Forms.Button
+    Friend WithEvents lblinfo As System.Windows.Forms.Label
 End Class
