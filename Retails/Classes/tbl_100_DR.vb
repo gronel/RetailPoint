@@ -134,8 +134,8 @@ Public Class tbl_100_DR
                             .Parameters.Add(New SqlParameter("@drCode", _drCode))
                             .Parameters.Add(New SqlParameter("@itemId", Integer.Parse(row.Cells("colItemId").Value)))
                             .Parameters.Add(New SqlParameter("@drQty", Integer.Parse(row.Cells("colQty").Value)))
-                            .Parameters.Add(New SqlParameter("@drCost", Decimal.Parse(row.Cells("colCost").Value)))
-                            .Parameters.Add(New SqlParameter("@drAmount", Decimal.Parse(row.Cells("colAmount").Value)))
+                            .Parameters.Add(New SqlParameter("@drCost", Decimal.Parse(NZ(row.Cells("colCost").Value))))
+                            .Parameters.Add(New SqlParameter("@drAmount", Decimal.Parse(NZ(row.Cells("colAmount").Value))))
                             .Parameters.Add(New SqlParameter("@isPost", _isPosted))
                             .ExecuteNonQuery()
                         End With

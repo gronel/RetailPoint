@@ -232,7 +232,7 @@ Public Class frm_100_DR
         End With
         '  FillGrid(dgDetails, String.Format("select  itemId, ItemCode, ItemName, ItemDescription, BrandType, drQty, UOM, drCost, drAmount from v_dr_item where (drCode='{0}')", DRcode), "v_dr_item")
 
-        FillDataGrid(dgDetails, String.Format("select  itemId, ItemCode, ItemName, ItemDescription, BrandType, drQty, UOM, drCost, drAmount from v_dr_item where (drCode='{0}')", DRcode), 1, 9)
+        FillDataGrid(dgDetails, String.Format("select  itemId, ItemCode, ItemName, ItemDescription, BrandType, drQty, UOM, drCost, drAmount from v_dr_item where (drCode='{0}')", DRcode), 0, 8)
         txtdrcode.Enabled = False
 
         For i = 0 To dgDetails.RowCount - 1
@@ -271,13 +271,10 @@ Public Class frm_100_DR
             .Controls.Clear()
             .Controls.Add(txtdrcode, "DR Code")
             .Controls.Add(cboVendor, "Vendor")
-
-
-
         End With
     End Sub
 
-    Private Sub btnAddItem_Click(sender As Object, e As EventArgs) Handles btnAddItem.Click
+    Private Sub btnAddItem_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
         frm_100_DR_Search_Item.myParent = Me
         frm_100_DR_Search_Item.ShowDialog()
     End Sub
@@ -292,11 +289,9 @@ Public Class frm_100_DR
         ComputeAllRows()
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnRemove.Click
 
-        For Each row As DataGridViewRow In dgDetails.Rows
-            dgDetails.Rows.Remove(row)
-        Next
+        RemoveFromDataGrid(dgDetails)
         ComputeAllRows()
     End Sub
 
@@ -319,5 +314,10 @@ Public Class frm_100_DR
 
     Private Sub btnsave_Click(sender As Object, e As EventArgs) Handles btnsave.Click
         SaveRecord(False)
+    End Sub
+
+    Private Sub dgDetails_CellContentClick(sender As Object, e As DataGridViewCellEventArgs)
+        Dim intCheckAll As Integer = dgDetails.Columns("colSelect").Index
+
     End Sub
 End Class
