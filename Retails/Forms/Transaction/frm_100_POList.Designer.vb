@@ -22,6 +22,7 @@ Partial Class frm_100_POList
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
@@ -56,10 +57,13 @@ Partial Class frm_100_POList
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.picLogo = New System.Windows.Forms.PictureBox()
         Me.lblTitle = New System.Windows.Forms.Label()
+        Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.PreviewToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         CType(Me.dgList, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.tsPagination.SuspendLayout()
         Me.Panel1.SuspendLayout()
         CType(Me.picLogo, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.ContextMenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'dgList
@@ -75,6 +79,7 @@ Partial Class frm_100_POList
         Me.dgList.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.dgList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgList.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.colPoCode, Me.Column2, Me.Column3, Me.Column4, Me.Column5, Me.Column6, Me.Column7})
+        Me.dgList.ContextMenuStrip = Me.ContextMenuStrip1
         Me.dgList.Location = New System.Drawing.Point(15, 42)
         Me.dgList.MultiSelect = False
         Me.dgList.Name = "dgList"
@@ -346,6 +351,18 @@ Partial Class frm_100_POList
         Me.lblTitle.TabIndex = 7
         Me.lblTitle.Text = "Purchase Order List"
         '
+        'ContextMenuStrip1
+        '
+        Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PreviewToolStripMenuItem})
+        Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(153, 48)
+        '
+        'PreviewToolStripMenuItem
+        '
+        Me.PreviewToolStripMenuItem.Name = "PreviewToolStripMenuItem"
+        Me.PreviewToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.PreviewToolStripMenuItem.Text = "Preview"
+        '
         'frm_100_POList
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -364,6 +381,7 @@ Partial Class frm_100_POList
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         CType(Me.picLogo, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ContextMenuStrip1.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -397,4 +415,6 @@ Partial Class frm_100_POList
     Friend WithEvents Column5 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Column6 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Column7 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents ContextMenuStrip1 As System.Windows.Forms.ContextMenuStrip
+    Friend WithEvents PreviewToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 End Class

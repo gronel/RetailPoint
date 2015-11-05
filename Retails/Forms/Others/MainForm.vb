@@ -121,6 +121,7 @@ Public Class MainForm
         If ParentMenuID = 767 Then
             cms.Items.Add("&Contents", imgList.Images("help"), New System.EventHandler(AddressOf SelectedChildMenu_OnClick)).Tag = "Contents"
             cms.Items.Add("-", Nothing, New System.EventHandler(AddressOf SelectedChildMenu_OnClick)).Tag = "-"
+            cms.Items.Add("Shift schedule", Nothing, New System.EventHandler(AddressOf SelectedChildMenu_OnClick)).Tag = "schedule"
             cms.Items.Add("&About", Nothing, New System.EventHandler(AddressOf SelectedChildMenu_OnClick)).Tag = "About"
         End If
 
@@ -156,6 +157,8 @@ Public Class MainForm
                 MsgBox("wala pa")
             ElseIf frmName = "About" Then
                 frmAbout.ShowDialog()
+            ElseIf frmName = "schedule" Then
+                frmShiftSchedule.ShowDialog()
             ElseIf frmName = "frm_000_Company" Then
                 frm_000_Company.ShowDialog()
             ElseIf frmName = "frmReport" Then

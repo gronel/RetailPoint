@@ -389,6 +389,8 @@ Public Class frm_200_SalesReport
         CenterControl(lblTitle, Me)
     End Sub
 
+
+
     Private Sub dgList_CellEnter(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles dgList.CellEnter
 
         Try
@@ -445,6 +447,13 @@ Public Class frm_200_SalesReport
     End Sub
 
     Private Sub dgList_CellContentClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles dgList.CellContentClick
+        Select Case e.ColumnIndex
+            Case 0
+                With frm_200_SalesDetails
+                    .sr_no = dgList.Item("colSRId", e.RowIndex).Value
+                    .ShowDialog(Me)
+                End With
+        End Select
 
     End Sub
 
@@ -455,7 +464,7 @@ Public Class frm_200_SalesReport
         Dim sum As Double
         With dgList
             For i = 0 To .RowCount - 1
-                sum = sum + NZ(.Item(2, i).Value)
+                sum = sum + NZ(.Item(4, i).Value)
             Next
             lbltotalAmt.Text = String.Format("{0:N2}", (NZ(sum)))
         End With
@@ -467,4 +476,6 @@ Public Class frm_200_SalesReport
     Private Sub dgList_RowsRemoved(sender As Object, e As DataGridViewRowsRemovedEventArgs) Handles dgList.RowsRemoved
         ComputeAllRows()
     End Sub
+
+  
 End Class

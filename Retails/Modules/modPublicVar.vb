@@ -12,9 +12,9 @@ Module modPublicVar
     ' changes, modification
     Public Const VersionChanges As String = "UPdate supplier"
     ' the date of new version
-    Public Const VersionDate As String = "1.2015.10"
+    Public Const VersionDate As String = "1.2015.11"
     ' this is the revision number,Ex. 2, "" if no revision
-    Public Const Revision As String = "3"
+    Public Const Revision As String = "r2"
     Public Const Version As String = "v." & VersionDate & " " & Revision
 
     ' index of row of datagrid to be deleted
