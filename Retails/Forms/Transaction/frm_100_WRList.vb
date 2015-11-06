@@ -504,11 +504,12 @@ Public Class frm_100_WRList
         Navigate(Pagination.LastPage)
     End Sub
 
-    Private Sub dgList_CellContentClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs)
 
-    End Sub
-
-    Private Sub dgList1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgList1.CellContentClick
-
+    Private Sub TabControl1_Selected(sender As Object, e As TabControlEventArgs) Handles TabControl1.Selected
+        If e.TabPageIndex = 1 Then
+            ActivateCommands(FormState.LoadState)
+        Else
+            ActivateCommands(FormState.ViewState)
+        End If
     End Sub
 End Class

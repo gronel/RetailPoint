@@ -2,10 +2,10 @@
 Imports System.Data.SqlClient
 Imports CrystalDecisions.CrystalReports.Engine
 Imports CrystalDecisions.Shared
-Public Class frm_100_WR
+Public Class frm_100_Return
 #Region "variable"
     Implements IBPSCommand
-    Public myParent As frm_100_WRList
+    Public myParent As frm_100_ReturnList
     Public bolFormState As clsPublic.FormState
     Public itemCode As String
     Public speficificCode As String
@@ -51,12 +51,12 @@ Public Class frm_100_WR
     Sub AddFields(ByVal rowIndex As Integer)
 
         With dgDetails
-            .Item("colAmount", rowIndex).Value = FormatNumber((NZ(.Item("colQty", rowIndex).Value)) * CDbl(NZ(.Item("colCost", rowIndex).Value)), dec)
+            .Item("colAmount", rowIndex).Value = FormatNumber((NZ(.Item("colQty", rowIndex).Value)) * CDbl(NZ(.Item("colCost", rowIndex).Value)), 2)
         End With
     End Sub
 
     Sub SaveRecord(ByVal ispost As Boolean)
-        Dim WR As New tbl_100_WR
+        Dim WR As New tbl_100_Return
         'SQL = DBLookUp("Select PONo from tbl_100_PO_Sub where PONo='" & PONo & "' and ((Status='" & isDelivered & "') or (Status='" & isLacking & "')  or (Status='" & isExcess & "'))", "PONo")
         'If PONo = "" Then
         'Else
@@ -71,8 +71,8 @@ Public Class frm_100_WR
         Dim strResult As Boolean
         Try
             If ErrProvider.CheckAndShowSummaryErrorMessage Then
-                If bolFormState = FormState.AddState And isRecordExist("Select wrId from tbl_100_WR where wrId='" & txtwrcode.Text & "'") Then
-                    ErrProvider.SetError(txtwrcode, "Widthdrawal code already exists.")
+                If bolFormState = FormState.AddState And isRecordExist("Select returnId from tbl_100_Return where returnId='" & txtreturnId.Text & "'") Then
+                    ErrProvider.SetError(txtreturnId, "Return ID already exists.")
 
                 ElseIf CountGridRows(dgDetails) = 0 Then
                     MsgBox("Empty item(s)!", MsgBoxStyle.Exclamation)
@@ -92,11 +92,12 @@ Public Class frm_100_WR
 
 
                     With WR
-                        .wrId = txtwrcode.Text
-                        .wrTotalCost = txtTotalAmount.Text
+                        .returnId = txtreturnId.Text
+                        .returnDate = dtreturnDate.Text
+                        .tatalAmt = txtTotalAmount.Text
                         .createdBy = CurrUser.USER_FULLNAME
-                        .createdDte = Date.Now
-                        .wrComments = txtcomments.Text
+                        .comments = txtcomments.Text
+                        .action = cboAction.SelectedIndex
                         .isPosted = ispost
 
 
@@ -108,8 +109,8 @@ Public Class frm_100_WR
 
                             Me.Close()
 
-                            myParent.RefreshRecord("sproc_100_wr_list " & False & ",'" & MainForm.tsSearch.Text & "'")
-                            myParent.RefreshRecord2("sproc_100_wr_list " & True & ",'" & MainForm.tsSearch.Text & "'")
+                            myParent.RefreshRecord("sproc_100_return_list " & False & ",'" & MainForm.tsSearch.Text & "'")
+                            myParent.RefreshRecord2("sproc_100_return_list " & True & ",'" & MainForm.tsSearch.Text & "'")
                         Else
 
                             If MsgBox("Do you want to Save?", MsgBoxStyle.Question + MsgBoxStyle.YesNo, "Save Prompt") = MsgBoxResult.Yes Then
@@ -117,8 +118,8 @@ Public Class frm_100_WR
                                 strResult = .Save(bolFormState = FormState.EditState, dgDetails)
                                 _CloseTransaction(strResult)
                                 Me.Close()
-                                myParent.RefreshRecord("sproc_100_wr_list " & False & ",'" & MainForm.tsSearch.Text & "'")
-                                myParent.RefreshRecord2("sproc_100_wr_list " & True & ",'" & MainForm.tsSearch.Text & "'")
+                                myParent.RefreshRecord("sproc_100_return_list " & False & ",'" & MainForm.tsSearch.Text & "'")
+                                myParent.RefreshRecord2("sproc_100_return_list " & True & ",'" & MainForm.tsSearch.Text & "'")
                             End If
                         End If
                     End With
@@ -200,7 +201,7 @@ Public Class frm_100_WR
         End With
     End Sub
 
-    
+
 
     Sub ComputeAllRows()
         Dim sum As Double
@@ -208,27 +209,29 @@ Public Class frm_100_WR
             For i = 0 To .RowCount - 1
                 sum = sum + NZ(.Item("colAmount", i).Value)
             Next
-            txtTotalAmount.Text = String.Format("{0:N" + CStr(dec) + "}", (NZ(sum)))
+            txtTotalAmount.Text = String.Format("{0:N2}", (NZ(sum)))
         End With
     End Sub
 
     Sub SetEditValue()
-        Dim WR As New tbl_100_WR
+        Dim WR As New tbl_100_Return
+
         With WR
-            WRcode = myParent.dgList1.Item("colWRCode", myParent.dgList1.CurrentRow.Index).Value
+            WRcode = myParent.dgList1.Item("colreturnId", myParent.dgList1.CurrentRow.Index).Value
             'PONo = myParent.dgList.Item(0, myParent.dgList.CurrentCell.Index).Value
             'PONo = myParent.dgList.CurrentCell.Value
             .FetchRecord(WRcode)
-            txtwrcode.Text = WRcode
-            txtcomments.Text = .wrComments
-
-            txtTotalAmount.Text = FormatNumber(.wrTotalCost)
+            txtreturnId.Text = WRcode
+            txtcomments.Text = .comments
+            cboAction.SelectedIndex = .action
+            dtreturnDate.Text = .returnDate
+            txtTotalAmount.Text = FormatNumber(.tatalAmt)
 
         End With
         '  FillGrid(dgDetails, String.Format("select  itemId, ItemCode, ItemName, ItemDescription, BrandType, drQty, UOM, drCost, drAmount from v_dr_item where (drCode='{0}')", DRcode), "v_dr_item")
 
-        FillDataGrid(dgDetails, String.Format("select  itemId, ItemCode, ItemName, ItemDescription, BrandType, Qty, UOM, Cost, Amount from v_wr_item where (wrId='{0}')", WRcode), 1, 9)
-        txtwrcode.Enabled = False
+        FillDataGrid(dgDetails, String.Format("select  itemId, ItemCode, ItemName, ItemDescription, BrandType, Qty, UOM, UnitPrice, Amount from v_return_item where (returnId='{0}')", WRcode), 1, 9)
+        txtreturnId.Enabled = False
 
         For i = 0 To dgDetails.RowCount - 1
             AddFields(i)
@@ -241,8 +244,8 @@ Public Class frm_100_WR
         If bolFormState = FormState.EditState Then
             SetEditValue()
         Else
-            txtwrcode.ReadOnly = True
-            txtwrcode.Text = tbl_100_WR.GenerateID
+            txtreturnId.ReadOnly = True
+            txtreturnId.Text = tbl_100_Return.GenerateID
 
 
         End If
@@ -265,17 +268,17 @@ Public Class frm_100_WR
 
         With ErrProvider 'Get the error or empty text
             .Controls.Clear()
-            .Controls.Add(txtwrcode, "WR Code")
+            .Controls.Add(txtreturnId, "Return ID")
             .Controls.Add(txtcomments, "Comments")
-
+            .Controls.Add(cboAction, "Action")
 
 
         End With
     End Sub
 
     Private Sub btnAddItem_Click(sender As Object, e As EventArgs) Handles btnAddItem.Click
-        frm_100_WR_Search_Item.myParent = Me
-        frm_100_WR_Search_Item.ShowDialog()
+        frm_100_Return_Search_Item.myParent = Me
+        frm_100_Return_Search_Item.ShowDialog()
     End Sub
 
     Private Sub dgDetails_CellValidated(sender As Object, e As DataGridViewCellEventArgs) Handles dgDetails.CellValidated
@@ -305,9 +308,6 @@ Public Class frm_100_WR
         lblCountSub.Text = CountGridRows(dgDetails)
         ComputeAllRows()
     End Sub
-
-
-
 
     Private Sub btnSavepost_Click(sender As Object, e As EventArgs) Handles btnSavepost.Click
         SaveRecord(True)

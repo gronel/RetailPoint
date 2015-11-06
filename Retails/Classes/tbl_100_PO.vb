@@ -95,7 +95,7 @@ Public Class tbl_100_PO
                     .Parameters.Add(New SqlParameter("@orderDte", _orderDte))
                     .Parameters.Add(New SqlParameter("@shippingDte", _shippingDte))
                     .Parameters.Add(New SqlParameter("@closedDte", _closedDte))
-                    .Parameters.Add(New SqlParameter("@totalCost", _totalCost))
+                    .Parameters.Add(New SqlParameter("@totalCost", NZ(_totalCost)))
                     .Parameters.Add(New SqlParameter("@status", _status))
                     .ExecuteNonQuery()
 
@@ -114,9 +114,9 @@ Public Class tbl_100_PO
                             .CommandType = CommandType.StoredProcedure
                             .Parameters.Add(New SqlParameter("@poCode", _poCode))
                             .Parameters.Add(New SqlParameter("@itemId", CInt(row.Cells("colItemId").Value)))
-                            .Parameters.Add(New SqlParameter("@poQty", Integer.Parse(row.Cells("colQty").Value)))
-                            .Parameters.Add(New SqlParameter("@poCost", Decimal.Parse(row.Cells("colCost").Value)))
-                            .Parameters.Add(New SqlParameter("@poAmount", Decimal.Parse(row.Cells("colAmount").Value)))
+                            .Parameters.Add(New SqlParameter("@poQty", Integer.Parse(NZ(row.Cells("colQty").Value))))
+                            .Parameters.Add(New SqlParameter("@poCost", Decimal.Parse(NZ(row.Cells("colCost").Value))))
+                            .Parameters.Add(New SqlParameter("@poAmount", Decimal.Parse(NZ(row.Cells("colAmount").Value))))
                             .ExecuteNonQuery()
                         End With
                     End Using

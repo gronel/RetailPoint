@@ -137,6 +137,7 @@
     <Compile Include="Classes\tbl_100_DR.vb" />
     <Compile Include="Classes\tbl_100_PayOut.vb" />
     <Compile Include="Classes\tbl_100_PO.vb" />
+    <Compile Include="Classes\tbl_100_Return.vb" />
     <Compile Include="Classes\tbl_100_SR.vb" />
     <Compile Include="Classes\tbl_100_WR.vb" />
     <Compile Include="Classes\_xDatabase.vb" />
@@ -222,6 +223,24 @@
       <DependentUpon>frm_100_SalesScreen_Pay.vb</DependentUpon>
     </Compile>
     <Compile Include="Forms\Transaction\frm_100_SalesScreen_Pay.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Transaction\frm_100_ReturnList.Designer.vb">
+      <DependentUpon>frm_100_ReturnList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Transaction\frm_100_ReturnList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Transaction\frm_100_Return.Designer.vb">
+      <DependentUpon>frm_100_Return.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Transaction\frm_100_Return.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Transaction\frm_100_Return_Search_Item.Designer.vb">
+      <DependentUpon>frm_100_Return_Search_Item.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Transaction\frm_100_Return_Search_Item.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Transaction\frm_100_WR_Search_Item.Designer.vb">
@@ -457,6 +476,16 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Transaction\frm_100_SalesScreen_Pay.resx">
       <DependentUpon>frm_100_SalesScreen_Pay.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Transaction\frm_100_ReturnList.resx">
+      <DependentUpon>frm_100_ReturnList.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Transaction\frm_100_Return.resx">
+      <DependentUpon>frm_100_Return.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Transaction\frm_100_Return_Search_Item.resx">
+      <DependentUpon>frm_100_Return_Search_Item.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Transaction\frm_100_WR_Search_Item.resx">
       <DependentUpon>frm_100_WR_Search_Item.vb</DependentUpon>

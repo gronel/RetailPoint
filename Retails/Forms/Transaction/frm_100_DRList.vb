@@ -321,7 +321,7 @@ Public Class frm_100_DRList
     Sub DeleteRecord()
         If vbYes = MsgBox("Are you sure you want to delete this Item?", MsgBoxStyle.Question + MsgBoxStyle.YesNo + MsgBoxStyle.DefaultButton2, "Confirm Delete") Then
 
-            RunQuery("Delete tbl_100_DR where drCode=" & dgList1.Item("colDRCode", dgList1.CurrentCell.RowIndex).Value)
+            RunQuery("Delete tbl_100_DR where drCode='" & dgList1.Item("colDRCode", dgList1.CurrentCell.RowIndex).Value + "'")
 
             Call SaveAuditTrail("Delete DR code", dgList1.Item("colDRCode", dgList1.CurrentCell.RowIndex).Value)
             Call RefreshRecord("sproc_100_dr_list " & False & ",'" & MainForm.tsSearch.Text & "'")
@@ -510,5 +510,14 @@ Public Class frm_100_DRList
 
     Private Sub dgList1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgList1.CellContentClick
 
+    End Sub
+
+    Private Sub TabControl1_Selected(sender As Object, e As TabControlEventArgs) Handles TabControl1.Selected
+
+        If e.TabPageIndex = 1 Then
+            ActivateCommands(FormState.LoadState)
+        Else
+            ActivateCommands(FormState.ViewState)
+        End If
     End Sub
 End Class

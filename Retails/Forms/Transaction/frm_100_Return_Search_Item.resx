@@ -117,16 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="btnDone.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        R0lGODlhEAAQAIQAACmMALe3t37MGKzmQ0aeFt3d3ZrcMrTlam7DDMXFxe/v763iYsTuep/aU43UIl2t
-        J8zMzHHGEJXaLIHOGbLpSqThPL3qdLTkZszxg6beWY7WJ3bIFYTOIWvFEMnwgP///yH/C05FVFNDQVBF
-        Mi4wAwEBAAAh+QQBAAAfACwAAAAAEAAQAAAIfAA/CBxIsKDBgwAOIsQAoIAChQIBeKBAoSFEAAwGDACQ
-        oMCHBwQeDgRgoUIFAAEgFHhw4EDDhwAOGDCAsqMCAhckuCwAYIEGDTUdflAAwIGDBQAyTJgQVOQHnksb
-        bNjQlKACnhGyVi14FQCCrQa7JlDp9ODVAkIhql2rMCAAOw==
-</value>
-  </data>
   <metadata name="colItemCode.UserAddedColumn" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -157,6 +147,16 @@
   <metadata name="colStackOH.UserAddedColumn" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnDone.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        R0lGODlhEAAQAIQAACmMALe3t37MGKzmQ0aeFt3d3ZrcMrTlam7DDMXFxe/v763iYsTuep/aU43UIl2t
+        J8zMzHHGEJXaLIHOGbLpSqThPL3qdLTkZszxg6beWY7WJ3bIFYTOIWvFEMnwgP///yH/C05FVFNDQVBF
+        Mi4wAwEBAAAh+QQBAAAfACwAAAAAEAAQAAAIfAA/CBxIsKDBgwAOIsQAoIAChQIBeKBAoSFEAAwGDACQ
+        oMCHBwQeDgRgoUIFAAEgFHhw4EDDhwAOGDCAsqMCAhckuCwAYIEGDTUdflAAwIGDBQAyTJgQVOQHnksb
+        bNjQlKACnhGyVi14FQCCrQa7JlDp9ODVAkIhql2rMCAAOw==
+</value>
+  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAgAAAAAAAEACAD1NQAAhgAAADAwAAABAAgAqA4AAHs2AAAgIAAAAQAIAKgIAAAjRQAAEBAAAAEA

@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class frm_100_WR_Search_Item
+Partial Class frm_100_Return_Search_Item
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,13 +22,12 @@ Partial Class frm_100_WR_Search_Item
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_100_WR_Search_Item))
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_100_Return_Search_Item))
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.btnSelectAll = New System.Windows.Forms.Button()
-        Me.btnDone = New System.Windows.Forms.Button()
         Me.dgList = New System.Windows.Forms.DataGridView()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtfind = New System.Windows.Forms.TextBox()
@@ -41,6 +40,7 @@ Partial Class frm_100_WR_Search_Item
         Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.btnDone = New System.Windows.Forms.Button()
         Me.colItemCode = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colItemId = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colSelect = New System.Windows.Forms.DataGridViewCheckBoxColumn()
@@ -64,18 +64,6 @@ Partial Class frm_100_WR_Search_Item
         Me.btnSelectAll.TabIndex = 7
         Me.btnSelectAll.Text = "Select All"
         Me.btnSelectAll.UseVisualStyleBackColor = True
-        '
-        'btnDone
-        '
-        Me.btnDone.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnDone.Image = CType(resources.GetObject("btnDone.Image"), System.Drawing.Image)
-        Me.btnDone.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnDone.Location = New System.Drawing.Point(721, 311)
-        Me.btnDone.Name = "btnDone"
-        Me.btnDone.Size = New System.Drawing.Size(74, 24)
-        Me.btnDone.TabIndex = 6
-        Me.btnDone.Text = "Done"
-        Me.btnDone.UseVisualStyleBackColor = True
         '
         'dgList
         '
@@ -194,6 +182,18 @@ Partial Class frm_100_WR_Search_Item
         Me.DataGridViewTextBoxColumn9.Name = "DataGridViewTextBoxColumn9"
         Me.DataGridViewTextBoxColumn9.ReadOnly = True
         '
+        'btnDone
+        '
+        Me.btnDone.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnDone.Image = CType(resources.GetObject("btnDone.Image"), System.Drawing.Image)
+        Me.btnDone.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnDone.Location = New System.Drawing.Point(721, 311)
+        Me.btnDone.Name = "btnDone"
+        Me.btnDone.Size = New System.Drawing.Size(74, 24)
+        Me.btnDone.TabIndex = 6
+        Me.btnDone.Text = "Done"
+        Me.btnDone.UseVisualStyleBackColor = True
+        '
         'colItemCode
         '
         Me.colItemCode.DataPropertyName = "ItemCode"
@@ -252,7 +252,7 @@ Partial Class frm_100_WR_Search_Item
         'colCost
         '
         Me.colCost.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.colCost.DataPropertyName = "CostPrice"
+        Me.colCost.DataPropertyName = "SellingPrice"
         DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
         DataGridViewCellStyle2.Format = "N2"
         DataGridViewCellStyle2.NullValue = Nothing
@@ -280,7 +280,7 @@ Partial Class frm_100_WR_Search_Item
         Me.colStackOH.Name = "colStackOH"
         Me.colStackOH.ReadOnly = True
         '
-        'frm_100_WR_Search_Item
+        'frm_100_Return_Search_Item
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -292,7 +292,7 @@ Partial Class frm_100_WR_Search_Item
         Me.Controls.Add(Me.btnDone)
         Me.Controls.Add(Me.dgList)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Name = "frm_100_WR_Search_Item"
+        Me.Name = "frm_100_Return_Search_Item"
         Me.ShowInTaskbar = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Item List"
@@ -312,6 +312,9 @@ Partial Class frm_100_WR_Search_Item
     Friend WithEvents DataGridViewTextBoxColumn4 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn5 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn6 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn7 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn8 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn9 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents colItemCode As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents colItemId As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents colSelect As System.Windows.Forms.DataGridViewCheckBoxColumn
@@ -322,7 +325,4 @@ Partial Class frm_100_WR_Search_Item
     Friend WithEvents colCost As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents colUOM As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents colStackOH As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn7 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn8 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn9 As System.Windows.Forms.DataGridViewTextBoxColumn
 End Class

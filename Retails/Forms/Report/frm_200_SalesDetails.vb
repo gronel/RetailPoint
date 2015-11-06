@@ -2,6 +2,7 @@
 
     Public sr_no As String
     Private Sub frm_200_SalesDetails_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.BackColor = Color.PaleTurquoise
         FillGrid(dgList, "select ItemName, ItemDescription, BrandType, Qty, Cost, SubAmt from v_sr_item where SRId='" + sr_no + "'", "v_sr_item")
 
     End Sub
