@@ -36,11 +36,13 @@ Public Class frm_100_PO
             Case "Refresh"
                 ''RefreshRecord()
             Case "Preview"
-                'If isRecordExist("Select PONo from tbl_100_PO where PONO='" & txtPONo.Text & "'") Then
-                '    Call viewReport("PO")
-                'Else
-                '    Call PreviewFromTemp()
-                'End If
+                If isRecordExist("Select poCode from tbl_100_PO where poCode='" & txtPONo.Text & "'") Then
+                    Call viewReport("PO")
+                Else
+                    MessageBox.Show("No Data", "Prompt", MessageBoxButtons.OK, MessageBoxIcon.Information)
+
+
+                End If
 
             Case "Print"
                 'viewReport("PO")
@@ -308,5 +310,21 @@ Public Class frm_100_PO
     Private Sub dgDetails_RowsRemoved(sender As Object, e As DataGridViewRowsRemovedEventArgs) Handles dgDetails.RowsRemoved
         lblCountSub.Text = CountGridRows(dgDetails)
         ComputeAllRows()
+    End Sub
+
+    Private Sub viewReport(ByVal category As String)
+
+        cryRpt.Load(Application.StartupPath & "\Reports\rpt_200_PO_Report.rpt")
+
+        arrParametersAndValue.Clear()
+        arrParametersAndValue.Add(New clsEnumerations.strArrays(SqlDbType.NVarChar, "@poCode", txtPONo.Text))
+        cryRpt.SetDataSource(FillReport("sproc_200_po", CommandType.StoredProcedure, arrParametersAndValue))
+        cryRpt.SetParameterValue("prepared", CurrUser.USER_FULLNAME)
+        With frm_200_ReportV
+            .rpt_viewer.ReportSource = cryRpt
+            .Text = "Purchase Order"
+            .Show()
+            .Focus()
+        End With
     End Sub
 End Class

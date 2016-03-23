@@ -10,6 +10,14 @@ Module modGlobal
         Dim USER_PHOTO As Byte()
         Dim isActive As Boolean
         Dim User_Department As String
+
+
+    End Structure
+
+    Public Structure Company_Info
+        Dim companyName As String
+        Dim companyAddress As String
+
     End Structure
 
 

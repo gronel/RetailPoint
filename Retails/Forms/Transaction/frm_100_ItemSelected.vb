@@ -8,6 +8,7 @@
     Public UOM As String
     Public UnitPrice As Decimal
     Public StockOH As Integer
+    Public BrandType As String
     Private hasError As Boolean
 
     Private Sub frm_100_ItemSelected_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -30,6 +31,7 @@
 
             With myparent.dgList2
                 newRow = .Rows.Add
+                .Item("colBrand2", newRow).Value = BrandType
                 .Item("colitemId2", newRow).Value = ItemId
                 .Item("colItemName2", newRow).Value = txtitemName.Text
                 .Item("colDescription2", newRow).Value = txtdescription.Text

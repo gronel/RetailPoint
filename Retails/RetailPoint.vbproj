@@ -183,10 +183,22 @@
     <Compile Include="Forms\Others\frmShiftSchedule.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Forms\Others\frmSummary.Designer.vb">
+      <DependentUpon>frmSummary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Others\frmSummary.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\Report\frm_200_Payout.Designer.vb">
       <DependentUpon>frm_200_Payout.vb</DependentUpon>
     </Compile>
     <Compile Include="Forms\Report\frm_200_Payout.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Report\frm_200_ReportV.designer.vb">
+      <DependentUpon>frm_200_ReportV.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Report\frm_200_ReportV.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Report\frm_200_SalesDetails.Designer.vb">
@@ -453,9 +465,15 @@
     <EmbeddedResource Include="Forms\Others\frmShiftSchedule.resx">
       <DependentUpon>frmShiftSchedule.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Others\frmSummary.resx">
+      <DependentUpon>frmSummary.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Report\frm_200_Payout.resx">
       <DependentUpon>frm_200_Payout.vb</DependentUpon>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Report\frm_200_ReportV.resx">
+      <DependentUpon>frm_200_ReportV.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Report\frm_200_SalesDetails.resx">
       <DependentUpon>frm_200_SalesDetails.vb</DependentUpon>

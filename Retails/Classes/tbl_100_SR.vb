@@ -94,6 +94,7 @@ Public Class tbl_100_SR
                     .Parameters.Add(New SqlParameter("@Change", _Change))
                     .Parameters.Add(New SqlParameter("@CreatedBy", _CreatedBy))
                     .Parameters.Add(New SqlParameter("@CreatedDte", _CreatedDte))
+
                     .ExecuteNonQuery()
                 End With
 

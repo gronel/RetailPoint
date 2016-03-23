@@ -239,6 +239,7 @@ Public Class frm_100_SalesScreen
     Private Sub txtSearch_KeyDown(sender As Object, e As KeyEventArgs) Handles txtSearch.KeyDown
         'FillGrid(dglist1, "sproc_100_salesItemList '" & txtSearch.Text & "'", "v_ItemMasterFile")
         FillDataGrid(dglist1, "sproc_100_salesItemList '" & txtSearch.Text & "'", 0, 7)
+
         getItemDetails()
     End Sub
 
@@ -253,6 +254,7 @@ Public Class frm_100_SalesScreen
             frm_100_ItemSelected.UOM = txtUOM.Text
             frm_100_ItemSelected.UnitPrice = txtUnitPrice.Text
             frm_100_ItemSelected.StockOH = txtOh.Text
+            frm_100_ItemSelected.BrandType = txtbrand.Text
             frm_100_ItemSelected.ShowDialog()
         End If
     End Sub
@@ -289,5 +291,9 @@ Public Class frm_100_SalesScreen
         frm_100_SalesScreen_Pay.myParent = Me
         frm_100_SalesScreen_Pay.lblAmountDue.Text = lblAmoutDue.Text
         frm_100_SalesScreen_Pay.ShowDialog()
+    End Sub
+
+    Private Sub GroupBox1_Enter(sender As Object, e As EventArgs) Handles GroupBox1.Enter
+
     End Sub
 End Class

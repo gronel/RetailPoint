@@ -315,8 +315,9 @@ Module modProcedure
 
         paramlist = FetchData(paramlist, "Select * from tbl_000_Company", CommandType.Text)
         If paramlist.Count <> 0 Then
-            CompanyName = paramlist(1).ToString
-            CompanyAddress = paramlist(2).ToString
+            CompanyInfo.companyName = paramlist(1).ToString
+            CompanyInfo.companyAddress = paramlist(2).ToString
+
         End If
     End Sub
 
@@ -358,6 +359,40 @@ Module modProcedure
                     myGrid.Rows.Remove(myrow)
                 End If
             Next
+        Next
+    End Sub
+
+
+    Public Sub FillMonthlyComboBox(ByVal cboCombo As ComboBox)
+
+        Dim monthTable As New DataTable
+        monthTable.Columns.Add("monId", GetType(Integer))
+        monthTable.Columns.Add("monName", GetType(String))
+
+        monthTable.Rows.Add(1, "January")
+        monthTable.Rows.Add(2, "February")
+        monthTable.Rows.Add(3, "March")
+        monthTable.Rows.Add(4, "April")
+        monthTable.Rows.Add(5, "May")
+        monthTable.Rows.Add(6, "June")
+        monthTable.Rows.Add(7, "July")
+        monthTable.Rows.Add(8, "August")
+        monthTable.Rows.Add(9, "September")
+        monthTable.Rows.Add(10, "October")
+        monthTable.Rows.Add(11, "November")
+        monthTable.Rows.Add(12, "December")
+
+        cboCombo.Items.Clear()
+        cboCombo.DataSource = monthTable
+        cboCombo.DisplayMember = "monName"
+        cboCombo.ValueMember = "monId"
+    End Sub
+
+    Public Sub FillYearStartToCurrent(ByVal cboCombo As ComboBox)
+        Dim iStartYr As Integer = 2014
+
+        For value As Integer = 2015 To Date.Now.Year
+            cboCombo.Items.Add(value)
         Next
     End Sub
 

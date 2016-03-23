@@ -11,6 +11,7 @@ Public Class frm_200_SalesReport
     Implements IBPSCommand
     Implements IBPS_SEARCH
 
+    Dim second As Integer
 
     Dim bolFormState As clsPublic.FormState
     Public category, value As String
@@ -351,7 +352,8 @@ Public Class frm_200_SalesReport
         ' Me.txtItemName.Focus()
         ' cboItemCode.Items.Clear()
         bolFormState = FormState.LoadState
-
+        Timer1.Enabled = False
+        Timer1.Stop()
     End Sub
 
     Private Sub frm_000_ItemList_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles Me.KeyDown
@@ -407,7 +409,9 @@ Public Class frm_200_SalesReport
     End Sub
 
 
-
+    Private Sub GetData()
+        FillGrid(dgList, "sproc_200_SalesReportUnpost '" & dtfrom.Text & "','" & dtto.Text & "'", "tbl_100_SR")
+    End Sub
 #End Region
 
 
@@ -453,29 +457,24 @@ Public Class frm_200_SalesReport
                     .sr_no = dgList.Item("colSRId", e.RowIndex).Value
                     .ShowDialog(Me)
                 End With
+            Case 1
+
+                RunQuery("UPDATE tbl_100_SR SET IsPosted = 1,PostedId=" + CurrUser.USER_ID.ToString + " WHERE (SRId = " + dgList.Item("colSRId", e.RowIndex).Value + ")")
+                btnpreview_Click(Me, Nothing)
         End Select
 
     End Sub
 
     Private Sub btnpreview_Click(sender As Object, e As EventArgs) Handles btnpreview.Click
-        FillGrid(dgList, "sproc_200_SalesReport '" & dtfrom.Text & "','" & dtto.Text & "'", "tbl_100_SR")
-    End Sub
-    Sub ComputeAllRows()
-        Dim sum As Double
-        With dgList
-            For i = 0 To .RowCount - 1
-                sum = sum + NZ(.Item(4, i).Value)
-            Next
-            lbltotalAmt.Text = String.Format("{0:N2}", (NZ(sum)))
-        End With
-    End Sub
-    Private Sub dgList_RowsAdded(sender As Object, e As DataGridViewRowsAddedEventArgs) Handles dgList.RowsAdded
-        ComputeAllRows()
+        GetData()
+        Timer1.Enabled = True
+        Timer1.Start()
     End Sub
 
-    Private Sub dgList_RowsRemoved(sender As Object, e As DataGridViewRowsRemovedEventArgs) Handles dgList.RowsRemoved
-        ComputeAllRows()
-    End Sub
 
-  
+    Private Sub Timer1_Tick_1(sender As Object, e As EventArgs) Handles Timer1.Tick
+
+        GetData()
+
+    End Sub
 End Class
